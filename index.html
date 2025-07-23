@@ -1,0 +1,1313 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Veye Homepage</title>
+
+    <!-- bootstrap css files -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" rel="stylesheet">
+
+    <!-- custom css -->
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/media.css">
+</head>
+
+<body>
+
+    <!-- header -->
+    <header class="container-fluid header">
+        <nav class="navbar navbar-expand-lg navbar-light bg-purple veye-top-navbar">
+            <div class="container">
+                <a class="navbar-brand" href="/">
+                    <img src="/images/static/veye-white.png" alt="Veye Logo" class="logo img-fluid">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll"
+                    aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse ms-auto justify-content-around" id="navbarSupportedContent">
+                    <form class="d-flex flex-grow-1 search-form">
+                        <input class="form-control me-2" type="search" placeholder="Search here..." aria-label="Search">
+
+                    </form>
+                    <div class="navbar-nav mb-2 mb-lg-0">
+                        <button class="btn btn-login-btn ms-3" type="button" data-bs-toggle="modal"
+                            data-bs-target="#loginModal">Login</button>
+                        <button class="btn btn-notification btn-icon ms-3" type="button" data-bs-toggle="modal"
+                            data-bs-target="#signupModal">
+                            <i class="bi bi-bell-fill"></i>
+                        </button>
+                    </div>
+
+                </div>
+            </div>
+        </nav>
+        <nav class="navbar navbar-expand-lg container-fluid bg-blue veye-bottom-navbar">
+            <div class="container">
+                <div class="collapse navbar-collapse" id="navbarScroll">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0 navbar-nav-scroll">
+                        <li class="list-inline-item active"><a href="/">Home</a></li>
+
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Sector Specific
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Airlines</a></li>
+                                <li><a class="dropdown-item" href="#">Financial</a></li>
+                                <li><a class="dropdown-item" href="#">Healthcare</a></li>
+                                <li><a class="dropdown-item" href="#">Insurance</a></li>
+                                <li><a class="dropdown-item" href="#">Material</a></li>
+                                <li><a class="dropdown-item" href="#">Mining</a></li>
+                                <li><a class="dropdown-item" href="#">Retail</a></li>
+                                <li><a class="dropdown-item" href="#">Services</a></li>
+                                <li><a class="dropdown-item" href="#">Technology</a></li>
+                            </ul>
+                        </li>
+
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Opportunity Stock
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Blue Chip</a></li>
+                                <li><a class="dropdown-item" href="#">Mid Chip</a></li>
+
+                                <li><a class="dropdown-item" href="#">Small Cap</a></li>
+                            </ul>
+                        </li>
+
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Stock Advisory
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Daily Analysis</a></li>
+                                <li><a class="dropdown-item" href="#">Stock of the Week Report</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            </ul>
+                        </li>
+
+                        <li class="list-inline-item"><a href="/contact">Stock Screeners</a></li>
+                        <li class="list-inline-item"><a href="/contact">Retirement</a></li>
+                        <li class="list-inline-item"><a href="/contact">Editorial</a></li>
+                        <li class="list-inline-item"><a href="/contact">About Us</a></li>
+
+                    </ul>
+
+                </div>
+
+            </div>
+        </nav>
+    </header>
+
+    <!-- main content -->
+    <main class="container-fluid">
+
+        <div class="marquee-container mt-3 mb-3">
+            <div class="marquee-track">
+                <div class="marquee-tile">
+
+                    <div class="stock-info">
+                        <div class="symbol-name">
+                            <span class="name">Apple Inc.</span>
+                            <span class="symbol">AAPL</span>
+                        </div>
+                        <div class="price-change stock-up">
+                            <span class="price">$150.00</span>
+                            <span class="change">+1.50%</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="marquee-tile">
+
+                    <div class="stock-info">
+                        <div class="symbol-name">
+                            <span class="name">Apple Inc.</span>
+                            <span class="symbol">AAPL</span>
+                        </div>
+                        <div class="price-change stock-down">
+                            <span class="price">$150.00</span>
+                            <span class="change">-1.50%</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="marquee-tile">
+
+                    <div class="stock-info">
+                        <div class="symbol-name">
+                            <span class="name">Apple Inc.</span>
+                            <span class="symbol">AAPL</span>
+                        </div>
+                        <div class="price-change stock-up">
+                            <span class="price">$150.00</span>
+                            <span class="change">+1.50%</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="marquee-tile">
+
+                    <div class="stock-info">
+                        <div class="symbol-name">
+                            <span class="name">Apple Inc.</span>
+                            <span class="symbol">AAPL</span>
+                        </div>
+                        <div class="price-change stock-up">
+                            <span class="price">$150.00</span>
+                            <span class="change">+1.50%</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="marquee-tile">
+
+                    <div class="stock-info">
+                        <div class="symbol-name">
+                            <span class="name">Apple Inc.</span>
+                            <span class="symbol">AAPL</span>
+                        </div>
+                        <div class="price-change stock-down">
+                            <span class="price">$150.00</span>
+                            <span class="change">-1.50%</span>
+                        </div>
+                    </div>
+                </div>
+                <!-- Repeat .marquee-tile as needed -->
+            </div>
+        </div>
+
+        <section class="hero-section bg-image-container color-bg">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6 hero-main">
+                        <h1><span>Trusted</span> ASX Research & Stock Recommendations from Independent
+                            <span>Experts</span>
+                        </h1>
+                        <p class="hero-description">Stop relying on random tips and endless market noise. Our
+                            independent ASX experts deliver actionable recommendations. Helping you invest with
+                            confidence, every step of the way.</p>
+
+                        <div class="d-flex">
+                            <button class="btn btn-white me-3" type="button" data-bs-toggle="modal"
+                                data-bs-target="#loginModal">7 Days Free Trial <i
+                                    class="bi bi-arrow-right-circle"></i></button>
+                            <button class="btn btn-purple" type="button" data-bs-toggle="modal"
+                                data-bs-target="#signupModal"> Get Your Free Report</button>
+                        </div>
+
+                    </div>
+                    <div class="col-md-6 hero-image h-100 d-none">
+                        <img src="/images/static/bg-bulls.png" alt="Hero Image" class="img-fluid">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="trending-market-news container mt-5">
+
+            <div class="row">
+                <div class="col-lg-8 col-sm-12">
+                    <div class="d-flex justify-content-between align-items-center mb-4">
+                        <h2 class="me-3">Trending Market News</h2>
+                        <button class="btn btn-outline-secondary btn-sm" type="button">View All
+                            <i class="bi bi-arrow-up-right"></i>
+                        </button>
+                    </div>
+                    <div class="d-flex veye-seperator mb-3"></div>
+                    <div class="row gy-1 gx-1">
+                        <div class="col-lg-4 col-sm-12">
+                            <div class="card br-no-border">
+                                <div class="image-wrapper">
+                                    <img src="/images/news/1.png" alt="News 1" class="card-img-top">
+                                    <div class="overlay"></div>
+                                    <div class="card-body ">
+                                        <span class="badge mb-2 text-uppercase">Market</span>
+                                        <h5 class="card-title">The Game Changing Aroadeily Breakfast</h5>
+                                        <p class="card-text"><span><i class="bi bi-calendar"></i></span> 27 August, 2025
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card br-no-border">
+                                <div class="image-wrapper">
+                                    <img src="/images/news/2.png" alt="News 2" class="card-img-top">
+                                    <div class="overlay"></div>
+                                    <div class="card-body">
+                                        <span class="badge mb-2 text-uppercase">Bitcoin</span>
+                                        <h5 class="card-title">Crypto Market Insights</h5>
+                                        <p class="card-text"><span><i class="bi bi-calendar"></i></span> 27 August, 2025
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card br-no-border">
+                                <div class="image-wrapper">
+                                    <img src="/images/news/3.png" alt="News 3" class="card-img-top">
+                                    <div class="overlay"></div>
+                                    <div class="card-body">
+                                        <span class="badge mb-2 text-uppercase">Economy</span>
+                                        <h5 class="card-title">Economic Outlook for 2023</h5>
+                                        <p class="card-text"><span><i class="bi bi-calendar"></i></span> 27 August, 2025
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="row gy-1 gx-1">
+                            <div class="col">
+                                <div class="card br-no-border">
+                                    <div class="image-wrapper">
+                                        <img src="/images/news/4.png" alt="News 4" class="card-img-top">
+                                        <div class="overlay"></div>
+                                        <div class="card-body">
+                                            <span class="badge mb-2 text-uppercase">News</span>
+                                            <h5 class="card-title">Tech Stocks to Watch</h5>
+                                            <p class="card-text"><span><i class="bi bi-calendar"></i></span> 27 August,
+                                                2025
+                                                &nbsp; <span><i class="bi bi-clock"></i></span> 10:00 AM</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="card br-no-border">
+                                    <div class="image-wrapper">
+                                        <img src="/images/news/5.png" alt="News 5" class="card-img-top">
+                                        <div class="overlay"></div>
+                                        <div class="card-body">
+                                            <span class="badge mb-2 text-uppercase">Crypto</span>
+                                            <h5 class="card-title">Investment Strategies for 2023</h5>
+                                            <p class="card-text"><span><i class="bi bi-calendar"></i></span> 27 August,
+                                                2025
+                                                &nbsp; <span><i class="bi bi-clock"></i></span> 10:00 AM</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-12 high-low-charts-section">
+                    <div class="row">
+                        <div class="col-12">
+                            <!-- Tabs container -->
+                            <ul class="nav nav-tabs mt-3" id="myTab" role="tablist">
+                                <li class="nav-item" role="presentation">
+                                    <a class="nav-link active" id="top-risers-tab" data-bs-toggle="tab"
+                                        href="#top-risers" role="tab" aria-controls="top-risers"
+                                        aria-selected="true">Top Risers</a>
+                                </li>
+                                <li class="nav-item" role="presentation">
+                                    <a class="nav-link" id="top-loosers-tab" data-bs-toggle="tab" href="#top-loosers"
+                                        role="tab" aria-controls="top-loosers" aria-selected="false">Top Loosers</a>
+                                </li>
+                                <li class="nav-item" role="presentation">
+                                    <a class="nav-link" id="fifty-two-week-high-tab" data-bs-toggle="tab"
+                                        href="#fifty-two-week-high" role="tab" aria-controls="fifty-two-week-high"
+                                        aria-selected="false">52 Weeks High</a>
+                                </li>
+                                <li class="nav-item" role="presentation">
+                                    <a class="nav-link" id="fifty-two-week-low-tab" data-bs-toggle="tab"
+                                        href="#fifty-two-week-low" role="tab" aria-controls="fifty-two-week-low"
+                                        aria-selected="false">52 Weeks Low</a>
+                                </li>
+                            </ul>
+                            <div class="tab-content mt-4" id="myTabContent">
+                                <div class="tab-pane fade show active" id="top-risers" role="tabpanel"
+                                    aria-labelledby="top-risers-tab">
+                                    <div class="card chart-table">
+                                        <div class="card-title mt-2 ms-3">
+                                            Top Risers
+                                        </div>
+                                        <div class="card-body">
+                                            <table class="risers-chart-table">
+                                                <thead>
+                                                    <tr>
+                                                        <th>Symbol</th>
+                                                        <th>1d</th>
+                                                        <th>Price</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <td>BTC</td>
+                                                        <td>5%</td>
+                                                        <td>$50,000</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>ETH</td>
+                                                        <td>3%</td>
+                                                        <td>$4,000</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>LTC</td>
+                                                        <td>2%</td>
+                                                        <td>$200</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>XRP</td>
+                                                        <td>1.5%</td>
+                                                        <td>$1.50</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>LINK</td>
+                                                        <td>1%</td>
+                                                        <td>$25.00</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>ADA</td>
+                                                        <td>0.5%</td>
+                                                        <td>$1.20</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>DOT</td>
+                                                        <td>0.3%</td>
+                                                        <td>$6.00</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>UNI</td>
+                                                        <td>0.2%</td>
+                                                        <td>$30.00</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>BNB</td>
+                                                        <td>0.1%</td>
+                                                        <td>$350.00</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>SOL</td>
+                                                        <td>0.05%</td>
+                                                        <td>$100.00</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>LTC</td>
+                                                        <td>2%</td>
+                                                        <td>$200</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>XRP</td>
+                                                        <td>1.5%</td>
+                                                        <td>$1.50</td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="tab-pane fade" id="top-loosers" role="tabpanel"
+                                    aria-labelledby="top-loosers-tab">
+                                    <h5>Top Loosers</h5>
+                                    <p>Content for Top Loosers will be shown here.</p>
+                                </div>
+                                <div class="tab-pane fade" id="fifty-two-week-high" role="tabpanel"
+                                    aria-labelledby="fifty-two-week-high-tab">
+                                    <h5>52 Weeks High</h5>
+                                    <p>Content for 52 Weeks High will be shown here.</p>
+                                </div>
+                                <div class="tab-pane fade" id="fifty-two-week-low" role="tabpanel"
+                                    aria-labelledby="fifty-two-week-low-tab">
+                                    <h5>52 Weeks Low</h5>
+                                    <p>Content for 52 Weeks Low will be shown here.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+        <section class="daily-analysis container mt-5">
+            <div class="row">
+                <div class="col-12">
+                    <div class="d-flex justify-content-between align-items-center mb-4">
+                        <h2 class="me-3">Daily Analysis</h2>
+                        <button class="btn btn-outline-secondary btn-sm" type="button">View All
+                            <i class="bi bi-arrow-up-right"></i>
+                        </button>
+                    </div>
+                    <div class="d-flex veye-seperator mb-3"></div>
+                    <div class="row gy-1 gx-3">
+                        <div class="col-sm-12 col-md-6 col-lg-4">
+                            <div class="card br-no-border">
+                                <div class="image-wrapper">
+                                    <img src="/images/news/3.png" alt="News 1" class="card-img-top">
+                                    <div class="overlay"></div>
+                                    <div class="card-body ">
+                                        <span class="badge mb-2 text-uppercase">Crypto</span>
+                                        <h5 class="card-title">The Growing Need For Effective Password Management</h5>
+                                        <p class="card-text"><span><i class="bi bi-calendar"></i></span> 27 August,
+                                            2025
+                                            &nbsp; <span><i class="bi bi-clock"></i></span> 10:00 AM</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-sm-12 col-md-6 col-lg-4">
+                            <div class="card br-no-border">
+                                <div class="image-wrapper">
+                                    <img src="/images/news/2.png" alt="News 1" class="card-img-top">
+                                    <div class="overlay"></div>
+                                    <div class="card-body ">
+                                        <span class="badge mb-2 text-uppercase">News</span>
+                                        <h5 class="card-title">Write Better CSS By From JavaScript Functions</h5>
+                                        <p class="card-text"><span><i class="bi bi-calendar"></i></span> 27 August,
+                                            2025
+                                            &nbsp; <span><i class="bi bi-clock"></i></span> 10:00 AM</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-sm-12 col-md-6 col-lg-4">
+                            <div class="card br-no-border">
+                                <div class="image-wrapper">
+                                    <img src="/images/news/1.png" alt="News 1" class="card-img-top">
+                                    <div class="overlay"></div>
+                                    <div class="card-body ">
+                                        <span class="badge mb-2 text-uppercase">Crypto</span>
+                                        <h5 class="card-title">The Growing Need For Effective Password Management</h5>
+                                        <p class="card-text"><span><i class="bi bi-calendar"></i></span> 27 August,
+                                            2025
+                                            &nbsp; <span><i class="bi bi-clock"></i></span> 10:00 AM</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row gy-1 gx-2 mt-3 horizontal-cards">
+                        <div class="col-sm-6 col-lg-3">
+                            <div class="card">
+                                <div class="d-flex flex-row">
+                                    <img src="/images/news/1.png" alt="News 1" class="card-img-top">
+                                    <div class="card-body position-relative">
+                                        <span class="badge mb-2 text-uppercase">Bitcoin</span>
+                                        <h5 class="card-title">Accessible Target Sizes Cheatsheet</h5>
+                                        <p class="card-text"><span><i class="bi bi-calendar"></i></span> 27 August,
+                                            2025</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 col-lg-3">
+                            <div class="card">
+                                <div class="d-flex flex-row">
+                                    <img src="/images/news/4.png" alt="News 1" class="card-img-top">
+                                    <div class="card-body position-relative">
+                                        <span class="badge mb-2 text-uppercase">Market</span>
+                                        <h5 class="card-title">Color Mechanics In UI Kits</h5>
+                                        <p class="card-text"><span><i class="bi bi-calendar"></i></span> 27 August,
+                                            2025</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 col-lg-3">
+                            <div class="card">
+                                <div class="d-flex flex-row">
+                                    <img src="/images/news/2.png" alt="News 1" class="card-img-top">
+                                    <div class="card-body position-relative">
+                                        <span class="badge mb-2 text-uppercase">Economy</span>
+                                        <h5 class="card-title">Accessible Target Sizes Cheatsheet</h5>
+                                        <p class="card-text"><span><i class="bi bi-calendar"></i></span> 27 August,
+                                            2025</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 col-lg-3">
+                            <div class="card">
+                                <div class="d-flex flex-row">
+                                    <img src="/images/news/3.png" alt="News 1" class="card-img-top">
+                                    <div class="card-body position-relative">
+                                        <span class="badge mb-2 text-uppercase">Economy</span>
+                                        <h5 class="card-title">Trends in Cryptocurrency</h5>
+                                        <p class="card-text"><span><i class="bi bi-calendar"></i></span> 27 August,
+                                            2025</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="sec-combined container mt-5">
+            <div class="row">
+                <div class="col-lg-8 col-sm-12">
+                    <section class="mining-news container mt-5">
+                        <div class="row">
+                            <div class="col-12">
+                                <div class="d-flex justify-content-between align-items-center mb-4">
+                                    <h2 class="me-3">Mining Stories</h2>
+                                    <button class="btn btn-outline-secondary btn-sm" type="button">View All
+                                        <i class="bi bi-arrow-up-right"></i>
+                                    </button>
+                                </div>
+                                <div class="d-flex veye-seperator mb-3"></div>
+
+                                <div class="row gy-3 gx-2">
+                                    <div class="col-lg-4 col-md-6 col-sm-12">
+                                        <div class="card">
+                                            <div class="image-wrapper">
+                                                <img src="/images/news/2.png" alt="News 1" class="card-img-top">
+                                                <div class="overlay"></div>
+                                                <span class="badge mb-2 text-uppercase">Market</span>
+                                                <div
+                                                    class="card-body mt-3 d-flex flex-column justify-content-center align-items-center">
+                                                    <h5 class="card-title text-center">What You Miss in the Market
+                                                        Changes
+                                                    </h5>
+                                                    <p class="card-text"><span><i class="bi bi-calendar"></i></span> 27
+                                                        August, 2025
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-4 col-md-6 col-sm-12">
+                                        <div class="card">
+                                            <div class="image-wrapper">
+                                                <img src="/images/news/4.png" alt="News 1" class="card-img-top">
+                                                <div class="overlay"></div>
+                                                <span class="badge mb-2 text-uppercase">Market</span>
+                                                <div
+                                                    class="card-body mt-3 d-flex flex-column justify-content-center align-items-center">
+                                                    <h5 class="card-title text-center">New Bill Allows to Pay Crypto
+                                                        Taxes
+                                                    </h5>
+                                                    <p class="card-text"><span><i class="bi bi-calendar"></i></span> 27
+                                                        August, 2025
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-4 col-md-6 col-sm-12">
+                                        <div class="card">
+                                            <div class="image-wrapper">
+                                                <img src="/images/news/1.png" alt="News 1" class="card-img-top">
+                                                <div class="overlay"></div>
+                                                <span class="badge mb-2 text-uppercase">Market</span>
+                                                <div
+                                                    class="card-body mt-3 d-flex flex-column justify-content-center align-items-center">
+                                                    <h5 class="card-title text-center">Crypto Exchange Services In the
+                                                        US
+                                                    </h5>
+                                                    <p class="card-text"><span><i class="bi bi-calendar"></i></span> 27
+                                                        August, 2025
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-lg-4 col-md-6 col-sm-12">
+                                        <div class="card">
+                                            <div class="image-wrapper">
+                                                <img src="/images/news/2.png" alt="News 1" class="card-img-top">
+                                                <div class="overlay"></div>
+                                                <span class="badge mb-2 text-uppercase">Market</span>
+                                                <div
+                                                    class="card-body mt-3 d-flex flex-column justify-content-center align-items-center">
+                                                    <h5 class="card-title text-center">What You Miss in the Market
+                                                        Changes
+                                                    </h5>
+                                                    <p class="card-text"><span><i class="bi bi-calendar"></i></span> 27
+                                                        August, 2025
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-4 col-md-6 col-sm-12">
+                                        <div class="card">
+                                            <div class="image-wrapper">
+                                                <img src="/images/news/4.png" alt="News 1" class="card-img-top">
+                                                <div class="overlay"></div>
+                                                <span class="badge mb-2 text-uppercase">Market</span>
+                                                <div
+                                                    class="card-body mt-3 d-flex flex-column justify-content-center align-items-center">
+                                                    <h5 class="card-title text-center">New Bill Allows to Pay Crypto
+                                                        Taxes
+                                                    </h5>
+                                                    <p class="card-text"><span><i class="bi bi-calendar"></i></span> 27
+                                                        August, 2025
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-4 col-md-6 col-sm-12">
+                                        <div class="card">
+                                            <div class="image-wrapper">
+                                                <img src="/images/news/1.png" alt="News 1" class="card-img-top">
+                                                <div class="overlay"></div>
+                                                <span class="badge mb-2 text-uppercase">Market</span>
+                                                <div
+                                                    class="card-body mt-3 d-flex flex-column justify-content-center align-items-center">
+                                                    <h5 class="card-title text-center">Crypto Exchange Services In the
+                                                        US
+                                                    </h5>
+                                                    <p class="card-text"><span><i class="bi bi-calendar"></i></span> 27
+                                                        August, 2025
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+
+
+
+                        </div>
+
+                    </section>
+
+                    <section class="advertisement-card container mt-5">
+                        <div class="row">
+                            <div class="col-12">
+                                <div class="image-wrapper">
+                                    <img src="/images/static/advertisement.png" alt="Advertisement"
+                                        class="card-img-top img-fluid">
+                                    <div class="overlay"></div>
+
+                                </div>
+                            </div>
+                        </div>
+
+                    </section>
+
+                    <section class="weeks-high-stocks container mt-5">
+                        <div class="row">
+                            <div class="col-12">
+
+                                <div class="d-flex justify-content-between align-items-center mb-4">
+                                    <h2 class="me-3">52 Weeks High Stocks</h2>
+                                    <button class="btn btn-outline-secondary btn-sm" type="button">View All
+                                        <i class="bi bi-arrow-up-right"></i>
+                                    </button>
+                                </div>
+                                <div class="d-flex veye-seperator mb-3"></div>
+
+
+                                <div class="row gy-3 gx-2">
+
+                                    <div class="col-lg-6 col-md-6 col-sm-12">
+                                        <div class="card">
+                                            <div class="image-wrapper">
+                                                <img src="/images/news/3.png" alt="News 1" class="card-img-top">
+                                                <div class="overlay"></div>
+                                                <span class="badge mb-2 text-uppercase">Market</span>
+                                                <div class="card-body mt-3">
+                                                    <h5 class="card-title">What You Miss in the Market Changes</h5>
+                                                    <p class="card-text"><span><i class="bi bi-calendar"></i></span> 27
+                                                        August,
+                                                        2025
+                                                        &nbsp; <span><i class="bi bi-clock"></i></span> 10:00 AM</p>
+                                                    <p class="description">Browned butter and brown sugar caramelly
+                                                        oodness
+                                                        crispy
+                                                        edgesthick and soft centers and melty little puddles of
+                                                        chocolate y
+                                                        first
+                                                        favorite.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6 col-md-6 col-sm-12">
+                                        <div class="card">
+                                            <div class="image-wrapper">
+                                                <img src="/images/news/2.png" alt="News 1" class="card-img-top">
+                                                <div class="overlay"></div>
+                                                <span class="badge mb-2 text-uppercase">Market</span>
+                                                <div
+                                                    class="card-body mt-3 d-flex flex-column justify-content-start align-items-start">
+                                                    <h5 class="card-title text-start">What You Miss in the Market
+                                                        Changes
+                                                    </h5>
+                                                    <p class="card-text"><span><i class="bi bi-calendar"></i></span> 27
+                                                        August,
+                                                        2025
+                                                        &nbsp; <span><i class="bi bi-clock"></i></span> 10:00 AM</p>
+                                                    <p class="description">Browned butter and brown sugar caramelly
+                                                        oodness
+                                                        crispy
+                                                        edgesthick and soft centers and melty little puddles of
+                                                        chocolate y
+                                                        first
+                                                        favorite.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6 col-md-6 col-sm-12">
+                                        <div class="card">
+                                            <div class="image-wrapper">
+                                                <img src="/images/news/1.png" alt="News 1" class="card-img-top">
+                                                <div class="overlay"></div>
+                                                <span class="badge mb-2 text-uppercase">Market</span>
+                                                <div class="card-body mt-3">
+                                                    <h5 class="card-title">What You Miss in the Market Changes</h5>
+                                                    <p class="card-text"><span><i class="bi bi-calendar"></i></span> 27
+                                                        August,
+                                                        2025
+                                                        &nbsp; <span><i class="bi bi-clock"></i></span> 10:00 AM</p>
+                                                    <p class="description">Browned butter and brown sugar caramelly
+                                                        oodness
+                                                        crispy
+                                                        edgesthick and soft centers and melty little puddles of
+                                                        chocolate y
+                                                        first
+                                                        favorite.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6 col-md-6 col-sm-12">
+                                        <div class="card">
+                                            <div class="image-wrapper">
+                                                <img src="/images/news/4.png" alt="News 1" class="card-img-top">
+                                                <div class="overlay"></div>
+                                                <span class="badge mb-2 text-uppercase">Market</span>
+                                                <div
+                                                    class="card-body mt-3 d-flex flex-column justify-content-start align-items-start">
+                                                    <h5 class="card-title text-start">What You Miss in the Market
+                                                        Changes
+                                                    </h5>
+                                                    <p class="card-text"><span><i class="bi bi-calendar"></i></span> 27
+                                                        August,
+                                                        2025
+                                                        &nbsp; <span><i class="bi bi-clock"></i></span> 10:00 AM</p>
+                                                    <p class="description">Browned butter and brown sugar caramelly
+                                                        oodness
+                                                        crispy
+                                                        edgesthick and soft centers and melty little puddles of
+                                                        chocolate y
+                                                        first
+                                                        favorite.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+                    </section>
+                </div>
+                <div class="col-lg-4 col-sm-12">
+                    <div class="col-12 subscribe-newsletter mt-4">
+                        <div class="d-flex justify-content-between align-items-center mb-4">
+                            <h2 class="me-3 homepage-heading">Subscribe to our News Letter</h2>
+
+                        </div>
+                        <div class="d-flex veye-seperator mb-3"></div>
+                        <div class="row">
+                            <div class="col-12">
+                                <div class="card">
+                                    <div class="card-body d-flex flex-column justify-content-center align-items-center">
+                                        <h5 class="card-title">Daily Newsletter</h5>
+                                        <p class="card-text">Get all the top stories from Blogs to keep track.</p>
+
+                                        <div class="mb-3 p-0">
+                                            <form class="d-flex flex-column gy-1">
+                                                <input type="email" class="form-control" id="emailInput"
+                                                    placeholder="Enter your email">
+
+                                                <button type="submit"
+                                                    class="btn btn-primary mt-3 text-uppercase">Subscribe</button>
+                                            </form>
+                                        </div>
+                                    </div>
+                                    <div class="card-footer text-center">
+                                        <small class="text-mutedd">We respect your privacy. Unsubscribe at any
+                                            time.</small>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-12 mt-5 past-recommendations">
+                        <div class="d-flex justify-content-between align-items-center mb-4">
+                            <h2 class="me-3 homepage-heading">Past Recommendations</h2>
+
+                        </div>
+                        <div class="d-flex veye-seperator mb-3"></div>
+                        <div class="row">
+                            <div class="col-12">
+                                <div class="card">
+                                    <div class="card-body">
+                                        <table>
+                                            <thead>
+                                                <tr>
+                                                    <th>Code</th>
+                                                    <th>Avg Buy</th>
+                                                    <th>Avg Sell</th>
+                                                    <th>Gain/loss</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td>BTC</td>
+                                                    <td>$50,000</td>
+                                                    <td>$55,000</td>
+                                                    <td class="text-success">+10%</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>ETH</td>
+                                                    <td>$3,000</td>
+                                                    <td>$2,800</td>
+                                                    <td class="text-danger">-7%</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>XRP</td>
+                                                    <td>$1.00</td>
+                                                    <td>$1.20</td>
+                                                    <td class="text-success">+20%</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>LTC</td>
+                                                    <td>$200</td>
+                                                    <td>$180</td>
+                                                    <td class="text-danger">-10%</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>ADA</td>
+                                                    <td>$1.50</td>
+                                                    <td>$1.80</td>
+                                                    <td class="text-success">+20%</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>DOT</td>
+                                                    <td>$30</td>
+                                                    <td>$28</td>
+                                                    <td class="text-danger">-7%</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>LINK</td>
+                                                    <td>$25</td>
+                                                    <td>$27</td>
+                                                    <td class="text-success">+8%</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>USDT</td>
+                                                    <td>$1.00</td>
+                                                    <td>$1.00</td>
+                                                    <td class="text-success">+0%</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>BNB</td>
+                                                    <td>$300</td>
+                                                    <td>$320</td>
+                                                    <td class="text-success">+6.67%</td>
+                                                </tr>
+                                            </tbody>
+
+                                        </table>
+                                    </div>
+                                </div>
+
+                                <p class="disclaimer">
+                                    <strong>Disclaimer:</strong> Past performance is not indicative of future results.
+                                    Returns shown include capital appreciation and dividends (where applicable) and
+                                    exclude transaction costs, as at 01 July 2025. Always consult a licensed advisor for
+                                    personal advice before investing.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-12 mt-5 compare-market-indices">
+                        <div class="d-flex justify-content-between align-items-center mb-4">
+                            <h2 class="me-3 homepage-heading">Compare Market Indices</h2>
+
+                        </div>
+                        <div class="d-flex veye-seperator mb-3"></div>
+                        <div class="row">
+                            <div class="col-12">
+                                <div class="card">
+                                    <div class="card-body d-flex flex-column justify-content-center align-items-center">
+                                        <h5 class="card-title">Coin 1</h5>
+                                        <p class="card-text">Get all the top stories from Blogs to keep track.
+                                        </p>
+
+                                        <div class="mb-3 p-0">
+                                            <form class="d-flex flex-column gy-1">
+                                                <input type="email" class="form-control" id="emailInput"
+                                                    placeholder="Enter your email">
+
+                                                <button type="submit"
+                                                    class="btn btn-primary mt-3 text-uppercase">Subscribe</button>
+                                            </form>
+                                        </div>
+                                    </div>
+                                    <div class="card-footer text-center">
+                                        <small class="text-mutedd">We respect your privacy. Unsubscribe at any
+                                            time.</small>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+
+
+        <section class="our-subscription mt-5">
+            <h2 class="mb-3">Our Subscription Plans</h2>
+            <div class="row gy-4 mx-auto d-flex justify-content-center">
+                <!-- <div class="col-lg-10 col-sm-12 mx-auto"> -->
+
+                <!-- <div class="d-flex justify-content-between align-items-center mx-auto mb-4"> -->
+                <div class="col-lg-5 col-sm-12">
+                    <div class="card h-100">
+                        <div class="card-body">
+                            <div class="d-flex mt-3 mx-3">
+                                <p class="pkg-type-text">Starter</p>
+                                <button class="btn btn-primary ms-auto subscribe-btn d-sm-none" type="button"
+                                    data-bs-toggle="modal" data-bs-target="#loginModal">Start Free
+                                    Trial</button>
+                            </div>
+                            <div class="sub-details mx-3 pt-2">
+                                <p class="pkg-price-text mb-0">Free</p>
+                                <p class="pkg-description-text">7 Days free trial at the price of 0$</p>
+                                <div class="pkg-benefits">
+                                    <h5>Benefits</h5>
+                                    <ul class="list-unstyled">
+                                        <li>Daily Analysis</li>
+                                        <li>Stock Of The Week Report</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <button class="btn btn-primary ms-2 subscribe-btn d-lg-none" type="button"
+                                data-bs-toggle="modal" data-bs-target="#loginModal">Start Free
+                                Trial</button>
+
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-5 col-sm-12">
+                    <div class="card h-100">
+                        <div class="card-body premium-card">
+                            <span class="badge">Most Valuable Package</span>
+                            <div class="d-flex mt-3 mx-3">
+                                <p class="pkg-type-text">Advance</p>
+                                <button class="btn btn-primary ms-auto subscribe-btn" type="button"
+                                    data-bs-toggle="modal" data-bs-target="#loginModal">Subscribe</button>
+                            </div>
+                            <div class="sub-details mx-3 pt-2">
+                                <p class="pkg-price-text mb-0">700$ /yearly</p>
+                                <p class="pkg-description-text">14-day full refund available for new
+                                    subscribers.
+                                </p>
+                                <div class="pkg-benefits">
+                                    <h5>Benefits</h5>
+                                    <ul class="list-unstyled">
+                                        <li>Easy to Understand Expert Analysis Report</li>
+                                        <li>Buy, Sell, and Hold Recommendations on each Stock</li>
+                                        <li>Detailed Technical & Fundamental Analysis of 5 Best ASX Small Cap
+                                            Stocks
+                                        </li>
+                                        <li>In-depth Financial Reports of High Potential ASX Stocks</li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+                <!-- </div> -->
+                <!-- </div> -->
+            </div>
+        </section>
+
+        <section class="dividend-news container mt-5">
+            <div class="row">
+                <div class="col-lg-8 col-sm-12">
+
+                    <div class="d-flex justify-content-between align-items-center mb-4">
+                        <h2 class="me-3">Dividend Investing</h2>
+                        <button class="btn btn-outline-secondary btn-sm" type="button">View All
+                            <i class="bi bi-arrow-up-right"></i>
+                        </button>
+                    </div>
+                    <div class="d-flex veye-seperator mb-3"></div>
+
+
+                    <div class="row gy-3 gx-2">
+
+                        <div class="col-lg-6 col-sm-12">
+                            <div class="card">
+                                <div class="image-wrapper">
+                                    <img src="/images/news/3.png" alt="News 1" class="card-img-top">
+                                    <div class="overlay"></div>
+                                    <div class="card-body mt-0">
+                                        <span class="mb-2 small-text">Market</span>
+                                        <h5 class="card-title">What You Miss in the Market Changes</h5>
+                                        <p class="card-text"><span><i class="bi bi-calendar"></i></span> 27 August,
+                                            2025
+                                            &nbsp; <span><i class="bi bi-clock"></i></span> 10:00 AM</p>
+                                        <p class="description">Browned butter and brown sugar caramelly oodness crispy
+                                            edgesthick and soft centers and melty little puddles of chocolate y first
+                                            favorite.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-sm-12">
+                            <div class="card">
+                                <div class="image-wrapper">
+                                    <img src="/images/news/2.png" alt="News 1" class="card-img-top">
+                                    <div class="overlay"></div>
+
+                                    <div class="card-body mt-0">
+                                        <span class="mb-2 small-text">Market</span>
+                                        <h5 class="card-title text-start">What You Miss in the Market Changes</h5>
+                                        <p class="card-text"><span><i class="bi bi-calendar"></i></span> 27 August,
+                                            2025
+                                            &nbsp; <span><i class="bi bi-clock"></i></span> 10:00 AM</p>
+                                        <p class="description">Browned butter and brown sugar caramelly oodness crispy
+                                            edgesthick and soft centers and melty little puddles of chocolate y first
+                                            favorite.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+
+                    </div>
+
+                </div>
+
+                <div class="col-lg-4 col-sm-12 etf-news-section">
+                    <div class="d-flex justify-content-between align-items-center mb-4">
+                        <h2 class="me-3">ETF News</h2>
+                        <button class="btn btn-outline-secondary btn-sm" type="button">View All
+                            <i class="bi bi-arrow-up-right"></i>
+                        </button>
+                    </div>
+                    <div class="d-flex veye-seperator mb-3"></div>
+
+                    <div class="row gy-2 gx-2">
+                        <div class="col-12">
+                            <div class="card">
+                                <div class="d-flex flex-row">
+                                    <img src="/images/news/3.png" alt="News 1" class="card-img-top">
+                                    <div class="card-body position-relative pt-0 pb-0">
+                                        <span class="mb-2 text-uppercase text-small">Bitcoin</span>
+                                        <h5 class="card-title">Accessible Target Sizes Cheatsheet</h5>
+                                        <p class="card-text"><span><i class="bi bi-calendar"></i></span> 27 August,
+                                            2025</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12">
+                            <div class="card">
+                                <div class="d-flex flex-row">
+                                    <img src="/images/news/2.png" alt="News 1" class="card-img-top">
+                                    <div class="card-body position-relative pt-0 pb-0">
+                                        <span class="mb-2 text-uppercase text-small">Bitcoin</span>
+                                        <h5 class="card-title">Accessible Target Sizes Cheatsheet</h5>
+                                        <p class="card-text"><span><i class="bi bi-calendar"></i></span> 27 August,
+                                            2025</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12">
+                            <div class="card">
+                                <div class="d-flex flex-row">
+                                    <img src="/images/news/3.png" alt="News 1" class="card-img-top">
+                                    <div class="card-body position-relative pt-0 pb-0">
+                                        <span class="mb-2 text-uppercase text-small">Bitcoin</span>
+                                        <h5 class="card-title">Accessible Target Sizes Cheatsheet</h5>
+                                        <p class="card-text"><span><i class="bi bi-calendar"></i></span> 27 August,
+                                            2025</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12">
+                            <div class="card">
+                                <div class="d-flex flex-row">
+                                    <img src="/images/news/1.png" alt="News 1" class="card-img-top">
+                                    <div class="card-body position-relative pt-0 pb-0">
+                                        <span class="mb-2 text-uppercase text-small">Bitcoin</span>
+                                        <h5 class="card-title">Accessible Target Sizes Cheatsheet</h5>
+                                        <p class="card-text"><span><i class="bi bi-calendar"></i></span> 27 August,
+                                            2025</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- <section class="newsletter-section container mt-5">
+            <div class="row">
+                <div class="d-flex justify-content-evenly align-items-center">
+                    <h2 class="text-center mb-0">Get Our Latest News & Update</h2>
+                    <form class="d-flex mb-0">
+                        <input class="form-control me-2" type="email" placeholder="Enter your email" aria-label="Email">
+                        <button class="btn btn-primary" type="submit">Subscribe</button>
+                    </form>
+                </div>
+            </div>
+        </section> -->
+
+
+
+    </main>
+
+    <footer class="veye-footer mt-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 text-start d-flex align-items-center mt-4 footer-top">
+                    <img src="/images/static/veye-white.png" alt="Veye Logo" class="footer-logo mb-3">
+                    <p class="disclaimer ms-5">
+                        <strong>Disclaimer:</strong> Veye Pty Ltd only provides general, and not personalised
+                        financial advice, and has not taken your personal circumstances into account. Veye Pty Ltd
+                        operates under AFSL 523157. For more information please see our Financial Services
+                        Guide. Please remember that investments can go up and down. Any past performance shown is
+                        not an indication of Future Returns. Commission and other costs charged by executing broker
+                        are not considered when calculating past performance. We request our readers not to
+                        interpret our reports as direct recommendations. Veye Pty Ltd does not guarantee the
+                        performance of, or returns on any investment.
+                    </p>
+                </div>
+            </div>
+
+            <div class="row footer-bottom mt-4 text-start footer-middle">
+                <div class="col-lg-3 col-md-6 col-sm-12">
+                    <h4 class="about-veye footer-heading">About Veye</h4>
+                    <p class="footer-desc">Veye is a leading independent equities research firm dedicated to helping
+                        its clients improve their investment results through unbiased and precise recommendations
+                        around buying, selling or holding stocks.</p>
+                </div>
+                <div class="col-lg-6 col-sm-12">
+                    <div class="row useful-links">
+                        <div class="col-lg-4 col-sm-6">
+                            <h4 class="footer-heading">Quick Links</h4>
+                            <ul class="list-unstyled">
+                                <li><a href="#">Daily Analysis</a></li>
+                                <li><a href="#">Dividend Investor Report</a></li>
+                                <li><a href="#">Master Of Growth Report</a></li>
+                                <li><a href="#">Penny Stock Report</a></li>
+                                <li><a href="#">Hot Sector Report</a></li>
+                            </ul>
+                        </div>
+
+                        <div class="col-lg-4 col-sm-6">
+                            <h4 class="footer-heading">Important Links</h4>
+                            <ul class="list-unstyled">
+                                <li><a href="#">Privacy Policy</a></li>
+                                <li><a href="#">Terms & Conditions</a></li>
+                                <li><a href="#">Free Trial - Terms Of Use</a></li>
+                                <li><a href="#">Financial Services Guide</a></li>
+                                <li><a href="#">About Us</a></li>
+                                <li><a href="#">Past Recommendations</a></li>
+                            </ul>
+                        </div>
+
+                        <div class="col-lg-4 col-sm-12">
+                            <h4 class="footer-heading follow-us-on">Follow Us On</h4>
+                            <ul class="list-unstyled">
+                                <li><a href="#"><i class="bi bi-geo-alt"></i> Veye Pty Ltd Level 21, 207 Kent
+                                        Street, Sydney, NSW, 2000</a></li>
+                                <li><a href="#"><i class="bi bi-envelope"></i> info@veye.com.au</a></li>
+                                <li><a href="#"><i class="bi bi-telephone"></i> (02) 9052 4957</a></li>
+                            </ul>
+
+                            <div class="footer-heading social-icons mt-3">
+                                <a href="#" class="me-3"><i class="bi bi-facebook"></i></a>
+                                <a href="#" class="me-3"><i class="bi bi-twitter"></i></a>
+                                <a href="#" class="me-3"><i class="bi bi-youtube"></i></a>
+                                <a href="#"><i class="bi bi-linkedin"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-sm-12">
+                    <h4 class="stay-updated footer-heading">Stay Updated</h4>
+                    <p class="desclaimer-desc">By providing your details, you agree to Veye’s Terms &
+                        Conditions and Privacy Policy and to receive marketing offers by email, text message or
+                        phone call from us or our agents until you opt out.</p>
+
+                    <div class="certifications">
+                        <img src="/images/static/cert1.png" alt="AFSL Certification" class="certification-img">
+                        <img src="/images/static/cert2.png" alt="ACNC Certification" class="certification-img">
+                        <img src="/images/static/cert3.png" alt="ASIC Certification" class="certification-img">
+                    </div>
+                </div>
+
+            </div>
+
+
+        </div>
+        <hr class="container-fluid mt-4 mb-3" />
+        <div class="row footer-last-line mt-4">
+            <div class="col-12 d-flex justify-content-evenly text-center">
+                <p class="mb-0">Copyrights © 2025 Veye Pty Ltd. All rights reserved</p>
+                <p class="mb-0">ACN: 623 120 865 | ABN: 58 623 120 865 | AFSL: 523157</p>
+                <p class="mb-0">Designed with ❤️ by <a href="https://www.veye.com.au" target="_blank">Veye</a></p>
+            </div>
+        </div>
+
+    </footer>
+
+
+
+    <!-- bootstrap js files -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+        integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+        integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+        crossorigin="anonymous"></script>
+
+    <!-- library files -->
+    <script src="https://code.jquery.com/jquery-3.7.1.js"
+        integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+
+    <!-- custom scripts -->
+    <script src="/js/script.js"></script>
+</body>
+
+</html>

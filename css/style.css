@@ -1,0 +1,984 @@
+:root {
+    --primary-color: #4854EB;
+    --secondary-color: #12253E;
+    --tertiory-color: #010080;
+    --background-color: #CFF5E7;
+    --bg-gradient: linear-gradient(135deg, #F3F3F3 0%, #ebebeb 100%);
+    --veye-green: #1BB087;
+    --veye-purple: #4854EB;
+
+    --success-color: #28a745;
+    --info-color: #17a2b8;
+    --warning-color: #ffc107;
+    --danger-color: #dc3545;
+    --light-color: #f8f9fa;
+    --dark-color: #343a40;
+
+    --text-dark-color: #183354;
+    --text-light-color: #f8f9fa;
+
+    --font-family: 'Arial', sans-serif;
+    --font-size-base: 16px;
+    --line-height-base: 1.5;
+
+    --container-width: 1200px;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: var(--font-family);
+    font-size: var(--font-size-base);
+    line-height: var(--line-height-base);
+    color: var(--text-dark-color);
+}
+
+/* Genric */
+.br-no-border {
+    border: 0px
+}
+
+.homepage-heading {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: var(--text-dark-color);
+    margin-bottom: 2px;
+}
+
+/* Header */
+.header {
+    padding-left: 0;
+    padding-right: 0;
+}
+.header .bg-purple {
+    background-color: var(--veye-purple);
+    color: var(--text-light-color);
+}
+
+.header .logo {
+    width: 110px;
+    height: auto;
+}
+
+.header .veye-top-navbar {
+    padding: 10px 0;
+}
+
+.header .search-form {
+    display: flex;
+    flex-grow: 1;
+    max-width: 50%;
+}
+
+.header .search-form input {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid var(--primary-color);
+    border-radius: 30px;
+}
+
+.header .btn-login-btn {
+    background-color: var(--text-light-color);
+    color: var(--dark-color);
+    border: 1px solid;
+    border-radius: 50px;
+    padding: 8px 20px;
+    font-weight: bold;
+}
+
+.header .btn-login-btn:hover {
+    background-color: var(--dark-color);
+    color: var(--text-light-color);
+}
+
+.header .btn-notification {
+    background-color: var(--veye-purple);
+    color: var(--text-light-color);
+    border-radius: 50%;
+    padding: 8px;
+}
+
+.header .btn-notification:hover {
+    color: var(--text-light-color);
+}
+
+.header .veye-bottom-navbar {
+    background-color: #ffffff;
+    padding: 10px 0;
+    box-shadow: 1px 5px 9px rgba(0, 0, 0, 0.1);
+}
+
+.header .veye-bottom-navbar .navbar-nav {
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+
+    font-size: 1.0rem;
+    font-weight: 500;
+    color: var(--text-dark-color);
+}
+
+.header .veye-bottom-navbar .navbar-nav a {
+    color: var(--text-dark-color);
+    text-decoration: none;
+    transition: color 0.3s ease;
+    font-weight: 500;
+}
+
+
+/* Marquee */
+.marquee-container {
+    overflow: hidden;
+    white-space: nowrap;
+    position: relative;
+    width: 100%;
+    background: #fff;
+}
+
+.marquee-track {
+    display: inline-block;
+    white-space: nowrap;
+    animation: scroll-left 50s linear infinite;
+}
+
+@keyframes scroll-left {
+    0% {
+        transform: translateX(100%);
+    }
+
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+.marquee-tile {
+    display: inline-flex;
+    align-items: center;
+    padding: 0 20px;
+    max-width: 220px;
+}
+
+.circular-badge {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--secondary-color);
+    color: var(--text-light-color);
+    font-size: 0.9rem;
+    border-radius: 50%;
+    height: 50px;
+    width: 50px;
+    margin-right: 10px;
+}
+
+.stock-info {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.stock-info .stock-up {
+    color: #19AE57;
+    font-weight: bold;
+}
+
+.stock-info .stock-down {
+    color: #E70000;
+    font-weight: bold;
+}
+
+
+
+/* hero section */
+.hero-section {
+    background: var(--bg-gradient);
+    padding: 60px 0;
+    padding-left: 0;
+}
+
+
+
+.hero-section h1 {
+    font-size: 2.2rem;
+    font-weight: bold;
+    color: var(--text-dark-color);
+    text-align: start;
+    margin-bottom: 20px;
+    line-height: 1.4;
+    font-family: Montserrat, sans-serif;
+    text-shadow: 1px 1px 4px rgb(0 0 0 / 37%);
+}
+
+.hero-section h1 span {
+    color: var(--veye-purple);
+    font-weight: bolder;
+    font-size: 2.5rem;
+}
+
+.hero-section .hero-description {
+    font-size: 0.9rem;
+    color: var(--text-dark-color);
+    margin-bottom: 30px;
+}
+
+.hero-section .btn {
+    font-size: 0.9rem;
+    padding: 10px 20px;
+    border-radius: 8px;
+    font-weight: bold;
+}
+
+.hero-section .btn.btn-white {
+    background-color: var(--light-color);
+    color: var(--text-dark-color);
+    border: 1px solid var(--primary-color);
+}
+
+.hero-section .btn.btn-white:hover {
+    background-color: var(--primary-color);
+    color: var(--text-light-color);
+}
+
+.hero-section .btn.btn-purple {
+    background-color: var(--veye-purple);
+    color: var(--text-light-color);
+    border: none;
+}
+
+.hero-section .btn.btn-purple:hover {
+    background-color: var(--veye-green);
+    color: var(--text-light-color);
+}
+
+.hero-section .hero-image img {
+    position: relative;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.color-bg {
+    background-color: #F3F3F3;
+}
+
+
+
+
+
+/* Veye Seperator */
+.veye-seperator {
+    width: 100%;
+    height: 2px;
+    background-color: var(--background-color);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin: 20px 0;
+    position: relative;
+}
+
+.veye-seperator::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    width: 5.5%;
+    height: 100%;
+    background: var(--primary-color);
+    transition: background-color 0.3s ease;
+}
+
+.veye-seperator:hover::before {
+    background: var(--secondary-color);
+}
+
+.veye-seperator::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 5%;
+    width: 1%;
+    height: 100%;
+    background: white;
+    transition: background-color 0.3s ease;
+    border-top-left-radius: 2px;
+    border-bottom-right-radius: 2px;
+}
+
+/* Trending Market News */
+.trending-market-news h2 {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: var(--text-dark-color);
+    margin-bottom: 2px;
+}
+
+.trending-market-news .image-wrapper {
+    position: relative;
+    overflow: hidden;
+    border-radius: 0.5rem;
+}
+
+.trending-market-news .card-img-top {
+    width: 100%;
+    height: 200px;
+    /* Adjust as needed */
+    object-fit: cover;
+    display: block;
+}
+
+.trending-market-news .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.041), rgba(0, 0, 0, 0.8));
+    z-index: 1;
+}
+
+.trending-market-news .image-wrapper .card-body {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    padding: 1rem;
+    z-index: 2;
+}
+
+.trending-market-news .image-wrapper .card-body .badge {
+    background-color: #8686869e;
+    color: var(--text-light-color);
+    font-size: 0.7rem;
+    border-radius: 0.25rem;
+    text-transform: uppercase;
+}
+
+.trending-market-news .image-wrapper .card-body .card-title {
+    font-size: 1.0rem;
+    font-weight: bold;
+    color: var(--text-light-color);
+}
+
+.trending-market-news .image-wrapper .card-body .card-text {
+    font-size: 0.8rem;
+    color: var(--text-light-color);
+}
+
+
+/* High Low Charts Section */
+.high-low-charts-section .nav-tabs {
+    border-bottom: 0;
+    margin-bottom: 20px;
+    margin-top: 0 !important;
+}
+
+.high-low-charts-section .nav .nav-link {
+    font-size: 1.0rem;
+    font-weight: bold;
+    color: var(--text-dark-color);
+    border: none;
+    border-radius: 0.5rem;
+    font-size: 0.72rem;
+}
+.high-low-charts-section .nav .nav-link:hover {
+    background-color: var(--primary-color);
+    color: var(--text-light-color);
+}
+.high-low-charts-section .nav .nav-link.active {
+    background-color: var(--primary-color);
+    color: var(--text-light-color);
+}
+
+.high-low-charts-section .chart-table .card-title {
+    font-size: 0.9rem;
+    font-weight: bold;
+    color: var(--text-dark-color);
+}
+.high-low-charts-section .chart-table .card-body {
+    padding: 0.6rem;
+}
+
+.high-low-charts-section .chart-table .card-body table {
+    width: 100%;
+    border-collapse: collapse;
+}
+.high-low-charts-section .chart-table .card-body table th,
+.high-low-charts-section .chart-table .card-body table td {
+    padding: 0.5rem;
+    text-align: left;
+    font-size: 0.8rem;
+    color: var(--text-dark-color);
+}
+
+
+
+/* Daily Analysis */
+.daily-analysis h2 {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: var(--text-dark-color);
+    margin-bottom: 2px;
+}
+
+.daily-analysis .image-wrapper {
+    position: relative;
+    overflow: hidden;
+    border-radius: 0.5rem;
+}
+
+.daily-analysis .card-img-top {
+    width: 100%;
+    height: 200px;
+    /* Adjust as needed */
+    object-fit: cover;
+    display: block;
+}
+
+.daily-analysis .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.041), rgba(0, 0, 0, 0.8));
+    z-index: 1;
+}
+
+.daily-analysis .card-body {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    padding: 1rem;
+    z-index: 2;
+}
+
+.daily-analysis .card-body .badge {
+    background-color: #8686869e;
+    color: var(--text-light-color);
+    font-size: 0.7rem;
+    border-radius: 0.25rem;
+    text-transform: uppercase;
+}
+
+.daily-analysis .card-body .card-title {
+    font-size: 1.0rem;
+    font-weight: bold;
+    color: var(--text-light-color);
+}
+
+.daily-analysis .card-body .card-text {
+    font-size: 0.8rem;
+    color: var(--text-light-color);
+}
+
+.daily-analysis .horizontal-cards .card {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 1rem;
+    padding: 0;
+    border-radius: 0.5rem;
+}
+
+.daily-analysis .horizontal-cards .card .card-body {
+    flex: 1;
+    padding: 0rem;
+    position: relative;
+    padding-left: 0.5rem;
+    padding-top: 0.2rem;
+}
+
+.daily-analysis .horizontal-cards .card .card-img-top {
+    width: 150px;
+    /* Adjust as needed */
+    height: 100px;
+    /* Adjust as needed */
+    object-fit: cover;
+    border-radius: 0.5rem;
+}
+
+.daily-analysis .horizontal-cards .card .card-body .badge {
+    background-color: var(--primary-color);
+}
+
+.daily-analysis .horizontal-cards .card .card-body h5 {
+    font-size: 1.0rem;
+    font-weight: bold;
+    color: var(--text-dark-color);
+}
+
+.daily-analysis .horizontal-cards .card .card-body p {
+    font-size: 0.7rem;
+    color: gray;
+}
+
+/* Mining News */
+.mining-news h2 {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: var(--text-dark-color);
+    margin-bottom: 2px;
+}
+
+.mining-news .image-wrapper {
+    position: relative;
+    overflow: hidden;
+    border-radius: 0.5rem;
+}
+
+.mining-news .card-img-top {
+    width: 100%;
+    height: 150px;
+    /* Adjust as needed */
+    object-fit: cover;
+    display: block;
+}
+
+.mining-news .card-body {
+    position: relative;
+    bottom: 0;
+    left: 0;
+    padding: 1rem;
+    z-index: 2;
+}
+
+.mining-news .image-wrapper .badge {
+    background-color: var(--veye-green);
+    color: var(--text-light-color);
+    font-size: 0.7rem;
+    border-radius: 0.25rem;
+    text-transform: uppercase;
+    padding: 0.5rem;
+    position: absolute;
+    top: 140px;
+    left: 36%;
+}
+
+.mining-news .card-body .card-title {
+    font-size: 1.0rem;
+    font-weight: bold;
+    color: var(--dark-color);
+}
+
+.mining-news .card-body .card-text {
+    font-size: 0.8rem;
+    color: var(--text-dark-color);
+}
+
+/* Subscribe Newsletter Section */
+.subscribe-newsletter .card {
+    background-color: var(--veye-purple);
+    border-radius: 8px;
+    padding: 20px 20px 0;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+.subscribe-newsletter .card .card-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: var(--text-light-color);
+    margin-bottom: 10px;
+}
+.subscribe-newsletter .card .card-text {
+    font-size: 0.9rem;
+    color: var(--text-light-color);
+    margin-bottom: 20px;
+}
+
+.subscribe-newsletter .card input[type="email"] {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid var(--text-light-color);
+    border-radius: 6px;
+    margin-bottom: 10px;
+}
+
+.subscribe-newsletter .card button[type="submit"] {
+    background-color: #CFF5E7;
+    color: #4854EB;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 6px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    font-size: 0.9rem;
+}
+.subscribe-newsletter .card button[type="submit"]:hover {
+    background-color: var(--veye-green);
+    color: var(--text-light-color);
+}
+
+.subscribe-newsletter .card .card-footer {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 0.8rem;
+    color: var(--text-light-color);
+}
+
+/* Past Recommendations */
+.past-recommendations h2 {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: var(--text-dark-color);
+    margin-bottom: 2px;
+}
+
+.past-recommendations .card {
+    background-color: #ffffff;
+    border-radius: 0.5rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+.past-recommendations .card .card-body {
+    padding: 1rem;
+}
+.past-recommendations .card table {
+    width: 100%;
+    border-collapse: collapse;
+}
+.past-recommendations .card table th {
+    color: var(--text-dark-color);
+    padding: 10px;
+    text-align: left;
+    font-size: 0.9rem;
+}
+.past-recommendations .card table td {
+    padding: 10px;
+    font-size: 0.8rem;
+    color: var(--text-dark-color);
+}
+
+.past-recommendations .disclaimer {
+    font-size: 0.8rem;
+    color: var(--text-dark-color);
+    margin-top: 10px;
+    text-align: start;
+}
+
+
+
+
+/* 52 Week High Stocks */
+.weeks-high-stocks h2 {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: var(--text-dark-color);
+    margin-bottom: 2px;
+}
+
+.weeks-high-stocks .image-wrapper {
+    position: relative;
+    overflow: hidden;
+    border-radius: 0.5rem;
+}
+
+.weeks-high-stocks .card-img-top {
+    width: 100%;
+    height: 210px;
+    /* Adjust as needed */
+    object-fit: cover;
+    display: block;
+}
+
+.weeks-high-stocks .image-wrapper .badge {
+    background-color: var(--veye-green);
+    color: var(--text-light-color);
+    font-size: 0.7rem;
+    border-radius: 0.25rem;
+    text-transform: uppercase;
+    padding: 0.5rem;
+    position: absolute;
+    top: 20px;
+    left: 5%;
+}
+
+.weeks-high-stocks .card-body .card-title {
+    font-size: 1.0rem;
+    font-weight: bold;
+    color: var(--dark-color);
+}
+
+.weeks-high-stocks .card-body .card-text {
+    font-size: 0.8rem;
+    color: var(--text-dark-color);
+}
+
+
+/* Our Subscription Section */
+.our-subscription {
+    background-color: #F3F3F3;
+    padding: 40px 20px;
+}
+
+.our-subscription h2 {
+    text-align: center;
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: var(--text-dark-color);
+}
+
+.our-subscription .card {
+    background-color: var(--light-color);
+    border-radius: 1.2rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin: 20px;
+}
+
+.our-subscription .pkg-type-text {
+    font-size: 0.8rem;
+    font-weight: normal;
+    color: var(--primary-color);
+}
+
+.our-subscription .subscribe-btn {
+    font-weight: bold;
+    color: var(--text-light-color);
+    background-color: var(--primary-color);
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+}
+
+.our-subscription .sub-details .pkg-price-text {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: var(--text-dark-color);
+}
+
+.our-subscription .sub-details .pkg-description-text {
+    font-size: 0.9rem;
+    color: var(--text-dark-color);
+}
+
+.our-subscription .sub-details .pkg-benefits {
+    margin-top: 1rem;
+}
+
+.our-subscription .sub-details .pkg-benefits h5 {
+    font-size: 1.0rem;
+    font-weight: bold;
+    color: var(--text-dark-color);
+}
+
+.our-subscription .sub-details .pkg-benefits ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.our-subscription .sub-details .pkg-benefits li {
+    font-size: 0.8rem;
+    color: var(--text-dark-color);
+    margin-bottom: 0.5rem;
+    line-height: 0.7rem;
+}
+
+.our-subscription .sub-details .pkg-benefits li::before {
+    content: '✔';
+    color: var(--veye-green);
+    margin-right: 0.5rem;
+}
+
+.premium-card {
+    background-color: var(--primary-color);
+    border-radius: 1.2rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    color: #fff;
+}
+
+.premium-card .badge {
+    position: absolute;
+    background-color: var(--veye-green);
+    color: var(--text-light-color);
+    font-size: 0.6rem;
+    border-radius: 0rem;
+    border-top-right-radius: 1.2rem;
+    border-bottom-left-radius: 1.2rem;
+    text-transform: uppercase;
+    padding: 0.5rem;
+    position: absolute;
+    top: -1px;
+    right: -1px;
+    padding: 0.6rem;
+}
+.our-subscription .premium-card .pkg-type-text,
+.our-subscription .premium-card .pkg-price-text,
+.our-subscription .premium-card .pkg-description-text,
+.our-subscription .premium-card .pkg-benefits h5,
+.our-subscription .premium-card .pkg-benefits li {
+    color: var(--text-light-color);
+}
+
+
+/* Dividend News */
+.dividend-news h2 {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: var(--text-dark-color);
+    margin-bottom: 2px;
+}
+
+.dividend-news .image-wrapper {
+    position: relative;
+    overflow: hidden;
+    border-radius: 0.5rem;
+}
+
+.dividend-news .card-img-top {
+    width: 100%;
+    height: 210px;
+    /* Adjust as needed */
+    object-fit: cover;
+    display: block;
+}
+
+.dividend-news .image-wrapper .small-text {
+    color: var(--text-dark-color);
+    font-size: 0.8rem;
+    margin-top: -0.5rem;
+}
+
+.dividend-news .card-body .card-title {
+    font-size: 1.0rem;
+    font-weight: bold;
+    color: var(--dark-color);
+}
+
+.dividend-news .card-body .card-text {
+    font-size: 0.8rem;
+    color: var(--text-dark-color);
+}
+
+.etf-news-section .card {
+    border-radius: 0.5rem;
+}
+
+.etf-news-section .card-img-top {
+    width: 150px;
+    /* Adjust as needed */
+    height: 100px;
+    /* Adjust as needed */
+    max-width: 150px;
+    object-fit: cover;
+    border-radius: 0.5rem;
+}
+
+.etf-news-section .text-small {
+    color: grey;
+    font-size: 0.7rem;
+    font-weight: 600;
+}
+
+
+/* Newsletter Section */
+.newsletter-section {
+    background-color: #CAFFEB;
+    padding: 40px 20px;
+    border-radius: 0.5rem;
+}
+
+.newsletter-section h2 {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: var(--text-dark-color);
+}
+
+.newsletter-section form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.newsletter-section input[type="email"] {
+    width: 300px;
+    padding: 10px;
+    border: 1px solid var(--primary-color);
+    border-radius: 0.25rem;
+}
+
+.newsletter-section button[type="submit"] {
+    padding: 10px 20px;
+    background-color: var(--primary-color);
+    color: var(--text-light-color);
+    border: none;
+    border-radius: 0.25rem;
+    cursor: pointer;
+}
+
+/* Footer */
+.veye-footer {
+    background-color: var(--primary-color);
+    color: var(--text-light-color);
+    padding: 20px;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+.veye-footer .footer-logo {
+    width: 150px;
+    height: auto;
+}
+
+.veye-footer .disclaimer {
+    font-size: 0.8rem;
+    color: var(--text-light-color);
+    margin-top: 10px;
+}
+
+.veye-footer .footer-bottom .footer-heading {
+    font-size: 1.1rem;
+    font-weight: bold;
+    color: var(--text-light-color);
+}
+
+.veye-footer .footer-bottom .footer-desc {
+    font-size: 0.9rem;
+    color: var(--text-light-color);
+    margin-top: 5px;
+}
+
+.veye-footer .desclaimer-desc {
+    font-size: 0.8rem;
+    color: var(--text-light-color);
+    margin-top: 10px;
+}
+
+.veye-footer .useful-links .social-icons i {
+    color: var(--text-light-color);
+}
+
+.veye-footer .footer-bottom li a {
+    font-size: 0.9rem;
+    color: var(--text-light-color);
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.veye-footer .footer-bottom li a:hover {
+    color: var(--warning-color);
+}
+
+.veye-footer .footer-bottom li i {
+    color: var(--light-color);
+    position: relative;
+    right: 5px;
+}
+
+.veye-footer .footer-bottom .certification-img {
+    width: 70px;
+    height: auto;
+    margin-top: 10px;
+}
+
+.veye-footer .footer-last-line a {
+    color: var(--text-light-color);
+    text-decoration: none;
+}

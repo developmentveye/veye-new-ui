@@ -1,0 +1,101 @@
+@media screen and (min-width: 768px) {
+
+    .container,
+    .container-fluid,
+    .container-lg,
+    .container-md,
+    .container-sm,
+    .container-xl,
+    .container-xxl {
+        padding-right: 0;
+        padding-left: 0;
+    }
+
+    .d-lg-none {
+        display: none !important;
+    }
+
+    .d-sm-none {
+        display: block !important;
+    }
+
+    .bg-image-container {
+    background-image: url('/images/static/bg-bulls.png');
+    background-size: contain;
+    background-position: right;
+    background-repeat: no-repeat;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .hero-section {
+        box-sizing: border-box;
+        margin-left: -0.75rem;
+        margin-right: -0.75rem;
+    }
+
+    .high-low-charts-section {
+        margin-top: 3rem;
+    }
+
+    .mining-news,
+    .advertisement-card,
+    .weeks-high-stocks {
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    .our-subscription {
+        padding-left: 0;
+        padding-right: 0;
+        margin-left: -1rem;
+        margin-right: -1rem;
+    }
+
+    .our-subscription .sub-details .pkg-benefits li {
+        line-height: 0.9rem;
+    }
+
+    .etf-news-section {
+        margin-top: 3rem;
+    }
+
+    .d-sm-none {
+        display: none !important;
+    }
+
+    .veye-footer .footer-top {
+        flex-direction: column;
+        align-items: start !important;
+        justify-content: start !important;
+    }
+
+    .veye-footer .footer-top p {
+        margin-left: 0.3rem !important;
+    }
+
+    .veye-footer .footer-last-line > div {
+        flex-direction: column;
+    }
+
+    .stay-updated {
+        margin-top: 2rem;
+    }
+
+    .bg-image-container {
+        background-color: #F3F3F3;
+        background-size: cover;
+        background-position: center;
+    }
+
+    .header .veye-bottom-navbar .navbar-nav {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+
+    font-size: 1.0rem;
+    font-weight: 500;
+    color: var(--text-dark-color);
+    }
+}
