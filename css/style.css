@@ -1018,6 +1018,13 @@ body {
     color: var(--veye-purple);
 }
 
+.login-content .card .card-sub-title {
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: var(--text-dark-color);
+    margin-top: 2.5rem;
+}
+
 .login-content .card .card-body {
     padding-left: 4rem;
     padding-right: 4rem;
