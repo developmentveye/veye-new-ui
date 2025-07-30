@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Veye Homepage</title>
+
+    <!-- bootstrap css files -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" rel="stylesheet">
+
+    <!-- custom css -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/media.css">
+</head>
+
+<body>
+
+    <!-- header -->
+    <header class="container-fluid header">
+        <nav class="navbar navbar-expand-lg navbar-light bg-purple veye-top-navbar">
+            <div class="container">
+                <a class="navbar-brand" href="/">
+                    <img src="images/static/veye-white.png" alt="Veye Logo" class="logo img-fluid">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll"
+                    aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse ms-auto justify-content-around" id="navbarSupportedContent">
+                    <form class="d-flex flex-grow-1 search-form">
+                        <input class="form-control me-2" type="search" placeholder="Search here..." aria-label="Search">
+
+                    </form>
+                    <div class="navbar-nav mb-2 mb-lg-0">
+                        <button class="btn btn-login-btn ms-3" type="button" data-bs-toggle="modal"
+                            data-bs-target="#loginModal">Login</button>
+                        <button class="btn btn-notification btn-icon ms-3" type="button" data-bs-toggle="modal"
+                            data-bs-target="#signupModal">
+                            <i class="bi bi-bell-fill"></i>
+                        </button>
+                    </div>
+
+                </div>
+            </div>
+        </nav>
+        <nav class="navbar navbar-expand-lg container-fluid bg-blue veye-bottom-navbar">
+            <div class="container">
+                <div class="collapse navbar-collapse" id="navbarScroll">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0 navbar-nav-scroll">
+                        <li class="list-inline-item active"><a href="/">Home</a></li>
+
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Sector Specific
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Airlines</a></li>
+                                <li><a class="dropdown-item" href="#">Financial</a></li>
+                                <li><a class="dropdown-item" href="#">Healthcare</a></li>
+                                <li><a class="dropdown-item" href="#">Insurance</a></li>
+                                <li><a class="dropdown-item" href="#">Material</a></li>
+                                <li><a class="dropdown-item" href="#">Mining</a></li>
+                                <li><a class="dropdown-item" href="#">Retail</a></li>
+                                <li><a class="dropdown-item" href="#">Services</a></li>
+                                <li><a class="dropdown-item" href="#">Technology</a></li>
+                            </ul>
+                        </li>
+
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Opportunity Stock
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Blue Chip</a></li>
+                                <li><a class="dropdown-item" href="#">Mid Chip</a></li>
+
+                                <li><a class="dropdown-item" href="#">Small Cap</a></li>
+                            </ul>
+                        </li>
+
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Stock Advisory
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Daily Analysis</a></li>
+                                <li><a class="dropdown-item" href="#">Stock of the Week Report</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            </ul>
+                        </li>
+
+                        <li class="list-inline-item"><a href="/contact">Stock Screeners</a></li>
+                        <li class="list-inline-item"><a href="/contact">Retirement</a></li>
+                        <li class="list-inline-item"><a href="/contact">Editorial</a></li>
+                        <li class="list-inline-item"><a href="/contact">About Us</a></li>
+
+                    </ul>
+
+                </div>
+
+            </div>
+        </nav>
+    </header>
+
+
+    <!-- main content -->
+    <main class="container-fluid about-page">
+        <div class="container px-5">
+            <div class="breadcrumb row mt-4">
+                <div class="col-12 ps-0">
+                    <nav aria-label="breadcrumb ps-0">
+                        <ol class="breadcrumb ps-0">
+                            <li class="breadcrumb-item"><a href="#">Home</a></li>
+                            <li class="breadcrumb-item active" aria-current="page">About Us</li>
+                        </ol>
+                    </nav>
+                </div>
+            </div>
+            <div class="row mt-2">
+                <div class="col-12">
+                    <h1 class="about-heading">About Us</h1>
+
+                    <div class="row about-section mt-5">
+                        <div class="col-4 me-auto">
+                            <div class="card h-100">
+                                <div class="card-body">
+                                    <img src="images/about/about1.png" alt="About Us Image"
+                                        class="img-fluid about-us-image h-100 rounded-5">
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="col-6 me-auto">
+                            <h2 class="about-us-title mb-4">Stocks Research and Recommendations - <span class="highlight">Buy, Sell and Hold.</span></h2>
+                            <p class="about-us-description">Veye is a leading independent equities research firm
+                                dedicated to helping its clients improve their investment results through unbiased and
+                                precise recommendations around buying, selling or holding stocks. Our sole purpose is to
+                                empower our clients in achieving their financial ambitions through our expertise
+                                innovation, excellence & service. We believe in building effective, long-term
+                                relationships through trust and mutual benefit and strive hard to help you accumulate or
+                                multiply your wealth and attain a state of financial freedom in your life.</p>
+                        </div>
+                    </div>
+
+                    <div class="row explore-section mt-5 pt-5">
+                        <div class="col-12 mt-4">
+                            <h2 class="about-us-title text-center mb-5">Explore <span class="highlight">Us</span></h2>
+                            <div class="row gx-5 mt-4">
+                                <div class="col-4">
+                                    <div class="card h-100">
+                                        <div class="card-body py-5 px-4">
+                                            <i class="bi bi-buildings-fill"></i>
+                                            <h5 class="card-title text-center">Our Mission</h5>
+                                            <p class="card-text">Stock Market decisions in today’s volatile business
+                                                environment are complex and governed by various aspects. Our mission is
+                                                to find undervalued companies that present an immediate opportunity for
+                                                you to invest for the long term.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-4">
+                                    <div class="card card-active h-100">
+                                        <div class="card-body py-5 px-4">
+                                            <i class="bi bi-graph-up-arrow card-icon"></i>
+                                            <h5 class="card-title text-center">Our Approach</h5>
+                                            <p class="card-text">At Veye, we believe that the best market research comes
+                                                from a holistic approach that combines both qualitative and quantitative
+                                                data. Our team of experienced researchers specializes in a range of
+                                                research methodologies to deliver accurate and insightful
+                                                recommendations.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-4">
+                                    <div class="card h-100">
+                                        <div class="card-body py-5 px-4">
+                                            <i class="bi bi-graph-up-arrow card-icon"></i>
+                                            <h5 class="card-title text-center">Values</h5>
+                                            <p class="card-text">At Veye, we are committed to conducting research with
+                                                integrity, professionalism, and respect. We believe that our work should
+                                                be grounded in ethical principles to ensure that their privacy and
+                                                confidentiality are protected.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row analysis-section mt-5 pt-5">
+                        <div class="col-6 mx-auto">
+                            <h2 class="about-us-title mb-4">Our Stock Analysis <span class="highlight">Methodology</span>
+                            </h2>
+                            <p class="about-us-description">While our primary approach is geared towards long-term
+                                investing, we also recognize short-term profit opportunities when stocks reach their
+                                full potential or experience notable retracements. Our goal is to provide comprehensive
+                                insights and recommendations to help investors make informed decisions.</p>
+                        </div>
+
+                        <div class="col-4 mx-auto">
+                            <div class="card h-100">
+                                <div class="card-body">
+                                    <img src="images/about/about1.png" alt="About Us Image"
+                                        class="img-fluid about-us-image h-100 rounded-4">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row testimonials-section mt-5 pt-5">
+                        <div class="col-12 mb-4">
+                            <h2 class="about-us-title text-center">What Our Clients Say <span>About Us</span></h2>
+                        </div>
+                        <div class="row">
+                            <div class="col-3">
+                                <div class="card border-0 h-100">
+                                    <div class="card-body">
+                                        <i class="bi bi-quote card-icon"></i>
+                                        <p class="card-text">Nobis voluptatem magni doloribus voluptate culpa dolor est
+                                            neque</p>
+
+                                        <h5 class="card-user text-center">John Doe</h5>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-3">
+                                <div class="card border-0 h-100">
+                                    <div class="card-body">
+                                        <i class="bi bi-quote card-icon"></i>
+                                        <p class="card-text">Nobis voluptatem magni doloribus voluptate culpa dolor est
+                                            neque</p>
+
+                                        <h5 class="card-user text-center">John Doe</h5>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-3">
+                                <div class="card border-0 h-100">
+                                    <div class="card-body">
+                                        <i class="bi bi-quote card-icon"></i>
+                                        <p class="card-text">Nobis voluptatem magni doloribus voluptate culpa dolor est
+                                            neque</p>
+
+                                        <h5 class="card-user text-center">John Doe</h5>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-3">
+                                <div class="card border-0 h-100">
+                                    <div class="card-body">
+                                        <i class="bi bi-quote card-icon"></i>
+                                        <p class="card-text">Nobis voluptatem magni doloribus voluptate culpa dolor est
+                                            neque</p>
+
+                                        <h5 class="card-user text-center">John Doe</h5>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </main>
+
+
+
+    <footer class="veye-footer mt-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 text-start d-flex align-items-center mt-4 footer-top">
+                    <img src="images/static/veye-white.png" alt="Veye Logo" class="footer-logo mb-3">
+                    <p class="disclaimer ms-5">
+                        <strong>Disclaimer:</strong> Veye Pty Ltd only provides general, and not personalised
+                        financial advice, and has not taken your personal circumstances into account. Veye Pty Ltd
+                        operates under AFSL 523157. For more information please see our Financial Services
+                        Guide. Please remember that investments can go up and down. Any past performance shown is
+                        not an indication of Future Returns. Commission and other costs charged by executing broker
+                        are not considered when calculating past performance. We request our readers not to
+                        interpret our reports as direct recommendations. Veye Pty Ltd does not guarantee the
+                        performance of, or returns on any investment.
+                    </p>
+                </div>
+            </div>
+
+            <div class="row footer-bottom mt-4 text-start footer-middle">
+                <div class="col-lg-3 col-md-6 col-sm-12">
+                    <h4 class="about-veye footer-heading">About Veye</h4>
+                    <p class="footer-desc">Veye is a leading independent equities research firm dedicated to helping
+                        its clients improve their investment results through unbiased and precise recommendations
+                        around buying, selling or holding stocks.</p>
+                </div>
+                <div class="col-lg-6 col-sm-12">
+                    <div class="row useful-links">
+                        <div class="col-lg-4 col-sm-6">
+                            <h4 class="footer-heading">Quick Links</h4>
+                            <ul class="list-unstyled">
+                                <li><a href="#">Daily Analysis</a></li>
+                                <li><a href="#">Dividend Investor Report</a></li>
+                                <li><a href="#">Master Of Growth Report</a></li>
+                                <li><a href="#">Penny Stock Report</a></li>
+                                <li><a href="#">Hot Sector Report</a></li>
+                            </ul>
+                        </div>
+
+                        <div class="col-lg-4 col-sm-6">
+                            <h4 class="footer-heading">Important Links</h4>
+                            <ul class="list-unstyled">
+                                <li><a href="#">Privacy Policy</a></li>
+                                <li><a href="#">Terms & Conditions</a></li>
+                                <li><a href="#">Free Trial - Terms Of Use</a></li>
+                                <li><a href="#">Financial Services Guide</a></li>
+                                <li><a href="#">About Us</a></li>
+                                <li><a href="#">Past Recommendations</a></li>
+                            </ul>
+                        </div>
+
+                        <div class="col-lg-4 col-sm-12">
+                            <h4 class="footer-heading follow-us-on">Follow Us On</h4>
+                            <ul class="list-unstyled">
+                                <li><a href="#"><i class="bi bi-geo-alt"></i> Veye Pty Ltd Level 21, 207 Kent
+                                        Street, Sydney, NSW, 2000</a></li>
+                                <li><a href="#"><i class="bi bi-envelope"></i> info@veye.com.au</a></li>
+                                <li><a href="#"><i class="bi bi-telephone"></i> (02) 9052 4957</a></li>
+                            </ul>
+
+                            <div class="footer-heading social-icons mt-3">
+                                <a href="#" class="me-3"><i class="bi bi-facebook"></i></a>
+                                <a href="#" class="me-3"><i class="bi bi-twitter"></i></a>
+                                <a href="#" class="me-3"><i class="bi bi-youtube"></i></a>
+                                <a href="#"><i class="bi bi-linkedin"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-sm-12">
+                    <h4 class="stay-updated footer-heading">Stay Updated</h4>
+                    <p class="desclaimer-desc">By providing your details, you agree to Veye’s Terms &
+                        Conditions and Privacy Policy and to receive marketing offers by email, text message or
+                        phone call from us or our agents until you opt out.</p>
+
+                    <div class="certifications">
+                        <img src="images/static/cert1.png" alt="AFSL Certification" class="certification-img">
+                        <img src="images/static/cert2.png" alt="ACNC Certification" class="certification-img">
+                        <img src="images/static/cert3.png" alt="ASIC Certification" class="certification-img">
+                    </div>
+                </div>
+
+            </div>
+
+
+        </div>
+        <hr class="container-fluid mt-4 mb-3" />
+        <div class="row footer-last-line mt-4">
+            <div class="col-12 d-flex justify-content-evenly text-center">
+                <p class="mb-0">Copyrights © 2025 Veye Pty Ltd. All rights reserved</p>
+                <p class="mb-0">ACN: 623 120 865 | ABN: 58 623 120 865 | AFSL: 523157</p>
+                <p class="mb-0">Designed with ❤️ by <a href="https://www.veye.com.au" target="_blank">Veye</a></p>
+            </div>
+        </div>
+
+    </footer>
+
+    <script>
+        function setFocus(on) {
+            var element = document.activeElement;
+            if (on) {
+                setTimeout(function () {
+                    element.parentNode.classList.add("focus");
+                });
+            } else {
+                let box = document.querySelector(".input-box");
+                box.classList.remove("focus");
+                $("input").each(function () {
+                    var $input = $(this);
+                    var $parent = $input.closest(".input-box");
+                    if ($input.val()) $parent.addClass("focus");
+                    else $parent.removeClass("focus");
+                });
+            }
+        }
+
+    </script>
+
+
+    <!-- bootstrap js files -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+        integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+        integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+        crossorigin="anonymous"></script>
+
+    <!-- library files -->
+    <script src="https://code.jquery.com/jquery-3.7.1.js"
+        integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+
+    <!-- custom scripts -->
+    <script src="js/script.js"></script>
+</body>
+
+</html>
