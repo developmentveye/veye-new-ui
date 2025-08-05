@@ -1174,13 +1174,13 @@ body {
     padding: 20px;
 }
 
-.user-dashboard .sidebar {
+.user-dashboard .main-sidebar {
     color: var(--text-dark-color);
     padding: 20px;
     border-radius: 0.5rem;
 }
 
-.user-dashboard .sidebar .card {
+.user-dashboard .main-sidebar .card {
     background-color: #ffffff;
     border-radius: 0.5rem;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
@@ -1188,35 +1188,92 @@ body {
     border-top-right-radius: 0;
 }
 
-.user-dashboard .sidebar .card-title {
+.user-dashboard .main-sidebar .card-title {
     font-size: 1rem;
     font-weight: bold;
     color: var(--veye-purple);
     margin-bottom: 20px;
 }
 
-.user-dashboard .sidebar .list-unstyled li a {
+.user-dashboard .sidebar .nav .nav-item {
+    margin-bottom: 0.3rem;
+}
+
+.user-dashboard .sidebar .nav .nav-item i {
     color: var(--text-dark-color);
-    text-decoration: none;
-    transition: color 0.3s ease;
+    font-size: 1.2rem;
+    margin-right: 0.5rem;
 }
 
-.user-dashboard .sidebar .list-unstyled li a:hover {
-    color: var(--warning-color);
-}
-
-.user-dashboard .sidebar .list-unstyled li ul {
-    padding-left: 2rem;
-    border-left: 2px solid var(--dark-color);
-}
-
-.user-dashboard .sidebar .list-unstyled li ul li a {
+.user-dashboard .sidebar .nav .nav-item .nav-link {
+    color: var(--text-dark-color);
     font-size: 0.9rem;
+    font-weight: 600;
+    padding: 10px 15px;
+    border-radius: 1.8rem;
+    transition: background-color 0.3s ease, color 0.3s ease;
 }
 
-.user-dashboard .sidebar .list-unstyled li i {
-    margin-right: 5px;
+.user-dashboard .sidebar .nav .nav-item .nav-link:hover {
+    background-color: #dddddd;
+    color: var(--primary-color);
 }
+
+.user-dashboard .sidebar .nav .nav-item .nav-link.active {
+    background-color: #D7E3FF;
+    color: var(--primary-color);
+}
+
+.user-dashboard .sidebar .nav .nav-item .nav-link.active i {
+    color: var(--primary-color);
+}
+
+.user-dashboard .sidebar .nav .nav-item a[aria-expanded="true"] .toggler-icon {
+    transform: rotate(90deg);
+    transition: transform 0.4s ease-in-out;
+}
+
+.user-dashboard .sidebar .nav .nav-item a[aria-expanded="false"] .toggler-icon {
+    transform: rotate(0deg);
+    transition: transform 0.4s ease-in-out;
+}
+
+.user-dashboard .sidebar .nav .submenu {
+    padding-left: 20px;
+}
+
+.user-dashboard .overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1040;
+}
+
+.user-dashboard .overlay.show {
+    display: block;
+}
+
+.user-dashboard .menu-toggle {
+    position: relative;
+    right: 0;
+    z-index: 2;
+}
+
+.user-dashboard .btn-toggler {
+    background-color: var(--primary-color);
+    color: var(--text-light-color);
+    border: none;
+    padding: 10px 15px;
+    border-radius: 0.5rem;
+    font-size: 0.9rem;
+    font-weight: bold;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
 
 .user-dashboard .user-dashboard-content {
     padding: 20px;
@@ -1336,6 +1393,92 @@ body {
     font-size: 1.2rem;
     font-weight: bold;
     color: var(--text-dark-color);
+}
+
+
+/* Change Password Page */
+.password-change-section .card {
+    border: solid 1px rgba(108, 106, 106, 0.65);
+    border-radius: 0.5rem;
+    box-shadow: 10px 10px 1px #D9D9D9;
+    padding: 20px;
+}
+
+.password-change-section .card .card-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: var(--veye-purple);
+}
+
+
+/* Input Field */
+.password-change-section .card .form-control {
+    border-radius: 0.5rem;
+    border: solid 1px rgba(108, 106, 106, 0.65);
+    line-height: 2rem;
+}
+
+.password-change-section .card .form-control:focus {
+    border-color: var(--primary-color);
+    box-shadow: none;
+}
+
+.password-change-section .input-box {
+    position: relative;
+    margin: 10px 0;
+}
+
+.password-change-section .input-box .form-label {
+    position: absolute;
+    color: #80868b;
+    font-size: 16px;
+    font-weight: 400;
+    max-width: calc(100% - (2 * 8px));
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    left: 8px;
+    top: 13px;
+    padding: 0 8px;
+    transition: 250ms;
+    user-select: none;
+    pointer-events: none;
+}
+
+.password-change-section .input-box .form-label svg {
+    position: relative;
+    width: 15px;
+    height: 15px;
+    top: 2px;
+    transition: 250ms;
+}
+
+.password-change-section .input-box.focus .form-label,
+.password-change-section .input-box.active .form-label {
+    color: #1a73e8;
+    top: -8px;
+    background: #fff;
+    font-size: 11px;
+    transition: 250ms;
+}
+
+.password-change-section .input-box.focus .form-label svg,
+.password-change-section .input-box.active .form-label svg {
+    position: relative;
+    width: 11px;
+    height: 11px;
+    top: 2px;
+    transition: 250ms;
+}
+
+.password-change-section .card .btn-change-password {
+    background-color: var(--primary-color);
+    color: var(--text-light-color);
+    border-radius: 0.5rem;
+    padding: 10px 20px;
+    font-weight: bold;
+    padding-left: 4rem;
+    padding-right: 4rem;
 }
 
 
@@ -2193,7 +2336,7 @@ body {
 }
 
 .editorial-details-page .more-reports-card .btn-report {
-    
+
     color: #000000;
     border: none;
     padding: 10px 15px;
@@ -2321,4 +2464,326 @@ body {
     height: 11px;
     top: 2px;
     transition: 250ms;
+}
+
+
+/* Sector Specific */
+.sector-specific-page .heading {
+    font-size: 2.2rem;
+    font-weight: bold;
+    color: var(--veye-purple);
+    margin-bottom: 15px;
+}
+
+.sector-specific-page .sub-heading {
+    font-size: 1.0rem;
+    color: var(--text-dark-color);
+    margin-bottom: 30px;
+}
+
+.sector-specific-page .card {
+    border: 1px solid #C4C4C4;
+    border-radius: 0.5rem;
+    box-shadow: 0 2px 16px 0 rgba(72, 84, 235, 0.20);
+    margin-bottom: 20px;
+}
+
+.sector-specific-page .sector-title {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: var(--text-dark-color);
+}
+
+.sector-specific-page .left-side {
+    border-radius: 0.5rem 0 0 0.5rem;
+    border-left: 1px solid #C3C3C3;
+    background: #C4DFFF;
+}
+
+.sector-specific-page .right-side {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    padding-left: 2rem;
+}
+
+.sector-specific-page .right-side>div {
+    border-radius: 0.8rem;
+    background: #EDEDED;
+
+    display: inline-flex;
+
+    padding: 11px;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    gap: 13px;
+    flex-shrink: 0;
+    margin-bottom: 20px;
+    margin-right: 10px;
+    text-align: center;
+
+}
+
+.sector-specific-page .right-side>div svg {
+    width: 20px;
+    height: 20px;
+}
+
+.sector-specific-page .right-side>div h5 {
+    font-size: 1rem;
+    font-weight: bold;
+    color: var(--veye-purple);
+    margin-bottom: 0;
+}
+
+/* Past Recommendations */
+.past-recommendations-page .heading {
+    font-size: 2.2rem;
+    font-weight: bold;
+    color: var(--veye-purple);
+    margin-bottom: 15px;
+}
+
+.past-recommendations-page .sub-heading {
+    font-size: 1.0rem;
+    color: var(--text-dark-color);
+    margin-bottom: 30px;
+}
+
+.past-recommendations-page .disclaimer p {
+    font-size: 0.8rem;
+    color: #6B6B6B;
+    margin-bottom: 15px;
+}
+
+/* Veye Table */
+.veye-table-card {
+    border-radius: 0.5rem;
+    border: 1px solid #C4C4C4;
+    box-shadow: 0 2px 16px 0 rgba(72, 84, 235, 0.20);
+    margin-bottom: 20px;
+}
+
+.veye-table-card .table-title {
+    color: var(--dark-color);
+    font-weight: bold;
+    padding: 10px;
+    border-radius: 0.5rem 0.5rem 0 0;
+    font-size: 1.3rem;
+}
+
+.veye-table-card .table-header .input-box {
+    position: relative;
+    margin: 10px 0;
+}
+
+.veye-table-card .table-header .input-box input {
+    width: 100%;
+    padding: 8px;
+    border-radius: 0.5rem;
+    border: solid 1px rgba(108, 106, 106, 0.65);
+    padding-right: 30px;
+}
+
+.veye-table-card .table-header .input-box input:focus {
+    border-color: var(--primary-color);
+    box-shadow: none;
+}
+
+.veye-table-card .table-header .input-box i {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    color: #80868b;
+}
+
+.veye-table-card .main-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.veye-table-card .main-table thead tr {
+    background: rgba(144, 203, 255, 0.30);
+    color: var(--dark-color);
+    padding-top: 0.8rem;
+    padding-bottom: 0.8rem;
+}
+
+.veye-table-card .main-table tbody tr {
+    background: #F7F6FE;
+}
+
+.veye-table-card .main-table tbody tr:hover {
+    background: rgba(144, 203, 255, 0.20);
+}
+
+.veye-table-card .main-table tr:nth-child(even) {
+    background: #FFF;
+}
+
+
+/* Veye pagination */
+
+.veye-pagination .pagination-info {
+    font-size: 0.9rem;
+    color: var(--text-dark-color);
+    margin-bottom: 10px;
+}
+
+.veye-pagination .pagination-show-entries select {
+    border-radius: 0.5rem;
+    border: solid 1px rgba(108, 106, 106, 0.65);
+    padding-top: 1px;
+    padding-bottom: 1px;
+    padding-left: 8px;
+    padding-right: 8px;
+    width: 60px;
+    height: 50px;
+    font-size: smaller;
+}
+
+.veye-pagination .pagination-show-entries select:focus {
+    border-color: var(--primary-color);
+    box-shadow: none;
+}
+
+.veye-pagination .pagination-nav ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+
+.company-profile-page .heading {
+    font-size: 2.2rem;
+    font-weight: bold;
+    color: var(--veye-purple);
+    margin-bottom: 30px;
+}
+
+.company-profile-page .sub-heading {
+    font-size: 1.0rem;
+    color: var(--text-dark-color);
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.company-profile-page .company-description {
+    font-size: 0.9rem;
+    color: var(--text-dark-color);
+    margin-bottom: 20px;
+}
+
+.company-profile-page .reports-listing .report-item {
+    border-bottom: 1px solid #C4C4C4;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.company-profile-page .reports-listing .report-item:last-child {
+    border-bottom: none;
+}
+
+.company-profile-page .reports-listing .report-item img {
+    height: 110px;
+    margin-right: 15px;
+    max-height: 200px;
+    object-fit: cover;
+}
+
+.company-profile-page .reports-listing .report-item h5 {
+    font-size: 1.1rem;
+    font-weight: bold;
+    color: var(--text-dark-color);
+    margin-bottom: 5px;
+}
+
+.company-profile-page .reports-listing .report-item span {
+    font-size: 0.7rem;
+    color: var(--text-dark-color);
+    display: block;
+}
+
+.company-profile-page .reports-listing .report-item .read-more {
+    font-size: 0.9rem;
+    color: var(--veye-green);
+    text-decoration: none;
+    cursor: pointer;
+    margin-top: auto;
+    display: block;
+}
+
+
+.company-profile-page .latest-articles h2 {
+    font-size: 1.0rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.company-profile-page .latest-articles .article-listings .post-item img {
+    width: 100%;
+    height: 90px;
+    object-fit: cover;
+    border-radius: 0.5rem;
+}
+
+.company-profile-page .latest-articles .article-listings .post-item span {
+    font-size: 0.7rem;
+    color: var(--text-dark-color);
+    margin-bottom: 5px;
+}
+
+.company-profile-page .latest-articles .article-listings .post-item h3 {
+    font-size: 0.9rem;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.company-profile-page .latest-articles .article-listings .post-item .date-time {
+    font-size: 0.7rem;
+    color: #6B6B6B;
+}
+
+.company-profile-page .btn-show-more-types {
+    background-color: var(--primary-color);
+    color: var(--text-light-color);
+    border: none;
+    padding: 10px 20px;
+    border-radius: 0.5rem;
+    font-weight: bold;
+    cursor: pointer;
+    box-shadow: 0 4px 4px 0 rgba(14, 53, 191, 0.25);
+}
+
+.company-profile-page .btn-show-more-types:hover {
+    background-color: var(--veye-green);
+    color: var(--text-light-color);
+}
+
+.company-profile-page button[aria-expanded="true"] .toggle-icon {
+    transform: rotate(90deg);
+}
+
+.company-profile-page .more-reports-card .btn-report {
+
+    color: #000000;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 0.2rem;
+    font-weight: bold;
+    cursor: pointer;
+    box-shadow: 0 4px 4px 0 rgba(14, 53, 191, 0.25);
+    border: 1px solid #4854EB;
+}
+
+.company-profile-page .more-reports-card .btn-report svg {
+    width: 30px;
+    height: 30px;
+    background-color: #FBF6EA;
+    padding: 4px;
+    border-radius: 8px;
+    margin-right: 10px;
 }
