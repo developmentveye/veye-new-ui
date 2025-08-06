@@ -113,167 +113,205 @@
 
 
     <!-- main content -->
-    <main class="container-fluid past-recommendations-page">
-        <div class="container px-5">
-            <div class="breadcrumb row mt-4">
-                <div class="col-12 ps-0">
-                    <nav aria-label="breadcrumb ps-0">
-                        <ol class="breadcrumb ps-0">
-                            <li class="breadcrumb-item"><a href="#">Home</a></li>
-                            <li class="breadcrumb-item active" aria-current="page">Past Recommendations</li>
-                        </ol>
-                    </nav>
-                </div>
-            </div>
-            <div class="row mt-2">
-                <h1 class="heading">
-                    Past Recommendations
-                </h1>
-                <p class="sub-heading">Presented below is our research report for BUY and Sell recommendations. The
-                    report is for all closed recommendations. A closed recommendation is where a BUY recommendation was
-                    given on a particular stock followed by a subsequent SELL recommendation. The stock, hence, is no
-                    longer being held in the portfolio.
-                    In all multiple buy recommendations, initial buy price has been mentioned, though price taken is the
-                    average of all buys.
-                    Companies which have undergone a merger / takeover are duly noted and returns are not shown if the
-                    newly formed entity remained within the portfolio at that point.
-                    The transaction fees and charges are excluded in the calculation. Gains and losses are hypothetical
-                    and are calculated using the initial buy price and include dividends. Calculations are based on
-                    prices and dividends for one security in each company for each recommendation.
-                    All Investors are advised to conduct their own independent research into individual stocks before
-                    making a purchase decision. In addition, investors are advised that past stock performance is no
-                    guarantee of future price appreciation.</p>
-                <div class="col-12 mt-2">
-                    <div class="card veye-table-card px-3 py-4">
-                        <div class="card-body">
-                            <div class="table-header d-flex justify-content-between align-items-center mb-3">
-                                <h2 class="table-title pt-0">Past Recommendations</h2>
-                                <div class="input-box">
-                                    <input type="text" class="form-control" placeholder="Search by Company Name" name="key"
-                                        onfocus="setFocus(true)" onblur="setFocus(false)">
-                                    <i class="bi bi-search"></i>
-                                </div>
+    <main class="container-fluid">
+        <div class="container-fluid free-trial-content">
+            <div class="container">
+                <div class="row justify-content-center mt-5">
+                    <div class="col-5 left-side py-auto d-flex flex-column justify-content-start">
+                        <div class="combined-img mt-5">
+                            <img src="images/static/black_bg_graphic.png" alt="Veye Logo" class="img-fluid d-none">
+                            <h2 class="main-title text-uppercase">7 Days Free Trial</h2>
+                            <h3 class="sub-title">Get your hands on premium report</h3>
+                        </div>
 
-                            </div>
-                            <div class="table-responsive">
-                                <table class="main-table">
-                                    <thead>
-                                        <tr>
-                                            <th>Company</th>
-                                            <th>Buy Price</th>
-                                            <th>Buy Date</th>
-                                            <th>Report No.</th>
-                                            <th>Sell Price</th>
-                                            <th>Sell Report No.</th>
-                                            <th>Gain / Loss %</th>
-                                        </tr>
-                                    </thead>
+                        <ul class="features mt-5">
+                            <li>Zero Cost</li>
+                            <li>7 Day Free Trial</li>
+                            <li>Easy Upgrade to Premium Products</li>
+                        </ul>
+                    </div>
 
-                                    <tbody>
-                                        <tr>
-                                            <td>Company A</td>
-                                            <td>$10.00</td>
-                                            <td>01 Jan 2023</td>
-                                            <td>100</td>
-                                            <td>01 Feb 2023</td>
-                                            <td>$12.00</td>
-                                            <td>20%</td>
-                                        </tr>
-                                        <tr>
-                                            <td>Company B</td>
-                                            <td>$15.00</td>
-                                            <td>15 Jan 2023</td>
-                                            <td>50</td>
-                                            <td>15 Feb 2023</td>
-                                            <td>$14.00</td>
-                                            <td>-6.67%</td>
-                                        </tr>
-                                        <tr>
-                                            <td>Company C</td>
-                                            <td>$8.00</td>
-                                            <td>20 Jan 2023</td>
-                                            <td>75</td>
-                                            <td>20 Feb 2023</td>
-                                            <td>$10.00</td>
-                                            <td>25%</td>
-                                        </tr>
-                                        <!-- Add more rows as needed -->
-                                    </tbody>
-                                </table>
-                            </div>
+                    <div class="col-lg-5 col-md-6 col-sm-12">
+                        <div class="card login-card">
+                            <div class="card-body">
+                                <h2 class="card-title text-center mb-1 mt-4">Sign Up <span>7 Days Free Trial</span></h2>
 
-                            <div class="row veye-pagination mt-4">
-                                <div class="col-12 d-flex justify-content-between align-items-center">
-                                    <div class="col-3 d-flex justify-content-start align-items-center">
-                                        <span class="pagination-info my-auto me-3">Showing 1 to 3 of 3 entries</span>
-
-                                        <div class="pagination-show-entries">
-                                            <select class="form-select" aria-label="Show entries" name="entries">
-                                                <option value="10">10</option>
-                                                <option value="20">20</option>
-                                                <option value="30">30</option>
-                                            </select>
-                                        </div>
+                                <h3 class="text-center mt-1 mb-2 card-sub-title">No Credit Card Required</h3>
+                                <p class="text-center mb-4">Start your free trial today and explore all the features of
+                                    Veye without any commitment.</p>
+                                <form>
+                                    <div class="mb-3 input-box">
+                                        <label for="firstName" class="form-label">First Name</label>
+                                        <input type="text" class="form-control" id="firstName" onfocus="setFocus(true)"
+                                            onblur="setFocus(false)" required>
                                     </div>
-                                    <nav aria-label="Page navigation" class="pagination-nav">
-                                        <ul class="pagination">
-                                            <li class="page-item">
-                                                <a class="page-link link disabled" href="#" tabindex="-1" aria-disabled="true">Previous</a>
-                                            </li>
-                                            <li class="page-item"><a class="page-link active" href="#">1</a></li>
-                                            <li class="page-item"><a class="page-link" href="#">2</a></li>
-                                            <li class="page-item"><a class="page-link" href="#">3</a></li>
-                                            <li class="page-item">
-                                                <a class="page-link link" href="#">Next</a>
-                                            </li>
-                                        </ul>
-                                    </nav>
-                                    
-                                </div>
+                                    <div class="mb-3 input-box">
+                                        <label for="lastName" class="form-label">Last Name</label>
+                                        <input type="text" class="form-control" id="lastName" onfocus="setFocus(true)"
+                                            onblur="setFocus(false)" required>
+                                    </div>
+                                    <div class="mb-3 input-box">
+                                        <label for="email" class="form-label">Email address</label>
+                                        <input type="email" class="form-control" id="email" onfocus="setFocus(true)"
+                                            onblur="setFocus(false)" required>
+                                    </div>
+                                    <div class="mb-3 input-box">
+                                        <label for="phone" class="form-label">Phone</label>
+                                        <input type="text" class="form-control" id="phone" onfocus="setFocus(true)"
+                                            onblur="setFocus(false)" required>
+                                    </div>
+                                    <div class="mb-3 input-box">
+                                        <label for="postCode" class="form-label">Post Code</label>
+                                        <input type="text" class="form-control" id="postCode" onfocus="setFocus(true)"
+                                            onblur="setFocus(false)" required>
+                                    </div>
+
+
+                                    <div class="mb-3">
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" id="terms">
+                                            <label class="form-check-label terms-label" for="terms">
+                                                By providing your details, you agree to Veye’s Terms & Conditions,
+                                                Privacy Policy, and Financial Services Guide and to receive marketing
+                                                offers by email, text message or phone call from us or our agents until
+                                                you opt out. Before you access our services, please read the Financial
+                                                Service Guide available here.
+
+                                            </label>
+                                        </div>
+
+                                    </div>
+                                    <div class="mt-3 d-flex justify-content-center">
+                                        <button type="submit" class="btn btn-login mt-3 mx-auto">Register</button>
+                                    </div>
+                                </form>
                             </div>
-
-
                         </div>
                     </div>
-
-                    <div class="row disclaimer mt-5 px-1">
-                        <div class="col-12">
-                            <h4 class="disclaimer-h4">Disclaimer</h4>
-                            <p class="card-text">Veye Pty Ltd(ABN 58 623 120 865), holds (AFSL No. 523157 ). All
-                                information provided by Veye Pty Ltd through its website, reports, and newsletters is
-                                general financial product advice only and should not be considered a personal
-                                recommendation to buy or sell any asset or security. Before acting on the advice, you
-                                should consider whether it’s appropriate to you, in light of your objectives, financial
-                                situation, or needs. You should look at the Product Disclosure Statement or other offer
-                                document associated with the security or product before making a decision on acquiring
-                                the security or product. You can refer to our Terms & Conditions and Financial Services
-                                Guide for more information. Any recommendation contained herein may not be suitable for
-                                all investors as it does not take into account your personal financial needs or
-                                investment objectives. Although Veye takes the utmost care to ensure accuracy of the
-                                content and that the information is gathered and processed from reliable resources, we
-                                strongly recommend that you seek professional advice from your financial advisor or
-                                stockbroker before making any investment decision based on any of our recommendations.
-                                All the information we share represents our views on the date of publishing as stocks
-                                are subject to real time changes and therefore may change without notice. Please
-                                remember that investments can go up and down and past performance is not necessarily
-                                indicative of future returns. We request our readers not to interpret our reports as
-                                direct recommendations. To the extent permitted by law, Veye Pty Ltd excludes all
-                                liability for any loss or damage arising from the use of this website and any
-                                information published (including any indirect or consequential loss, any data loss, or
-                                data corruption) (as mentioned on the website www.veye.com.au), and confirms that the
-                                employees and/or associates of Veye Pty Ltd do not hold positions in any of the
-                                financial products covered on the website on the date of publishing this report. Veye
-                                Pty Ltd hereby limits its liability, to the extent permitted by law to the resupply of
-                                services.</p>
-                        </div>
-                    </div>
-
-
                 </div>
-
-
             </div>
         </div>
+
+        <div class="container free-trial-sub-section mt-5">
+            <div class="row mt-5">
+                <div class="col-7 left-side">
+                    <h4 class="mt-4 text-center">Get Free Access to Below Reports</h4>
+                    <div class="card mt-5">
+                        <div class="card-body">
+                            <div class="row">
+                                <div class="col-3">
+                                    <img src="images/static/free-trial-report1.png" alt="Veye Logo" class="img-fluid">
+                                </div>
+
+                                <div class="col-9">
+                                    <h3 class="card-title text-uppercase">DAILY ANALYSIS REPORT</h3>
+                                    <p class="card-text">To keep up with the latest on what's hot and what's not, our
+                                        analysts give their views on the recent market movements and developments. You
+                                        will be getting 7 Reports on ASX Stocks everday.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-4 mx-auto">
+                    <div class="row">
+                        <div class="col-12 mt-3 past-recommendations">
+                            <div class="d-flex justify-content-between align-items-center mb-4">
+                                <h2 class="me-3 homepage-heading">Past Recommendations</h2>
+
+                            </div>
+                            <div class="d-flex veye-seperator mb-3"></div>
+                            <div class="row">
+                                <div class="col-12">
+                                    <div class="card">
+                                        <div class="card-body">
+                                            <table>
+                                                <thead>
+                                                    <tr>
+                                                        <th>Code</th>
+                                                        <th>Avg Buy</th>
+                                                        <th>Avg Sell</th>
+                                                        <th>Gain/loss</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <td>BTC</td>
+                                                        <td>$50,000</td>
+                                                        <td>$55,000</td>
+                                                        <td class="text-success">+10%</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>ETH</td>
+                                                        <td>$3,000</td>
+                                                        <td>$2,800</td>
+                                                        <td class="text-danger">-7%</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>XRP</td>
+                                                        <td>$1.00</td>
+                                                        <td>$1.20</td>
+                                                        <td class="text-success">+20%</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>LTC</td>
+                                                        <td>$200</td>
+                                                        <td>$180</td>
+                                                        <td class="text-danger">-10%</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>ADA</td>
+                                                        <td>$1.50</td>
+                                                        <td>$1.80</td>
+                                                        <td class="text-success">+20%</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>DOT</td>
+                                                        <td>$30</td>
+                                                        <td>$28</td>
+                                                        <td class="text-danger">-7%</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>LINK</td>
+                                                        <td>$25</td>
+                                                        <td>$27</td>
+                                                        <td class="text-success">+8%</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>USDT</td>
+                                                        <td>$1.00</td>
+                                                        <td>$1.00</td>
+                                                        <td class="text-success">+0%</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>BNB</td>
+                                                        <td>$300</td>
+                                                        <td>$320</td>
+                                                        <td class="text-success">+6.67%</td>
+                                                    </tr>
+                                                </tbody>
+
+                                            </table>
+                                        </div>
+                                    </div>
+
+                                    <p class="disclaimer">
+                                        <strong>Disclaimer:</strong> Past performance is not indicative of future
+                                        results.
+                                        Returns shown include capital appreciation and dividends (where applicable) and
+                                        exclude transaction costs, as at 01 July 2025. Always consult a licensed advisor
+                                        for
+                                        personal advice before investing.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
     </main>
 
 

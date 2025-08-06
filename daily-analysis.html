@@ -1,0 +1,906 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Veye Homepage</title>
+
+    <!-- bootstrap css files -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" rel="stylesheet">
+
+    <!-- custom css -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/media.css">
+</head>
+
+<body>
+
+    <!-- header -->
+    <header class="container-fluid header">
+        <nav class="navbar navbar-expand-lg navbar-light bg-purple veye-top-navbar">
+            <div class="container">
+                <a class="navbar-brand" href="/">
+                    <img src="images/static/veye-white.png" alt="Veye Logo" class="logo img-fluid">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll"
+                    aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse ms-auto justify-content-around" id="navbarSupportedContent">
+                    <form class="d-flex flex-grow-1 search-form">
+                        <input class="form-control me-2" type="search" placeholder="Search here..." aria-label="Search">
+
+                    </form>
+                    <div class="navbar-nav mb-2 mb-lg-0">
+                        <button class="btn btn-login-btn ms-3" type="button" data-bs-toggle="modal"
+                            data-bs-target="#loginModal">Login</button>
+                        <button class="btn btn-notification btn-icon ms-3" type="button" data-bs-toggle="modal"
+                            data-bs-target="#signupModal">
+                            <i class="bi bi-bell-fill"></i>
+                        </button>
+                    </div>
+
+                </div>
+            </div>
+        </nav>
+        <nav class="navbar navbar-expand-lg container-fluid bg-blue veye-bottom-navbar">
+            <div class="container">
+                <div class="collapse navbar-collapse" id="navbarScroll">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0 navbar-nav-scroll">
+                        <li class="list-inline-item active"><a href="/">Home</a></li>
+
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Sector Specific
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Airlines</a></li>
+                                <li><a class="dropdown-item" href="#">Financial</a></li>
+                                <li><a class="dropdown-item" href="#">Healthcare</a></li>
+                                <li><a class="dropdown-item" href="#">Insurance</a></li>
+                                <li><a class="dropdown-item" href="#">Material</a></li>
+                                <li><a class="dropdown-item" href="#">Mining</a></li>
+                                <li><a class="dropdown-item" href="#">Retail</a></li>
+                                <li><a class="dropdown-item" href="#">Services</a></li>
+                                <li><a class="dropdown-item" href="#">Technology</a></li>
+                            </ul>
+                        </li>
+
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Opportunity Stock
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Blue Chip</a></li>
+                                <li><a class="dropdown-item" href="#">Mid Chip</a></li>
+
+                                <li><a class="dropdown-item" href="#">Small Cap</a></li>
+                            </ul>
+                        </li>
+
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Stock Advisory
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Daily Analysis</a></li>
+                                <li><a class="dropdown-item" href="#">Stock of the Week Report</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            </ul>
+                        </li>
+
+                        <li class="list-inline-item"><a href="/contact">Stock Screeners</a></li>
+                        <li class="list-inline-item"><a href="/contact">Retirement</a></li>
+                        <li class="list-inline-item"><a href="/contact">Editorial</a></li>
+                        <li class="list-inline-item"><a href="/contact">About Us</a></li>
+
+                    </ul>
+
+                </div>
+
+            </div>
+        </nav>
+    </header>
+
+
+    <!-- main content -->
+    <main class="container-fluid report-category-page">
+        <div class="container px-5">
+            <div class="breadcrumb row mt-4">
+                <div class="col-12 ps-0">
+                    <nav aria-label="breadcrumb ps-0">
+                        <ol class="breadcrumb ps-0">
+                            <li class="breadcrumb-item"><a href="#">Home</a></li>
+                            <li class="breadcrumb-item"><a href="#">Stock Advisory</a></li>
+                            <li class="breadcrumb-item active" aria-current="page">Daily Analysis</li>
+                        </ol>
+                    </nav>
+                </div>
+            </div>
+            <div class="row mt-2">
+                <div class="col-8 report-listings">
+
+                    <h3 class="card-title mb-4">Daily Analysis</h3>
+
+                    <div class="card editorial-card border-0 mb-4">
+                        <div class="card-body p-0">
+                            <div class="row">
+                                <div class="col-3">
+                                    <img src="images/reports/1.jpg" alt="Editorial Image" class="img-fluid ">
+                                </div>
+                                <div class="col-9 ps-0">
+                                    <div class="card h-100">
+                                        <div
+                                            class="card-body editorial-details d-flex flex-column justify-content-between">
+                                            <div class="title">
+                                                <h2 class="card-title">Best five ASX gold stocks in view of the slowing
+                                                </h2>
+                                                <div class="time-date">Published on: 2023-03-15</div>
+                                            </div>
+
+                                            <div class="card-description">
+                                                In the current market scenario, gold stocks have shown resilience and
+                                                potential for growth. Here are the top five ASX gold stocks to watch:
+                                            </div>
+
+                                            <div class="btns">
+                                                <button class="btn btn-sm btn-outline btn-read-more mt-3">
+                                                    <i class="bi bi-arrow-right"></i>
+                                                    Read More
+                                                </button>
+                                                <button class="btn btn-sm btn-outline btn-share mt-3 ms-2">
+                                                    <i class="bi bi-share"></i>
+                                                    Share
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+
+
+                    </div>
+
+                    <div class="card editorial-card border-0 mb-4">
+                        <div class="card-body p-0">
+                            <div class="row">
+                                <div class="col-3">
+                                    <img src="images/reports/1.jpg" alt="Editorial Image" class="img-fluid ">
+                                </div>
+                                <div class="col-9 ps-0">
+                                    <div class="card h-100">
+                                        <div
+                                            class="card-body editorial-details d-flex flex-column justify-content-between">
+                                            <div class="title">
+                                                <h2 class="card-title">Best five ASX gold stocks in view of the slowing
+                                                </h2>
+                                                <div class="time-date">Published on: 2023-03-15</div>
+                                            </div>
+
+                                            <div class="card-description">
+                                                In the current market scenario, gold stocks have shown resilience and
+                                                potential for growth. Here are the top five ASX gold stocks to watch:
+                                            </div>
+
+                                            <div class="btns">
+                                                <button class="btn btn-sm btn-outline btn-read-more mt-3">
+                                                    <i class="bi bi-arrow-right"></i>
+                                                    Read More
+                                                </button>
+                                                <button class="btn btn-sm btn-outline btn-share mt-3 ms-2">
+                                                    <i class="bi bi-share"></i>
+                                                    Share
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+
+
+                    </div>
+
+                    <div class="card editorial-card border-0 mb-4">
+                        <div class="card-body p-0">
+                            <div class="row">
+                                <div class="col-3">
+                                    <img src="images/reports/1.jpg" alt="Editorial Image" class="img-fluid ">
+                                </div>
+                                <div class="col-9 ps-0">
+                                    <div class="card h-100">
+                                        <div
+                                            class="card-body editorial-details d-flex flex-column justify-content-between">
+                                            <div class="title">
+                                                <h2 class="card-title">Best five ASX gold stocks in view of the slowing
+                                                </h2>
+                                                <div class="time-date">Published on: 2023-03-15</div>
+                                            </div>
+
+                                            <div class="card-description">
+                                                In the current market scenario, gold stocks have shown resilience and
+                                                potential for growth. Here are the top five ASX gold stocks to watch:
+                                            </div>
+
+                                            <div class="btns">
+                                                <button class="btn btn-sm btn-outline btn-read-more mt-3">
+                                                    <i class="bi bi-arrow-right"></i>
+                                                    Read More
+                                                </button>
+                                                <button class="btn btn-sm btn-outline btn-share mt-3 ms-2">
+                                                    <i class="bi bi-share"></i>
+                                                    Share
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+
+
+                    </div>
+
+                    <div class="card editorial-card border-0 mb-4">
+                        <div class="card-body p-0">
+                            <div class="row">
+                                <div class="col-3">
+                                    <img src="images/reports/1.jpg" alt="Editorial Image" class="img-fluid ">
+                                </div>
+                                <div class="col-9 ps-0">
+                                    <div class="card h-100">
+                                        <div
+                                            class="card-body editorial-details d-flex flex-column justify-content-between">
+                                            <div class="title">
+                                                <h2 class="card-title">Best five ASX gold stocks in view of the slowing
+                                                </h2>
+                                                <div class="time-date">Published on: 2023-03-15</div>
+                                            </div>
+
+                                            <div class="card-description">
+                                                In the current market scenario, gold stocks have shown resilience and
+                                                potential for growth. Here are the top five ASX gold stocks to watch:
+                                            </div>
+
+                                            <div class="btns">
+                                                <button class="btn btn-sm btn-outline btn-read-more mt-3">
+                                                    <i class="bi bi-arrow-right"></i>
+                                                    Read More
+                                                </button>
+                                                <button class="btn btn-sm btn-outline btn-share mt-3 ms-2">
+                                                    <i class="bi bi-share"></i>
+                                                    Share
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+
+
+                    </div>
+
+                </div>
+
+                <div class="col-4">
+
+                    <div class="card recent-posts mt-4">
+                        <div class="card-body">
+                            <h2 class="card-title">Recent Posts</h2>
+                            <hr class="mb-3">
+
+                            <div class="row post-listings g-3">
+                                <div class="col-12 post-item">
+                                    <div class="row">
+                                        <div class="col-4">
+                                            <img src="images/reports/1.jpg" alt="Post Image" class="img-fluid">
+                                        </div>
+                                        <div class="col-8 ps-0">
+                                            <h3 class="post-title">Best five ASX gold stocks in view of the slowing</h3>
+
+                                            <p class="post-desc mb-0">In the current market scenario, gold stocks have
+                                                shown
+                                                resilience and potential for growth.</p>
+
+                                            <div class="btns">
+                                                <button class="btn btn-sm btn-outline btn-read-more mt-3">
+                                                    <i class="bi bi-arrow-right"></i>
+                                                    Read More
+                                                </button>
+                                                <button class="btn btn-sm btn-outline btn-share mt-3 ms-2">
+                                                    <i class="bi bi-share"></i>
+                                                    Share
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-12 post-item">
+                                    <div class="row">
+                                        <div class="col-4">
+                                            <img src="images/reports/1.jpg" alt="Post Image" class="img-fluid">
+                                        </div>
+                                        <div class="col-8 ps-0">
+                                            <h3 class="post-title">Best five ASX gold stocks in view of the slowing</h3>
+
+                                            <p class="post-desc mb-0">In the current market scenario, gold stocks have
+                                                shown
+                                                resilience and potential for growth.</p>
+
+                                            <div class="btns">
+                                                <button class="btn btn-sm btn-outline btn-read-more mt-3">
+                                                    <i class="bi bi-arrow-right"></i>
+                                                    Read More
+                                                </button>
+                                                <button class="btn btn-sm btn-outline btn-share mt-3 ms-2">
+                                                    <i class="bi bi-share"></i>
+                                                    Share
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-12 post-item">
+                                    <div class="row">
+                                        <div class="col-4">
+                                            <img src="images/reports/1.jpg" alt="Post Image" class="img-fluid">
+                                        </div>
+                                        <div class="col-8 ps-0">
+                                            <h3 class="post-title">Best five ASX gold stocks in view of the slowing</h3>
+
+                                            <p class="post-desc mb-0">In the current market scenario, gold stocks have
+                                                shown
+                                                resilience and potential for growth.</p>
+
+                                            <div class="btns">
+                                                <button class="btn btn-sm btn-outline btn-read-more mt-3">
+                                                    <i class="bi bi-arrow-right"></i>
+                                                    Read More
+                                                </button>
+                                                <button class="btn btn-sm btn-outline btn-share mt-3 ms-2">
+                                                    <i class="bi bi-share"></i>
+                                                    Share
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="more-categories">
+                        <button class="btn btn-show-more-types w-100 mt-5 d-flex justify-content-between"
+                            data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-bs-expanded="false"
+                            aria-bs-controls="collapseOne">
+                            <span class="me-2">More Report on VEYE</span>
+                            <i class="bi bi-chevron-right toggle-icon"></i>
+                        </button>
+
+                        <div class="more-reports-card mt-4 collapse" id="collapseOne" aria-labelledby="headingOne"
+                            data-parent="#accordion">
+                            <div class="reports-body">
+
+                                <a href="#" class="d-block btn btn-report text-start mb-2">
+                                    <svg width="21" height="19" viewBox="0 0 21 19" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <g clip-path="url(#clip0_1081_2704)">
+                                            <path
+                                                d="M13.1241 6.96698C13.8302 7.58554 14.9791 7.58557 15.6852 6.96698C16.0272 6.66732 16.2156 6.26893 16.2156 5.84517C16.2156 5.4214 16.0272 5.02302 15.6852 4.72338C15.3322 4.41409 14.8684 4.25946 14.4047 4.25946C13.9409 4.25946 13.4772 4.41409 13.1242 4.72338C12.7822 5.02302 12.5938 5.4214 12.5938 5.84517C12.5938 6.26893 12.7821 6.66735 13.1241 6.96698Z"
+                                                fill="#232536" />
+                                            <path
+                                                d="M5.53018 5.03394L3.74511 5.15475C3.2484 5.18839 2.80602 5.41645 2.53133 5.78046L0.472657 8.5082C0.264324 8.78424 0.231204 9.1297 0.384004 9.43233C0.536844 9.73496 0.850934 9.94585 1.22418 9.99651L2.85862 10.2183C3.24096 8.44072 4.15623 6.66754 5.53018 5.03394Z"
+                                                fill="#4854EB" />
+                                            <path
+                                                d="M9.41406 15.9583L9.66723 17.3901C9.72505 17.7171 9.96578 17.9923 10.3112 18.1262C10.4549 18.1819 10.607 18.2094 10.7584 18.2094C10.971 18.2094 11.1821 18.1551 11.3661 18.0485L14.4798 16.245C14.8953 16.0043 15.1556 15.6167 15.1939 15.1816L15.3318 13.6178C13.4671 14.8215 11.4431 15.6233 9.41406 15.9583Z"
+                                                fill="#4854EB" />
+                                            <path
+                                                d="M8.79723 14.9662C8.85397 14.9662 8.91103 14.9621 8.96798 14.9538C9.81805 14.8293 10.6374 14.6195 11.419 14.3449L4.70134 8.45984C4.38793 9.14452 4.14849 9.86231 4.00635 10.6071C3.95034 10.9006 4.06273 11.1997 4.30294 11.4102L8.05126 14.694C8.2507 14.8686 8.51988 14.9662 8.79723 14.9662Z"
+                                                fill="#4854EB" />
+                                            <path
+                                                d="M19.2493 8.16251C20.8932 5.37829 20.9541 2.43606 20.8682 1.05618C20.8387 0.58338 20.4085 0.206435 19.8687 0.180664C19.6123 0.168395 19.3083 0.159546 18.9657 0.159546C17.2045 0.159546 14.4177 0.39325 11.7571 1.59886C9.64271 2.55698 6.87014 4.66667 5.23438 7.43918C5.25369 7.4524 5.27256 7.46643 5.29035 7.48202L12.5339 13.8279C12.5517 13.8435 12.5677 13.86 12.5828 13.8769C15.7475 12.4438 18.1557 10.0149 19.2493 8.16251ZM12.2681 3.97553C13.4448 2.94464 15.3596 2.94454 16.5364 3.97553C17.1065 4.47492 17.4204 5.13894 17.4204 5.8452C17.4204 6.55146 17.1065 7.21549 16.5364 7.71487C15.9481 8.23027 15.175 8.48801 14.4023 8.48808C13.6293 8.48812 12.8566 8.23041 12.2681 7.71487C11.698 7.21549 11.3841 6.55146 11.3841 5.8452C11.3841 5.13894 11.698 4.47492 12.2681 3.97553Z"
+                                                fill="#232536" />
+                                            <path
+                                                d="M0.908345 15.0348C1.06284 15.0348 1.21733 14.9832 1.33516 14.8799L3.30595 13.1533C3.5417 12.9468 3.5417 12.612 3.30595 12.4054C3.07025 12.1989 2.68803 12.1989 2.45229 12.4054L0.481493 14.132C0.245752 14.3385 0.245752 14.6733 0.481493 14.8799C0.599363 14.9831 0.753854 15.0348 0.908345 15.0348Z"
+                                                fill="#4854EB" />
+                                            <path
+                                                d="M5.10857 13.9873C4.87287 13.7808 4.49064 13.7808 4.2549 13.9873L0.465868 17.3067C0.230127 17.5133 0.230127 17.8481 0.465868 18.0546C0.583738 18.1579 0.738229 18.2095 0.89272 18.2095C1.04721 18.2095 1.2017 18.1579 1.31953 18.0546L5.10853 14.7352C5.34431 14.5286 5.34431 14.1938 5.10857 13.9873Z"
+                                                fill="#4854EB" />
+                                            <path
+                                                d="M6.06162 15.5707L4.09087 17.2973C3.85513 17.5038 3.85513 17.8386 4.09087 18.0451C4.20874 18.1484 4.36323 18.2001 4.51768 18.2001C4.67213 18.2001 4.82666 18.1484 4.94449 18.0451L6.91529 16.3186C7.15103 16.1121 7.15103 15.7773 6.91529 15.5707C6.67959 15.3642 6.29736 15.3642 6.06162 15.5707Z"
+                                                fill="#4854EB" />
+                                        </g>
+                                        <defs>
+                                            <clipPath id="clip0_1081_2704">
+                                                <rect width="20.6042" height="18.0506" fill="white"
+                                                    transform="translate(0.289062 0.159546)" />
+                                            </clipPath>
+                                        </defs>
+                                    </svg>
+
+                                    Daily Analysis
+                                </a>
+
+                                <a href="#" class="d-block btn btn-report text-start mb-2">
+                                    <svg width="21" height="19" viewBox="0 0 21 19" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <g clip-path="url(#clip0_1081_2704)">
+                                            <path
+                                                d="M13.1241 6.96698C13.8302 7.58554 14.9791 7.58557 15.6852 6.96698C16.0272 6.66732 16.2156 6.26893 16.2156 5.84517C16.2156 5.4214 16.0272 5.02302 15.6852 4.72338C15.3322 4.41409 14.8684 4.25946 14.4047 4.25946C13.9409 4.25946 13.4772 4.41409 13.1242 4.72338C12.7822 5.02302 12.5938 5.4214 12.5938 5.84517C12.5938 6.26893 12.7821 6.66735 13.1241 6.96698Z"
+                                                fill="#232536" />
+                                            <path
+                                                d="M5.53018 5.03394L3.74511 5.15475C3.2484 5.18839 2.80602 5.41645 2.53133 5.78046L0.472657 8.5082C0.264324 8.78424 0.231204 9.1297 0.384004 9.43233C0.536844 9.73496 0.850934 9.94585 1.22418 9.99651L2.85862 10.2183C3.24096 8.44072 4.15623 6.66754 5.53018 5.03394Z"
+                                                fill="#4854EB" />
+                                            <path
+                                                d="M9.41406 15.9583L9.66723 17.3901C9.72505 17.7171 9.96578 17.9923 10.3112 18.1262C10.4549 18.1819 10.607 18.2094 10.7584 18.2094C10.971 18.2094 11.1821 18.1551 11.3661 18.0485L14.4798 16.245C14.8953 16.0043 15.1556 15.6167 15.1939 15.1816L15.3318 13.6178C13.4671 14.8215 11.4431 15.6233 9.41406 15.9583Z"
+                                                fill="#4854EB" />
+                                            <path
+                                                d="M8.79723 14.9662C8.85397 14.9662 8.91103 14.9621 8.96798 14.9538C9.81805 14.8293 10.6374 14.6195 11.419 14.3449L4.70134 8.45984C4.38793 9.14452 4.14849 9.86231 4.00635 10.6071C3.95034 10.9006 4.06273 11.1997 4.30294 11.4102L8.05126 14.694C8.2507 14.8686 8.51988 14.9662 8.79723 14.9662Z"
+                                                fill="#4854EB" />
+                                            <path
+                                                d="M19.2493 8.16251C20.8932 5.37829 20.9541 2.43606 20.8682 1.05618C20.8387 0.58338 20.4085 0.206435 19.8687 0.180664C19.6123 0.168395 19.3083 0.159546 18.9657 0.159546C17.2045 0.159546 14.4177 0.39325 11.7571 1.59886C9.64271 2.55698 6.87014 4.66667 5.23438 7.43918C5.25369 7.4524 5.27256 7.46643 5.29035 7.48202L12.5339 13.8279C12.5517 13.8435 12.5677 13.86 12.5828 13.8769C15.7475 12.4438 18.1557 10.0149 19.2493 8.16251ZM12.2681 3.97553C13.4448 2.94464 15.3596 2.94454 16.5364 3.97553C17.1065 4.47492 17.4204 5.13894 17.4204 5.8452C17.4204 6.55146 17.1065 7.21549 16.5364 7.71487C15.9481 8.23027 15.175 8.48801 14.4023 8.48808C13.6293 8.48812 12.8566 8.23041 12.2681 7.71487C11.698 7.21549 11.3841 6.55146 11.3841 5.8452C11.3841 5.13894 11.698 4.47492 12.2681 3.97553Z"
+                                                fill="#232536" />
+                                            <path
+                                                d="M0.908345 15.0348C1.06284 15.0348 1.21733 14.9832 1.33516 14.8799L3.30595 13.1533C3.5417 12.9468 3.5417 12.612 3.30595 12.4054C3.07025 12.1989 2.68803 12.1989 2.45229 12.4054L0.481493 14.132C0.245752 14.3385 0.245752 14.6733 0.481493 14.8799C0.599363 14.9831 0.753854 15.0348 0.908345 15.0348Z"
+                                                fill="#4854EB" />
+                                            <path
+                                                d="M5.10857 13.9873C4.87287 13.7808 4.49064 13.7808 4.2549 13.9873L0.465868 17.3067C0.230127 17.5133 0.230127 17.8481 0.465868 18.0546C0.583738 18.1579 0.738229 18.2095 0.89272 18.2095C1.04721 18.2095 1.2017 18.1579 1.31953 18.0546L5.10853 14.7352C5.34431 14.5286 5.34431 14.1938 5.10857 13.9873Z"
+                                                fill="#4854EB" />
+                                            <path
+                                                d="M6.06162 15.5707L4.09087 17.2973C3.85513 17.5038 3.85513 17.8386 4.09087 18.0451C4.20874 18.1484 4.36323 18.2001 4.51768 18.2001C4.67213 18.2001 4.82666 18.1484 4.94449 18.0451L6.91529 16.3186C7.15103 16.1121 7.15103 15.7773 6.91529 15.5707C6.67959 15.3642 6.29736 15.3642 6.06162 15.5707Z"
+                                                fill="#4854EB" />
+                                        </g>
+                                        <defs>
+                                            <clipPath id="clip0_1081_2704">
+                                                <rect width="20.6042" height="18.0506" fill="white"
+                                                    transform="translate(0.289062 0.159546)" />
+                                            </clipPath>
+                                        </defs>
+                                    </svg>
+
+                                    Daily Analysis
+                                </a>
+
+                                <a href="#" class="d-block btn btn-report text-start mb-2">
+                                    <svg width="21" height="19" viewBox="0 0 21 19" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <g clip-path="url(#clip0_1081_2704)">
+                                            <path
+                                                d="M13.1241 6.96698C13.8302 7.58554 14.9791 7.58557 15.6852 6.96698C16.0272 6.66732 16.2156 6.26893 16.2156 5.84517C16.2156 5.4214 16.0272 5.02302 15.6852 4.72338C15.3322 4.41409 14.8684 4.25946 14.4047 4.25946C13.9409 4.25946 13.4772 4.41409 13.1242 4.72338C12.7822 5.02302 12.5938 5.4214 12.5938 5.84517C12.5938 6.26893 12.7821 6.66735 13.1241 6.96698Z"
+                                                fill="#232536" />
+                                            <path
+                                                d="M5.53018 5.03394L3.74511 5.15475C3.2484 5.18839 2.80602 5.41645 2.53133 5.78046L0.472657 8.5082C0.264324 8.78424 0.231204 9.1297 0.384004 9.43233C0.536844 9.73496 0.850934 9.94585 1.22418 9.99651L2.85862 10.2183C3.24096 8.44072 4.15623 6.66754 5.53018 5.03394Z"
+                                                fill="#4854EB" />
+                                            <path
+                                                d="M9.41406 15.9583L9.66723 17.3901C9.72505 17.7171 9.96578 17.9923 10.3112 18.1262C10.4549 18.1819 10.607 18.2094 10.7584 18.2094C10.971 18.2094 11.1821 18.1551 11.3661 18.0485L14.4798 16.245C14.8953 16.0043 15.1556 15.6167 15.1939 15.1816L15.3318 13.6178C13.4671 14.8215 11.4431 15.6233 9.41406 15.9583Z"
+                                                fill="#4854EB" />
+                                            <path
+                                                d="M8.79723 14.9662C8.85397 14.9662 8.91103 14.9621 8.96798 14.9538C9.81805 14.8293 10.6374 14.6195 11.419 14.3449L4.70134 8.45984C4.38793 9.14452 4.14849 9.86231 4.00635 10.6071C3.95034 10.9006 4.06273 11.1997 4.30294 11.4102L8.05126 14.694C8.2507 14.8686 8.51988 14.9662 8.79723 14.9662Z"
+                                                fill="#4854EB" />
+                                            <path
+                                                d="M19.2493 8.16251C20.8932 5.37829 20.9541 2.43606 20.8682 1.05618C20.8387 0.58338 20.4085 0.206435 19.8687 0.180664C19.6123 0.168395 19.3083 0.159546 18.9657 0.159546C17.2045 0.159546 14.4177 0.39325 11.7571 1.59886C9.64271 2.55698 6.87014 4.66667 5.23438 7.43918C5.25369 7.4524 5.27256 7.46643 5.29035 7.48202L12.5339 13.8279C12.5517 13.8435 12.5677 13.86 12.5828 13.8769C15.7475 12.4438 18.1557 10.0149 19.2493 8.16251ZM12.2681 3.97553C13.4448 2.94464 15.3596 2.94454 16.5364 3.97553C17.1065 4.47492 17.4204 5.13894 17.4204 5.8452C17.4204 6.55146 17.1065 7.21549 16.5364 7.71487C15.9481 8.23027 15.175 8.48801 14.4023 8.48808C13.6293 8.48812 12.8566 8.23041 12.2681 7.71487C11.698 7.21549 11.3841 6.55146 11.3841 5.8452C11.3841 5.13894 11.698 4.47492 12.2681 3.97553Z"
+                                                fill="#232536" />
+                                            <path
+                                                d="M0.908345 15.0348C1.06284 15.0348 1.21733 14.9832 1.33516 14.8799L3.30595 13.1533C3.5417 12.9468 3.5417 12.612 3.30595 12.4054C3.07025 12.1989 2.68803 12.1989 2.45229 12.4054L0.481493 14.132C0.245752 14.3385 0.245752 14.6733 0.481493 14.8799C0.599363 14.9831 0.753854 15.0348 0.908345 15.0348Z"
+                                                fill="#4854EB" />
+                                            <path
+                                                d="M5.10857 13.9873C4.87287 13.7808 4.49064 13.7808 4.2549 13.9873L0.465868 17.3067C0.230127 17.5133 0.230127 17.8481 0.465868 18.0546C0.583738 18.1579 0.738229 18.2095 0.89272 18.2095C1.04721 18.2095 1.2017 18.1579 1.31953 18.0546L5.10853 14.7352C5.34431 14.5286 5.34431 14.1938 5.10857 13.9873Z"
+                                                fill="#4854EB" />
+                                            <path
+                                                d="M6.06162 15.5707L4.09087 17.2973C3.85513 17.5038 3.85513 17.8386 4.09087 18.0451C4.20874 18.1484 4.36323 18.2001 4.51768 18.2001C4.67213 18.2001 4.82666 18.1484 4.94449 18.0451L6.91529 16.3186C7.15103 16.1121 7.15103 15.7773 6.91529 15.5707C6.67959 15.3642 6.29736 15.3642 6.06162 15.5707Z"
+                                                fill="#4854EB" />
+                                        </g>
+                                        <defs>
+                                            <clipPath id="clip0_1081_2704">
+                                                <rect width="20.6042" height="18.0506" fill="white"
+                                                    transform="translate(0.289062 0.159546)" />
+                                            </clipPath>
+                                        </defs>
+                                    </svg>
+
+                                    Daily Analysis
+                                </a>
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="more-sectors mt-3">
+                        <button class="btn btn-show-more-types w-100 d-flex justify-content-between"
+                            data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-bs-expanded="false"
+                            aria-bs-controls="collapseTwo">
+                            <span class="me-2">Specific Sectors</span>
+                            <i class="bi bi-chevron-right toggle-icon"></i>
+                        </button>
+
+                        <div class="more-reports-card mt-4 collapse" id="collapseTwo" aria-labelledby="headingOne"
+                            data-parent="#accordion">
+                            <div class="reports-body">
+
+                                <a href="#" class="d-block btn btn-report text-start mb-2">
+                                    <svg width="21" height="19" viewBox="0 0 21 19" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <g clip-path="url(#clip0_1081_2704)">
+                                            <path
+                                                d="M13.1241 6.96698C13.8302 7.58554 14.9791 7.58557 15.6852 6.96698C16.0272 6.66732 16.2156 6.26893 16.2156 5.84517C16.2156 5.4214 16.0272 5.02302 15.6852 4.72338C15.3322 4.41409 14.8684 4.25946 14.4047 4.25946C13.9409 4.25946 13.4772 4.41409 13.1242 4.72338C12.7822 5.02302 12.5938 5.4214 12.5938 5.84517C12.5938 6.26893 12.7821 6.66735 13.1241 6.96698Z"
+                                                fill="#232536" />
+                                            <path
+                                                d="M5.53018 5.03394L3.74511 5.15475C3.2484 5.18839 2.80602 5.41645 2.53133 5.78046L0.472657 8.5082C0.264324 8.78424 0.231204 9.1297 0.384004 9.43233C0.536844 9.73496 0.850934 9.94585 1.22418 9.99651L2.85862 10.2183C3.24096 8.44072 4.15623 6.66754 5.53018 5.03394Z"
+                                                fill="#4854EB" />
+                                            <path
+                                                d="M9.41406 15.9583L9.66723 17.3901C9.72505 17.7171 9.96578 17.9923 10.3112 18.1262C10.4549 18.1819 10.607 18.2094 10.7584 18.2094C10.971 18.2094 11.1821 18.1551 11.3661 18.0485L14.4798 16.245C14.8953 16.0043 15.1556 15.6167 15.1939 15.1816L15.3318 13.6178C13.4671 14.8215 11.4431 15.6233 9.41406 15.9583Z"
+                                                fill="#4854EB" />
+                                            <path
+                                                d="M8.79723 14.9662C8.85397 14.9662 8.91103 14.9621 8.96798 14.9538C9.81805 14.8293 10.6374 14.6195 11.419 14.3449L4.70134 8.45984C4.38793 9.14452 4.14849 9.86231 4.00635 10.6071C3.95034 10.9006 4.06273 11.1997 4.30294 11.4102L8.05126 14.694C8.2507 14.8686 8.51988 14.9662 8.79723 14.9662Z"
+                                                fill="#4854EB" />
+                                            <path
+                                                d="M19.2493 8.16251C20.8932 5.37829 20.9541 2.43606 20.8682 1.05618C20.8387 0.58338 20.4085 0.206435 19.8687 0.180664C19.6123 0.168395 19.3083 0.159546 18.9657 0.159546C17.2045 0.159546 14.4177 0.39325 11.7571 1.59886C9.64271 2.55698 6.87014 4.66667 5.23438 7.43918C5.25369 7.4524 5.27256 7.46643 5.29035 7.48202L12.5339 13.8279C12.5517 13.8435 12.5677 13.86 12.5828 13.8769C15.7475 12.4438 18.1557 10.0149 19.2493 8.16251ZM12.2681 3.97553C13.4448 2.94464 15.3596 2.94454 16.5364 3.97553C17.1065 4.47492 17.4204 5.13894 17.4204 5.8452C17.4204 6.55146 17.1065 7.21549 16.5364 7.71487C15.9481 8.23027 15.175 8.48801 14.4023 8.48808C13.6293 8.48812 12.8566 8.23041 12.2681 7.71487C11.698 7.21549 11.3841 6.55146 11.3841 5.8452C11.3841 5.13894 11.698 4.47492 12.2681 3.97553Z"
+                                                fill="#232536" />
+                                            <path
+                                                d="M0.908345 15.0348C1.06284 15.0348 1.21733 14.9832 1.33516 14.8799L3.30595 13.1533C3.5417 12.9468 3.5417 12.612 3.30595 12.4054C3.07025 12.1989 2.68803 12.1989 2.45229 12.4054L0.481493 14.132C0.245752 14.3385 0.245752 14.6733 0.481493 14.8799C0.599363 14.9831 0.753854 15.0348 0.908345 15.0348Z"
+                                                fill="#4854EB" />
+                                            <path
+                                                d="M5.10857 13.9873C4.87287 13.7808 4.49064 13.7808 4.2549 13.9873L0.465868 17.3067C0.230127 17.5133 0.230127 17.8481 0.465868 18.0546C0.583738 18.1579 0.738229 18.2095 0.89272 18.2095C1.04721 18.2095 1.2017 18.1579 1.31953 18.0546L5.10853 14.7352C5.34431 14.5286 5.34431 14.1938 5.10857 13.9873Z"
+                                                fill="#4854EB" />
+                                            <path
+                                                d="M6.06162 15.5707L4.09087 17.2973C3.85513 17.5038 3.85513 17.8386 4.09087 18.0451C4.20874 18.1484 4.36323 18.2001 4.51768 18.2001C4.67213 18.2001 4.82666 18.1484 4.94449 18.0451L6.91529 16.3186C7.15103 16.1121 7.15103 15.7773 6.91529 15.5707C6.67959 15.3642 6.29736 15.3642 6.06162 15.5707Z"
+                                                fill="#4854EB" />
+                                        </g>
+                                        <defs>
+                                            <clipPath id="clip0_1081_2704">
+                                                <rect width="20.6042" height="18.0506" fill="white"
+                                                    transform="translate(0.289062 0.159546)" />
+                                            </clipPath>
+                                        </defs>
+                                    </svg>
+
+                                    Daily Analysis
+                                </a>
+
+                                <a href="#" class="d-block btn btn-report text-start mb-2">
+                                    <svg width="21" height="19" viewBox="0 0 21 19" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <g clip-path="url(#clip0_1081_2704)">
+                                            <path
+                                                d="M13.1241 6.96698C13.8302 7.58554 14.9791 7.58557 15.6852 6.96698C16.0272 6.66732 16.2156 6.26893 16.2156 5.84517C16.2156 5.4214 16.0272 5.02302 15.6852 4.72338C15.3322 4.41409 14.8684 4.25946 14.4047 4.25946C13.9409 4.25946 13.4772 4.41409 13.1242 4.72338C12.7822 5.02302 12.5938 5.4214 12.5938 5.84517C12.5938 6.26893 12.7821 6.66735 13.1241 6.96698Z"
+                                                fill="#232536" />
+                                            <path
+                                                d="M5.53018 5.03394L3.74511 5.15475C3.2484 5.18839 2.80602 5.41645 2.53133 5.78046L0.472657 8.5082C0.264324 8.78424 0.231204 9.1297 0.384004 9.43233C0.536844 9.73496 0.850934 9.94585 1.22418 9.99651L2.85862 10.2183C3.24096 8.44072 4.15623 6.66754 5.53018 5.03394Z"
+                                                fill="#4854EB" />
+                                            <path
+                                                d="M9.41406 15.9583L9.66723 17.3901C9.72505 17.7171 9.96578 17.9923 10.3112 18.1262C10.4549 18.1819 10.607 18.2094 10.7584 18.2094C10.971 18.2094 11.1821 18.1551 11.3661 18.0485L14.4798 16.245C14.8953 16.0043 15.1556 15.6167 15.1939 15.1816L15.3318 13.6178C13.4671 14.8215 11.4431 15.6233 9.41406 15.9583Z"
+                                                fill="#4854EB" />
+                                            <path
+                                                d="M8.79723 14.9662C8.85397 14.9662 8.91103 14.9621 8.96798 14.9538C9.81805 14.8293 10.6374 14.6195 11.419 14.3449L4.70134 8.45984C4.38793 9.14452 4.14849 9.86231 4.00635 10.6071C3.95034 10.9006 4.06273 11.1997 4.30294 11.4102L8.05126 14.694C8.2507 14.8686 8.51988 14.9662 8.79723 14.9662Z"
+                                                fill="#4854EB" />
+                                            <path
+                                                d="M19.2493 8.16251C20.8932 5.37829 20.9541 2.43606 20.8682 1.05618C20.8387 0.58338 20.4085 0.206435 19.8687 0.180664C19.6123 0.168395 19.3083 0.159546 18.9657 0.159546C17.2045 0.159546 14.4177 0.39325 11.7571 1.59886C9.64271 2.55698 6.87014 4.66667 5.23438 7.43918C5.25369 7.4524 5.27256 7.46643 5.29035 7.48202L12.5339 13.8279C12.5517 13.8435 12.5677 13.86 12.5828 13.8769C15.7475 12.4438 18.1557 10.0149 19.2493 8.16251ZM12.2681 3.97553C13.4448 2.94464 15.3596 2.94454 16.5364 3.97553C17.1065 4.47492 17.4204 5.13894 17.4204 5.8452C17.4204 6.55146 17.1065 7.21549 16.5364 7.71487C15.9481 8.23027 15.175 8.48801 14.4023 8.48808C13.6293 8.48812 12.8566 8.23041 12.2681 7.71487C11.698 7.21549 11.3841 6.55146 11.3841 5.8452C11.3841 5.13894 11.698 4.47492 12.2681 3.97553Z"
+                                                fill="#232536" />
+                                            <path
+                                                d="M0.908345 15.0348C1.06284 15.0348 1.21733 14.9832 1.33516 14.8799L3.30595 13.1533C3.5417 12.9468 3.5417 12.612 3.30595 12.4054C3.07025 12.1989 2.68803 12.1989 2.45229 12.4054L0.481493 14.132C0.245752 14.3385 0.245752 14.6733 0.481493 14.8799C0.599363 14.9831 0.753854 15.0348 0.908345 15.0348Z"
+                                                fill="#4854EB" />
+                                            <path
+                                                d="M5.10857 13.9873C4.87287 13.7808 4.49064 13.7808 4.2549 13.9873L0.465868 17.3067C0.230127 17.5133 0.230127 17.8481 0.465868 18.0546C0.583738 18.1579 0.738229 18.2095 0.89272 18.2095C1.04721 18.2095 1.2017 18.1579 1.31953 18.0546L5.10853 14.7352C5.34431 14.5286 5.34431 14.1938 5.10857 13.9873Z"
+                                                fill="#4854EB" />
+                                            <path
+                                                d="M6.06162 15.5707L4.09087 17.2973C3.85513 17.5038 3.85513 17.8386 4.09087 18.0451C4.20874 18.1484 4.36323 18.2001 4.51768 18.2001C4.67213 18.2001 4.82666 18.1484 4.94449 18.0451L6.91529 16.3186C7.15103 16.1121 7.15103 15.7773 6.91529 15.5707C6.67959 15.3642 6.29736 15.3642 6.06162 15.5707Z"
+                                                fill="#4854EB" />
+                                        </g>
+                                        <defs>
+                                            <clipPath id="clip0_1081_2704">
+                                                <rect width="20.6042" height="18.0506" fill="white"
+                                                    transform="translate(0.289062 0.159546)" />
+                                            </clipPath>
+                                        </defs>
+                                    </svg>
+
+                                    Daily Analysis
+                                </a>
+
+                                <a href="#" class="d-block btn btn-report text-start mb-2">
+                                    <svg width="21" height="19" viewBox="0 0 21 19" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <g clip-path="url(#clip0_1081_2704)">
+                                            <path
+                                                d="M13.1241 6.96698C13.8302 7.58554 14.9791 7.58557 15.6852 6.96698C16.0272 6.66732 16.2156 6.26893 16.2156 5.84517C16.2156 5.4214 16.0272 5.02302 15.6852 4.72338C15.3322 4.41409 14.8684 4.25946 14.4047 4.25946C13.9409 4.25946 13.4772 4.41409 13.1242 4.72338C12.7822 5.02302 12.5938 5.4214 12.5938 5.84517C12.5938 6.26893 12.7821 6.66735 13.1241 6.96698Z"
+                                                fill="#232536" />
+                                            <path
+                                                d="M5.53018 5.03394L3.74511 5.15475C3.2484 5.18839 2.80602 5.41645 2.53133 5.78046L0.472657 8.5082C0.264324 8.78424 0.231204 9.1297 0.384004 9.43233C0.536844 9.73496 0.850934 9.94585 1.22418 9.99651L2.85862 10.2183C3.24096 8.44072 4.15623 6.66754 5.53018 5.03394Z"
+                                                fill="#4854EB" />
+                                            <path
+                                                d="M9.41406 15.9583L9.66723 17.3901C9.72505 17.7171 9.96578 17.9923 10.3112 18.1262C10.4549 18.1819 10.607 18.2094 10.7584 18.2094C10.971 18.2094 11.1821 18.1551 11.3661 18.0485L14.4798 16.245C14.8953 16.0043 15.1556 15.6167 15.1939 15.1816L15.3318 13.6178C13.4671 14.8215 11.4431 15.6233 9.41406 15.9583Z"
+                                                fill="#4854EB" />
+                                            <path
+                                                d="M8.79723 14.9662C8.85397 14.9662 8.91103 14.9621 8.96798 14.9538C9.81805 14.8293 10.6374 14.6195 11.419 14.3449L4.70134 8.45984C4.38793 9.14452 4.14849 9.86231 4.00635 10.6071C3.95034 10.9006 4.06273 11.1997 4.30294 11.4102L8.05126 14.694C8.2507 14.8686 8.51988 14.9662 8.79723 14.9662Z"
+                                                fill="#4854EB" />
+                                            <path
+                                                d="M19.2493 8.16251C20.8932 5.37829 20.9541 2.43606 20.8682 1.05618C20.8387 0.58338 20.4085 0.206435 19.8687 0.180664C19.6123 0.168395 19.3083 0.159546 18.9657 0.159546C17.2045 0.159546 14.4177 0.39325 11.7571 1.59886C9.64271 2.55698 6.87014 4.66667 5.23438 7.43918C5.25369 7.4524 5.27256 7.46643 5.29035 7.48202L12.5339 13.8279C12.5517 13.8435 12.5677 13.86 12.5828 13.8769C15.7475 12.4438 18.1557 10.0149 19.2493 8.16251ZM12.2681 3.97553C13.4448 2.94464 15.3596 2.94454 16.5364 3.97553C17.1065 4.47492 17.4204 5.13894 17.4204 5.8452C17.4204 6.55146 17.1065 7.21549 16.5364 7.71487C15.9481 8.23027 15.175 8.48801 14.4023 8.48808C13.6293 8.48812 12.8566 8.23041 12.2681 7.71487C11.698 7.21549 11.3841 6.55146 11.3841 5.8452C11.3841 5.13894 11.698 4.47492 12.2681 3.97553Z"
+                                                fill="#232536" />
+                                            <path
+                                                d="M0.908345 15.0348C1.06284 15.0348 1.21733 14.9832 1.33516 14.8799L3.30595 13.1533C3.5417 12.9468 3.5417 12.612 3.30595 12.4054C3.07025 12.1989 2.68803 12.1989 2.45229 12.4054L0.481493 14.132C0.245752 14.3385 0.245752 14.6733 0.481493 14.8799C0.599363 14.9831 0.753854 15.0348 0.908345 15.0348Z"
+                                                fill="#4854EB" />
+                                            <path
+                                                d="M5.10857 13.9873C4.87287 13.7808 4.49064 13.7808 4.2549 13.9873L0.465868 17.3067C0.230127 17.5133 0.230127 17.8481 0.465868 18.0546C0.583738 18.1579 0.738229 18.2095 0.89272 18.2095C1.04721 18.2095 1.2017 18.1579 1.31953 18.0546L5.10853 14.7352C5.34431 14.5286 5.34431 14.1938 5.10857 13.9873Z"
+                                                fill="#4854EB" />
+                                            <path
+                                                d="M6.06162 15.5707L4.09087 17.2973C3.85513 17.5038 3.85513 17.8386 4.09087 18.0451C4.20874 18.1484 4.36323 18.2001 4.51768 18.2001C4.67213 18.2001 4.82666 18.1484 4.94449 18.0451L6.91529 16.3186C7.15103 16.1121 7.15103 15.7773 6.91529 15.5707C6.67959 15.3642 6.29736 15.3642 6.06162 15.5707Z"
+                                                fill="#4854EB" />
+                                        </g>
+                                        <defs>
+                                            <clipPath id="clip0_1081_2704">
+                                                <rect width="20.6042" height="18.0506" fill="white"
+                                                    transform="translate(0.289062 0.159546)" />
+                                            </clipPath>
+                                        </defs>
+                                    </svg>
+
+                                    Daily Analysis
+                                </a>
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card offer-card mt-4">
+                        <div class="card-body">
+                            <h2 class="card-title">DIVIDEND STOCKS REPORT</h2>
+
+                            <p class="card-description">
+                                Each week we cover companies offering a good combination of growth & dividends,
+                                maintaining a balance between stable 'cash flow' and riskier 'raising stars'. Our
+                                guidance helps you choose companies with regular dividends and opportunities for
+                                lower-risk capital growth.
+                            </p>
+
+                            <ul class="benefits">
+                                <li>Receive a weekly report on dividend stocks</li>
+                                <li>Get insights on companies with stable cash flow</li>
+                                <li>Balance between growth and dividends</li>
+                                <li>Lower-risk capital growth opportunities</li>
+                            </ul>
+
+                            <div class="btns d-flex justify-content-center mb-3">
+                                <button class="btn btn-primary btn-read-more mt-3 mx-auto">
+                                    <i class="bi bi-arrow-right"></i>
+                                    Subscribe Now
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <div class="modal leadPopupModal fade" id="leadModal" data-bs-backdrop="static" data-bs-keyboard="false"
+        tabindex="-1" aria-labelledby="leadModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+
+            <div class="card form-card modal-content">
+                <!-- <div class="modal-header">
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div> -->
+
+                <div class="form-wrapper">
+                    <div class="card-body">
+                        <!-- <img src="images/static/veye-colorfull.png" alt="Veye Logo"
+                            class="img-fluid d-block mx-auto mb-5 mt-4 card-logo"> -->
+
+                        <h3 class="card-title text-center mb-3 mt-4">
+                            Grab Your FREE Report on <span class="highlight">Top 5 ASX Stocks</span> to Buy in 2025
+                        </h3>
+
+                        <p class="card-description text-center mb-4">
+                            Welcome back! Please enter your details.
+                        </p>
+
+                        <div class="progress mx-3 mb-4">
+                            <div class="progress-bar" role="progressbar" style="width: 70%;" aria-valuenow="70"
+                                aria-valuemin="0" aria-valuemax="100">70% Complete</div>
+                        </div>
+
+                        <form class="form px-3" id="leadForm">
+                            <div class="mb-3 input-box">
+                                <label for="name" class="form-label">Name</label>
+                                <input type="text" class="form-control" id="name" onfocus="setFocus(true)"
+                                    onblur="setFocus(false)" required>
+                            </div>
+                            <div class="mb-3 input-box">
+                                <label for="email" class="form-label">Email address</label>
+                                <input type="email" class="form-control" id="email" onfocus="setFocus(true)"
+                                    onblur="setFocus(false)" required>
+                            </div>
+                            <div class="mb-3 input-box">
+                                <label for="phone" class="form-label">Phone Number</label>
+                                <input type="tel" class="form-control" id="phone" onfocus="setFocus(true)"
+                                    onblur="setFocus(false)" required>
+                            </div>
+
+                            <div class="mb-2">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" id="terms">
+                                    <label class="form-check-label terms-label" for="terms">
+                                        By providing your details, you agree to Veye’s Terms & Conditions, Privacy
+                                        Policy, and Financial Services Guide and to receive marketing offers by
+                                        email, text message or phone call from us or our agents until you opt out.
+                                        Before you access our services, please read the Financial Service Guide
+                                        available here.
+                                    </label>
+                                </div>
+
+                            </div>
+                            <div class="mt-2 d-flex justify-content-center">
+                                <button type="submit" class="btn btn-submit w-100 mt-3 mx-auto mb-3">Get Your Report
+                                    Now</button>
+                            </div>
+
+                        </form>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+    </div>
+
+    <footer class="veye-footer mt-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 text-start d-flex align-items-center mt-4 footer-top">
+                    <img src="images/static/veye-white.png" alt="Veye Logo" class="footer-logo mb-3">
+                    <p class="disclaimer ms-5">
+                        <strong>Disclaimer:</strong> Veye Pty Ltd only provides general, and not personalised
+                        financial advice, and has not taken your personal circumstances into account. Veye Pty Ltd
+                        operates under AFSL 523157. For more information please see our Financial Services
+                        Guide. Please remember that investments can go up and down. Any past performance shown is
+                        not an indication of Future Returns. Commission and other costs charged by executing broker
+                        are not considered when calculating past performance. We request our readers not to
+                        interpret our reports as direct recommendations. Veye Pty Ltd does not guarantee the
+                        performance of, or returns on any investment.
+                    </p>
+                </div>
+            </div>
+
+            <div class="row footer-bottom mt-4 text-start footer-middle">
+                <div class="col-lg-3 col-md-6 col-sm-12">
+                    <h4 class="about-veye footer-heading">About Veye</h4>
+                    <p class="footer-desc">Veye is a leading independent equities research firm dedicated to helping
+                        its clients improve their investment results through unbiased and precise recommendations
+                        around buying, selling or holding stocks.</p>
+                </div>
+                <div class="col-lg-6 col-sm-12">
+                    <div class="row useful-links">
+                        <div class="col-lg-4 col-sm-6">
+                            <h4 class="footer-heading">Quick Links</h4>
+                            <ul class="list-unstyled">
+                                <li><a href="#">Daily Analysis</a></li>
+                                <li><a href="#">Dividend Investor Report</a></li>
+                                <li><a href="#">Master Of Growth Report</a></li>
+                                <li><a href="#">Penny Stock Report</a></li>
+                                <li><a href="#">Hot Sector Report</a></li>
+                            </ul>
+                        </div>
+
+                        <div class="col-lg-4 col-sm-6">
+                            <h4 class="footer-heading">Important Links</h4>
+                            <ul class="list-unstyled">
+                                <li><a href="#">Privacy Policy</a></li>
+                                <li><a href="#">Terms & Conditions</a></li>
+                                <li><a href="#">Free Trial - Terms Of Use</a></li>
+                                <li><a href="#">Financial Services Guide</a></li>
+                                <li><a href="#">About Us</a></li>
+                                <li><a href="#">Past Recommendations</a></li>
+                            </ul>
+                        </div>
+
+                        <div class="col-lg-4 col-sm-12">
+                            <h4 class="footer-heading follow-us-on">Follow Us On</h4>
+                            <ul class="list-unstyled">
+                                <li><a href="#"><i class="bi bi-geo-alt"></i> Veye Pty Ltd Level 21, 207 Kent
+                                        Street, Sydney, NSW, 2000</a></li>
+                                <li><a href="#"><i class="bi bi-envelope"></i> info@veye.com.au</a></li>
+                                <li><a href="#"><i class="bi bi-telephone"></i> (02) 9052 4957</a></li>
+                            </ul>
+
+                            <div class="footer-heading social-icons mt-3">
+                                <a href="#" class="me-3"><i class="bi bi-facebook"></i></a>
+                                <a href="#" class="me-3"><i class="bi bi-twitter"></i></a>
+                                <a href="#" class="me-3"><i class="bi bi-youtube"></i></a>
+                                <a href="#"><i class="bi bi-linkedin"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-sm-12">
+                    <h4 class="stay-updated footer-heading">Stay Updated</h4>
+                    <p class="desclaimer-desc">By providing your details, you agree to Veye’s Terms &
+                        Conditions and Privacy Policy and to receive marketing offers by email, text message or
+                        phone call from us or our agents until you opt out.</p>
+
+                    <div class="certifications">
+                        <img src="images/static/cert1.png" alt="AFSL Certification" class="certification-img">
+                        <img src="images/static/cert2.png" alt="ACNC Certification" class="certification-img">
+                        <img src="images/static/cert3.png" alt="ASIC Certification" class="certification-img">
+                    </div>
+                </div>
+
+            </div>
+
+
+        </div>
+        <hr class="container-fluid mt-4 mb-3" />
+        <div class="row footer-last-line mt-4">
+            <div class="col-12 d-flex justify-content-evenly text-center">
+                <p class="mb-0">Copyrights © 2025 Veye Pty Ltd. All rights reserved</p>
+                <p class="mb-0">ACN: 623 120 865 | ABN: 58 623 120 865 | AFSL: 523157</p>
+                <p class="mb-0">Designed with ❤️ by <a href="https://www.veye.com.au" target="_blank">Veye</a></p>
+            </div>
+        </div>
+
+    </footer>
+
+
+
+
+    <!-- bootstrap js files -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+        integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+        integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+        crossorigin="anonymous"></script>
+
+    <!-- library files -->
+    <script src="https://code.jquery.com/jquery-3.7.1.js"
+        integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+
+    <!-- custom scripts -->
+    <script src="js/script.js"></script>
+
+    <script>
+        function setFocus(on) {
+            var element = document.activeElement;
+            if (on) {
+                setTimeout(function () {
+                    element.parentNode.classList.add("focus");
+                });
+            } else {
+                let box = document.querySelector(".input-box");
+                box.classList.remove("focus");
+                $("input").each(function () {
+                    var $input = $(this);
+                    var $parent = $input.closest(".input-box");
+                    if ($input.val()) $parent.addClass("focus");
+                    else $parent.removeClass("focus");
+                });
+            }
+        }
+
+        // Show Modal on page load
+        $(document).ready(function () {
+            // $('#leadModal').modal('show');
+        });
+
+    </script>
+</body>
+
+</html>

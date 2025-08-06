@@ -140,7 +140,7 @@
                                     <div class="sidebar p-3">
                                         <ul class="nav flex-column">
                                             <li class="nav-item">
-                                                <a href="#" class="nav-link active">
+                                                <a href="/profile/dashboard.html" class="nav-link">
                                                     <i class="bi bi-house-door"></i>
                                                     Dashboard
                                                 </a>
@@ -182,7 +182,7 @@
                                             </li>
 
                                             <li class="nav-item">
-                                                <a href="/profile/buy-recommendation.html" class="nav-link">
+                                                <a href="/profile/buy-recommendation.html" class="nav-link active">
                                                     <i class="bi bi-arrow-down-left-circle"></i>
                                                     Latest Buy Recommendation
                                                 </a>
@@ -271,128 +271,101 @@
                         </div>
                     </div>
 
-                    <div class="row mt-4 reports-section">
+                    <div class="row mt-4 buy-recommendation-section">
                         <div class="col-12">
-                            <div class="row">
-                                <div class="col-lg-3 col-md-6 col-sm-12">
-                                    <div class="card report-card">
-                                        <div class="card-body">
-                                            <img src="../images/reports/1.jpg" alt="Stock Report"
-                                                class="card-img-top stock-img img-fluid">
-                                            <div class="card-title text-center mt-3">
-                                                11217 Reports
+                            <div class="card veye-table-card px-3 py-4">
+                                <div class="card-body">
+                                    <div class="table-header d-flex justify-content-between align-items-center mb-3">
+                                        <h2 class="table-title pt-0">Latest Buy Recommendations</h2>
+                                        <div class="input-box">
+                                            <input type="text" class="form-control" placeholder="Search by Company Name"
+                                                name="key" onfocus="setFocus(true)" onblur="setFocus(false)">
+                                            <i class="bi bi-search"></i>
+                                        </div>
+
+                                    </div>
+                                    <div class="table-responsive">
+                                        <table class="main-table">
+                                            <thead>
+                                                <tr>
+                                                    <th>Company</th>
+                                                    <th>Buy Price</th>
+                                                    <th>Buy Date</th>
+                                                    <th>Report No.</th>
+                                                    <th>Sell Price</th>
+                                                    <th>Sell Report No.</th>
+                                                    <th>Gain / Loss %</th>
+                                                </tr>
+                                            </thead>
+
+                                            <tbody>
+                                                <tr>
+                                                    <td>Company A</td>
+                                                    <td>$10.00</td>
+                                                    <td>01 Jan 2023</td>
+                                                    <td>100</td>
+                                                    <td>01 Feb 2023</td>
+                                                    <td>$12.00</td>
+                                                    <td>20%</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Company B</td>
+                                                    <td>$15.00</td>
+                                                    <td>15 Jan 2023</td>
+                                                    <td>50</td>
+                                                    <td>15 Feb 2023</td>
+                                                    <td>$14.00</td>
+                                                    <td>-6.67%</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Company C</td>
+                                                    <td>$8.00</td>
+                                                    <td>20 Jan 2023</td>
+                                                    <td>75</td>
+                                                    <td>20 Feb 2023</td>
+                                                    <td>$10.00</td>
+                                                    <td>25%</td>
+                                                </tr>
+                                                <!-- Add more rows as needed -->
+                                            </tbody>
+                                        </table>
+                                    </div>
+
+                                    <div class="row veye-pagination mt-4">
+                                        <div class="col-12 d-flex justify-content-between align-items-center">
+                                            <div class="col-3 d-flex justify-content-start align-items-center">
+                                                <span class="pagination-info my-auto me-3">Showing 1 to 3 of 3
+                                                    entries</span>
+
+                                                <div class="pagination-show-entries">
+                                                    <select class="form-select" aria-label="Show entries"
+                                                        name="entries">
+                                                        <option value="10">10</option>
+                                                        <option value="20">20</option>
+                                                        <option value="30">30</option>
+                                                    </select>
+                                                </div>
                                             </div>
-                                            <div class="d-flex justify-content-center">
-                                                <button class="btn btn-outline-primary btn-sm w-100 px-3">Daily
-                                                    Analysis</button>
-                                            </div>
+                                            <nav aria-label="Page navigation" class="pagination-nav">
+                                                <ul class="pagination">
+                                                    <li class="page-item">
+                                                        <a class="page-link link disabled" href="#" tabindex="-1"
+                                                            aria-disabled="true">Previous</a>
+                                                    </li>
+                                                    <li class="page-item"><a class="page-link active" href="#">1</a>
+                                                    </li>
+                                                    <li class="page-item"><a class="page-link" href="#">2</a></li>
+                                                    <li class="page-item"><a class="page-link" href="#">3</a></li>
+                                                    <li class="page-item">
+                                                        <a class="page-link link" href="#">Next</a>
+                                                    </li>
+                                                </ul>
+                                            </nav>
+
                                         </div>
                                     </div>
-                                </div>
-                                <div class="col-lg-3 col-md-6 col-sm-12">
-                                    <div class="card report-card">
-                                        <div class="card-body">
-                                            <img src="../images/reports/2.jpg" alt="Stock Report"
-                                                class="card-img-top stock-img img-fluid">
-                                            <div class="card-title text-center mt-3">
-                                                11217 Reports
-                                            </div>
-                                            <div class="d-flex justify-content-center">
-                                                <button class="btn btn-outline-primary btn-sm w-100 px-3">Daily
-                                                    Analysis</button>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-lg-3 col-md-6 col-sm-12">
-                                    <div class="card report-card">
-                                        <div class="card-body">
-                                            <img src="../images/reports/3.jpg" alt="Stock Report"
-                                                class="card-img-top stock-img img-fluid">
-                                            <div class="card-title text-center mt-3">
-                                                11217 Reports
-                                            </div>
-                                            <div class="d-flex justify-content-center">
-                                                <button class="btn btn-outline-primary btn-sm w-100 px-3">Daily
-                                                    Analysis</button>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-lg-3 col-md-6 col-sm-12">
-                                    <div class="card report-card">
-                                        <div class="card-body">
-                                            <img src="../images/reports/4.jpg" alt="Stock Report"
-                                                class="card-img-top stock-img img-fluid">
-                                            <div class="card-title text-center mt-3">
-                                                11217 Reports
-                                            </div>
-                                            <div class="d-flex justify-content-center">
-                                                <button class="btn btn-outline-primary btn-sm w-100 px-3">Daily
-                                                    Analysis</button>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-lg-3 col-md-6 col-sm-12">
-                                    <div class="card report-card">
-                                        <div class="card-body">
-                                            <img src="../images/reports/5.jpg" alt="Stock Report"
-                                                class="card-img-top stock-img img-fluid">
-                                            <div class="card-title text-center mt-3">
-                                                11217 Reports
-                                            </div>
-                                            <div class="d-flex justify-content-center">
-                                                <button class="btn btn-outline-primary btn-sm w-100 px-3">Daily
-                                                    Analysis</button>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-lg-3 col-md-6 col-sm-12">
-                                    <div class="card report-card">
-                                        <div class="card-body">
-                                            <img src="../images/reports/7.jpg" alt="Stock Report"
-                                                class="card-img-top stock-img img-fluid">
-                                            <div class="card-title text-center mt-3">
-                                                11217 Reports
-                                            </div>
-                                            <div class="d-flex justify-content-center">
-                                                <button class="btn btn-outline-primary btn-sm w-100 px-3">Daily
-                                                    Analysis</button>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-lg-3 col-md-6 col-sm-12">
-                                    <div class="card report-card">
-                                        <div class="card-body">
-                                            <img src="../images/reports/8.jpg" alt="Stock Report"
-                                                class="card-img-top stock-img img-fluid">
-                                            <div class="card-title text-center mt-3">
-                                                11217 Reports
-                                            </div>
-                                            <div class="d-flex justify-content-center">
-                                                <button class="btn btn-outline-primary btn-sm w-100 px-3">Daily
-                                                    Analysis</button>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-lg-3 col-md-6 col-sm-12">
-                                    <div class="card report-card">
-                                        <div class="card-body">
-                                            <img src="../images/reports/7.jpg" alt="Stock Report"
-                                                class="card-img-top stock-img img-fluid">
-                                            <div class="card-title text-center mt-3">
-                                                11217 Reports
-                                            </div>
-                                            <div class="d-flex justify-content-center">
-                                                <button class="btn btn-outline-primary btn-sm w-100 px-3">Daily
-                                                    Analysis</button>
-                                            </div>
-                                        </div>
-                                    </div>
+
+
                                 </div>
                             </div>
                         </div>

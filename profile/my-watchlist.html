@@ -1,0 +1,664 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Veye Homepage</title>
+
+    <!-- bootstrap css files -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" rel="stylesheet">
+
+    <!-- custom css -->
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/media.css">
+</head>
+
+<body>
+
+    <!-- header -->
+    <header class="container-fluid header">
+        <nav class="navbar navbar-expand-lg navbar-light bg-purple veye-top-navbar">
+            <div class="container">
+                <a class="navbar-brand" href="/">
+                    <img src="../images/static/veye-white.png" alt="Veye Logo" class="logo img-fluid">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll"
+                    aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse ms-auto justify-content-around" id="navbarSupportedContent">
+                    <form class="d-flex flex-grow-1 search-form">
+                        <input class="form-control me-2" type="search" placeholder="Search here..." aria-label="Search">
+
+                    </form>
+                    <div class="navbar-nav mb-2 mb-lg-0">
+                        <button class="btn btn-login-btn ms-3" type="button" data-bs-toggle="modal"
+                            data-bs-target="#loginModal">Login</button>
+                        <button class="btn btn-notification btn-icon ms-3" type="button" data-bs-toggle="modal"
+                            data-bs-target="#signupModal">
+                            <i class="bi bi-bell-fill"></i>
+                        </button>
+                    </div>
+
+                </div>
+            </div>
+        </nav>
+        <nav class="navbar navbar-expand-lg container-fluid bg-blue veye-bottom-navbar">
+            <div class="container">
+                <div class="collapse navbar-collapse" id="navbarScroll">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0 navbar-nav-scroll">
+                        <li class="list-inline-item active"><a href="/">Home</a></li>
+
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Sector Specific
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Airlines</a></li>
+                                <li><a class="dropdown-item" href="#">Financial</a></li>
+                                <li><a class="dropdown-item" href="#">Healthcare</a></li>
+                                <li><a class="dropdown-item" href="#">Insurance</a></li>
+                                <li><a class="dropdown-item" href="#">Material</a></li>
+                                <li><a class="dropdown-item" href="#">Mining</a></li>
+                                <li><a class="dropdown-item" href="#">Retail</a></li>
+                                <li><a class="dropdown-item" href="#">Services</a></li>
+                                <li><a class="dropdown-item" href="#">Technology</a></li>
+                            </ul>
+                        </li>
+
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Opportunity Stock
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Blue Chip</a></li>
+                                <li><a class="dropdown-item" href="#">Mid Chip</a></li>
+
+                                <li><a class="dropdown-item" href="#">Small Cap</a></li>
+                            </ul>
+                        </li>
+
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Stock Advisory
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Daily Analysis</a></li>
+                                <li><a class="dropdown-item" href="#">Stock of the Week Report</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            </ul>
+                        </li>
+
+                        <li class="list-inline-item"><a href="/contact">Stock Screeners</a></li>
+                        <li class="list-inline-item"><a href="/contact">Retirement</a></li>
+                        <li class="list-inline-item"><a href="/contact">Editorial</a></li>
+                        <li class="list-inline-item"><a href="/contact">About Us</a></li>
+
+                    </ul>
+
+                </div>
+
+            </div>
+        </nav>
+    </header>
+
+
+    <!-- main content -->
+    <main class="container-fluid user-dashboard mt-5 mb-5">
+        <div class="container">
+
+
+            <div class="row mx-2 gx-4 ms-0">
+                <div class="col-lg-3 col-md-12 ps-0">
+
+
+                    <!-- Mobile Toggle Button -->
+                    <button class="btn btn-toggler menu-toggle d-md-none mb-4 mt-0" type="button"
+                        aria-label="Open sidebar">
+                        <i class="bi bi-list"></i>
+                    </button>
+
+
+                    <!-- Sidebar Card -->
+                    <div class="main-sidebar pt-0 ps-0" id="sidebar">
+                        <div class="card">
+
+                            <div class="card-body px-4">
+                                <h5 class="card-title text-center text-uppercase mt-3">My Dashboard</h5>
+
+                                <div class="d-flex">
+                                    <!-- Sidebar -->
+                                    <div class="sidebar p-3">
+                                        <ul class="nav flex-column">
+                                            <li class="nav-item">
+                                                <a href="/profile/dashboard.html" class="nav-link">
+                                                    <i class="bi bi-house-door"></i>
+                                                    Dashboard
+                                                </a>
+                                            </li>
+
+                                            <li class="nav-item">
+                                                <a href="#reportsMenu"
+                                                    class="nav-link d-flex justify-content-between align-items-center"
+                                                    data-bs-toggle="collapse" role="button" aria-expanded="false">
+
+                                                    <span>
+                                                        <i class="bi bi-file-earmark-text"></i>
+                                                        My Reports
+                                                    </span>
+                                                    <i class="bi bi-chevron-right toggler-icon"></i>
+                                                </a>
+
+                                                <div class="collapse submenu" id="reportsMenu">
+                                                    <ul class="nav flex-column">
+                                                        <li class="nav-item">
+                                                            <a href="/profile/portfolio/report1" class="nav-link">Daily
+                                                                Analysis</a>
+                                                        </li>
+                                                        <li class="nav-item">
+                                                            <a href="/profile/portfolio/report2" class="nav-link">Master
+                                                                Of Growth Report</a>
+                                                        </li>
+                                                        <li class="nav-item">
+                                                            <a href="/profile/portfolio/report3" class="nav-link">Penny
+                                                                Stocks Report</a>
+                                                        </li>
+                                                        <li class="nav-item">
+                                                            <a href="/profile/portfolio/report4" class="nav-link">Hot
+                                                                Sector Report</a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+
+                                            </li>
+
+                                            <li class="nav-item">
+                                                <a href="/profile/my-watchlist.html" class="nav-link active">
+                                                    <i class="bi bi-card-checklist"></i>
+                                                    My Watchlist
+                                                </a>
+                                            </li>
+
+                                            <li class="nav-item">
+                                                <a href="/profile/buy-recommendation.html" class="nav-link">
+                                                    <i class="bi bi-arrow-down-left-circle"></i>
+                                                    Latest Buy Recommendation
+                                                </a>
+                                            </li>
+
+                                            <li class="nav-item">
+                                                <a href="/profile/sell-recommendation.html" class="nav-link">
+                                                    <i class="bi bi-arrow-up-right-circle"></i>
+                                                    Latest Sell Recommendation
+                                                </a>
+                                            </li>
+
+                                            <li class="nav-item">
+                                                <a href="/profile/my-email.html" class="nav-link">
+                                                    <i class="bi bi-envelope"></i>
+                                                    My Email
+                                                </a>
+                                            </li>
+
+                                            <li class="nav-item">
+                                                <a href="/profile/my-password.html" class="nav-link">
+                                                    <i class="bi bi-shield-lock"></i>
+                                                    My Password
+                                                </a>
+                                            </li>
+
+                                            <li class="nav-item">
+                                                <a href="/profile/my-subscription.html" class="nav-link">
+                                                    <i class="bi bi-receipt"></i>
+                                                    My Subscription
+                                                </a>
+                                            </li>
+
+                                            <li class="nav-item">
+                                                <a href="/profile/my-invoice.html" class="nav-link">
+                                                    <i class="bi bi-file-pdf"></i>
+                                                    My Invoice
+                                                </a>
+                                            </li>
+
+                                            <hr>
+                                            <li class="nav-item">
+                                                <a href="/profile/logout" class="nav-link text-danger fw-bold">
+                                                    <i class="bi bi-box-arrow-right text-danger fw-bold"></i>
+                                                    Logout
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+
+                                </div>
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
+
+                <!-- Dark overlay for mobile -->
+                <div class="overlay" id="sidebarOverlay"></div>
+
+                <div class="col-lg-9 col-md-12 user-dashboard-content">
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="search-bar">
+                                <input type="text" class="form-control input-box" placeholder="Search reports..."
+                                    onfocus="setFocus(true)" onblur="setFocus(false)">
+                                <i class="fas fa-filter"></i>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="row welcome-box my-3 mx-1">
+                        <div class="col-md-9 col-sm-12">
+                            <div class="hello-container">
+                                <h2 class="hello-text">Hello, <span class="user-name">Brijesh</span></h2>
+                                <h4 class="welcome-back-text">Welcome back to VEYE</h4>
+                                <button class="btn btn-black mt-3 px-4" type="button">
+                                    Get Your Report Now
+                                    <i class="bi bi-arrow-right-short"></i>
+                                </button>
+                            </div>
+
+                        </div>
+                        <div class="col-md-3 col-sm-12 d-flex justify-content-center align-items-center">
+                            <div class="user-avatar-section">
+                                <div class="user-avatar-border">
+                                    <div class="user-avatar">
+                                        BR
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row mt-4 wishlist-section">
+                        <div class="col-12">
+
+                            <div class="card mb-3">
+                                <div class="card-body">
+                                    <!-- Watchlist Tabs -->
+                                    <ul class="nav nav-tabs mb-3" id="watchlistTabs">
+
+                                        <li class="nav-item">
+                                            <div class="d-flex justify-content-between align-items-center br-tabs">
+                                                <a class="nav-link active"
+                                                    data-id="{{ $list->id }}" href="#">
+                                                    list A
+                                                </a>
+                                                <button class="btn btn-outline-danger btn-sm">
+                                                    <i class="bi bi-trash"></i>
+                                                </button>
+                                            </div>
+
+                                        </li>
+                                        &nbsp; &nbsp;
+                                        <li class="nav-item">
+                                            <div class="d-flex justify-content-between align-items-center br-tabs">
+                                                <a class="nav-link"
+                                                    data-id="{{ $list->id }}" href="#">
+                                                    list B
+                                                </a>
+                                                <button class="btn btn-outline-danger btn-sm">
+                                                    <i class="bi bi-trash"></i>
+                                                </button>
+                                            </div>
+
+                                        </li>
+
+                                        <li class="nav-item ms-2">
+                                            <button class="btn btn-sm btn-dark">+ Add
+                                                Watchlist</button>
+                                        </li>
+                                    </ul>
+
+                                    <!-- Expandable Form to Add Stock -->
+                                    <div class="accordion mb-3" id="addStockAccordion">
+                                        <div class="accordion-item">
+                                            <h2 class="accordion-header" id="headingOne">
+                                                <button class="accordion-button collapsed" type="button"
+                                                    data-bs-toggle="collapse" data-bs-target="#collapseOne"
+                                                    aria-expanded="false" aria-controls="collapseOne">
+                                                    Add Stock/Company
+                                                </button>
+                                            </h2>
+                                            <div id="collapseOne" class="accordion-collapse collapse"
+                                                aria-labelledby="headingOne" data-bs-parent="#addStockAccordion">
+                                                <div class="accordion-body">
+                                                    <form id="addStockForm">
+                                                        <input type="hidden" name="watchlist_id" id="watchlist_id"
+                                                            value="">
+                                                        <div class="row g-2">
+                                                            <div class="col-md-3">
+                                                                <input type="text" name="symbol"
+                                                                    class="form-control search-company-name"
+                                                                    placeholder="Enter company code">
+                                                            </div>
+                                                            <div class="col-md-2">
+                                                                <input type="number" name="buy_quantity"
+                                                                    class="form-control"
+                                                                    placeholder="Enter Buy Quantity">
+                                                            </div>
+                                                            <div class="col-md-2">
+                                                                <input type="text" name="buy_price" class="form-control"
+                                                                    placeholder="Enter Buy Price">
+                                                            </div>
+                                                            <div class="col-md-3">
+                                                                <input type="date" name="buy_date" class="form-control"
+                                                                    id="datepickerss" placeholder="Enter Buy Date">
+                                                            </div>
+                                                            <div class="col-md-2">
+                                                                <button type="submit"
+                                                                    class="btn btn-success w-100">Add</button>
+                                                            </div>
+                                                        </div>
+                                                    </form>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+
+                            <div class="card veye-table-card px-3 py-4">
+                                <div class="card-body">
+                                    <div class="table-header d-flex justify-content-between align-items-center mb-3">
+                                        <h2 class="table-title pt-0">My Wishlist - list A</h2>
+                                        <div class="input-box">
+                                            <input type="text" class="form-control" placeholder="Search by Company Name"
+                                                name="key" onfocus="setFocus(true)" onblur="setFocus(false)">
+                                            <i class="bi bi-search"></i>
+                                        </div>
+
+                                    </div>
+                                    <div class="table-responsive">
+                                        <table class="main-table">
+                                            <thead>
+                                                <tr>
+                                                    <th>Company</th>
+                                                    <th>Buy Price</th>
+                                                    <th>Buy Date</th>
+                                                    <th>Quantity</th>
+                                                    <th>Current Price</th>
+                                                    <th>Gain / Loss %</th>
+                                                    <th>Action</th>
+                                                </tr>
+                                            </thead>
+
+                                            <tbody>
+                                                <tr>
+                                                    <td>Company A</td>
+                                                    <td>$10.00</td>
+                                                    <td>01 Jan 2023</td>
+                                                    <td>5</td>
+                                                    <td>$12.00</td>
+                                                    <td>20%</td>
+                                                    <td>
+                                                        <button class="btn btn-outline-danger btn-sm">
+                                                            <i class="bi bi-trash"></i>
+                                                        </button>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Company B</td>
+                                                    <td>$15.00</td>
+                                                    <td>15 Jan 2023</td>
+                                                    <td>50</td>
+                                                    <td>$14.00</td>
+                                                    <td>-6.67%</td>
+                                                    <td>
+                                                        <button class="btn btn-outline-danger btn-sm">
+                                                            <i class="bi bi-trash"></i>
+                                                        </button>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Company C</td>
+                                                    <td>$8.00</td>
+                                                    <td>20 Jan 2023</td>
+                                                    <td>75</td>
+                                                    <td>$10.00</td>
+                                                    <td>25%</td>
+                                                    <td>
+                                                        <button class="btn btn-outline-danger btn-sm">
+                                                            <i class="bi bi-trash"></i>
+                                                        </button>
+                                                    </td>
+                                                </tr>
+                                                <!-- Add more rows as needed -->
+                                            </tbody>
+                                        </table>
+                                    </div>
+
+                                    <div class="row veye-pagination mt-4">
+                                        <div class="col-12 d-flex justify-content-between align-items-center">
+                                            <div class="col-3 d-flex justify-content-start align-items-center">
+                                                <span class="pagination-info my-auto me-3">Showing 1 to 3 of 3
+                                                    entries</span>
+
+                                                <div class="pagination-show-entries">
+                                                    <select class="form-select" aria-label="Show entries"
+                                                        name="entries">
+                                                        <option value="10">10</option>
+                                                        <option value="20">20</option>
+                                                        <option value="30">30</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                            <nav aria-label="Page navigation" class="pagination-nav">
+                                                <ul class="pagination">
+                                                    <li class="page-item">
+                                                        <a class="page-link link disabled" href="#" tabindex="-1"
+                                                            aria-disabled="true">Previous</a>
+                                                    </li>
+                                                    <li class="page-item"><a class="page-link active" href="#">1</a>
+                                                    </li>
+                                                    <li class="page-item"><a class="page-link" href="#">2</a></li>
+                                                    <li class="page-item"><a class="page-link" href="#">3</a></li>
+                                                    <li class="page-item">
+                                                        <a class="page-link link" href="#">Next</a>
+                                                    </li>
+                                                </ul>
+                                            </nav>
+
+                                        </div>
+                                    </div>
+
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </main>
+
+
+
+    <footer class="veye-footer mt-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 text-start d-flex align-items-center mt-4 footer-top">
+                    <img src="../images/static/veye-white.png" alt="Veye Logo" class="footer-logo mb-3">
+                    <p class="disclaimer ms-5">
+                        <strong>Disclaimer:</strong> Veye Pty Ltd only provides general, and not personalised
+                        financial advice, and has not taken your personal circumstances into account. Veye Pty Ltd
+                        operates under AFSL 523157. For more information please see our Financial Services
+                        Guide. Please remember that investments can go up and down. Any past performance shown is
+                        not an indication of Future Returns. Commission and other costs charged by executing broker
+                        are not considered when calculating past performance. We request our readers not to
+                        interpret our reports as direct recommendations. Veye Pty Ltd does not guarantee the
+                        performance of, or returns on any investment.
+                    </p>
+                </div>
+            </div>
+
+            <div class="row footer-bottom mt-4 text-start footer-middle">
+                <div class="col-lg-3 col-md-6 col-sm-12">
+                    <h4 class="about-veye footer-heading">About Veye</h4>
+                    <p class="footer-desc">Veye is a leading independent equities research firm dedicated to helping
+                        its clients improve their investment results through unbiased and precise recommendations
+                        around buying, selling or holding stocks.</p>
+                </div>
+                <div class="col-lg-6 col-sm-12">
+                    <div class="row useful-links">
+                        <div class="col-lg-4 col-sm-6">
+                            <h4 class="footer-heading">Quick Links</h4>
+                            <ul class="list-unstyled">
+                                <li><a href="#">Daily Analysis</a></li>
+                                <li><a href="#">Dividend Investor Report</a></li>
+                                <li><a href="#">Master Of Growth Report</a></li>
+                                <li><a href="#">Penny Stock Report</a></li>
+                                <li><a href="#">Hot Sector Report</a></li>
+                            </ul>
+                        </div>
+
+                        <div class="col-lg-4 col-sm-6">
+                            <h4 class="footer-heading">Important Links</h4>
+                            <ul class="list-unstyled">
+                                <li><a href="#">Privacy Policy</a></li>
+                                <li><a href="#">Terms & Conditions</a></li>
+                                <li><a href="#">Free Trial - Terms Of Use</a></li>
+                                <li><a href="#">Financial Services Guide</a></li>
+                                <li><a href="#">About Us</a></li>
+                                <li><a href="#">Past Recommendations</a></li>
+                            </ul>
+                        </div>
+
+                        <div class="col-lg-4 col-sm-12">
+                            <h4 class="footer-heading follow-us-on">Follow Us On</h4>
+                            <ul class="list-unstyled">
+                                <li><a href="#"><i class="bi bi-geo-alt"></i> Veye Pty Ltd Level 21, 207 Kent
+                                        Street, Sydney, NSW, 2000</a></li>
+                                <li><a href="#"><i class="bi bi-envelope"></i> info@veye.com.au</a></li>
+                                <li><a href="#"><i class="bi bi-telephone"></i> (02) 9052 4957</a></li>
+                            </ul>
+
+                            <div class="footer-heading social-icons mt-3">
+                                <a href="#" class="me-3"><i class="bi bi-facebook"></i></a>
+                                <a href="#" class="me-3"><i class="bi bi-twitter"></i></a>
+                                <a href="#" class="me-3"><i class="bi bi-youtube"></i></a>
+                                <a href="#"><i class="bi bi-linkedin"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-sm-12">
+                    <h4 class="stay-updated footer-heading">Stay Updated</h4>
+                    <p class="desclaimer-desc">By providing your details, you agree to Veye’s Terms &
+                        Conditions and Privacy Policy and to receive marketing offers by email, text message or
+                        phone call from us or our agents until you opt out.</p>
+
+                    <div class="certifications">
+                        <img src="../images/static/cert1.png" alt="AFSL Certification" class="certification-img">
+                        <img src="../images/static/cert2.png" alt="ACNC Certification" class="certification-img">
+                        <img src="../images/static/cert3.png" alt="ASIC Certification" class="certification-img">
+                    </div>
+                </div>
+
+            </div>
+
+
+        </div>
+        <hr class="container-fluid mt-4 mb-3" />
+        <div class="row footer-last-line mt-4">
+            <div class="col-12 d-flex justify-content-evenly text-center">
+                <p class="mb-0">Copyrights © 2025 Veye Pty Ltd. All rights reserved</p>
+                <p class="mb-0">ACN: 623 120 865 | ABN: 58 623 120 865 | AFSL: 523157</p>
+                <p class="mb-0">Designed with ❤️ by <a href="https://www.veye.com.au" target="_blank">Veye</a></p>
+            </div>
+        </div>
+
+    </footer>
+
+    <script>
+        function setFocus(on) {
+            var element = document.activeElement;
+            if (on) {
+                setTimeout(function () {
+                    element.parentNode.classList.add("focus");
+                });
+            } else {
+                let box = document.querySelector(".input-box");
+                box.classList.remove("focus");
+                $("input").each(function () {
+                    var $input = $(this);
+                    var $parent = $input.closest(".input-box");
+                    if ($input.val()) $parent.addClass("focus");
+                    else $parent.removeClass("focus");
+                });
+            }
+        }
+
+    </script>
+
+
+    <!-- bootstrap js files -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+        integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+        integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+        crossorigin="anonymous"></script>
+
+    <!-- library files -->
+    <script src="https://code.jquery.com/jquery-3.7.1.js"
+        integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+
+    <!-- custom scripts -->
+    <script src="../js/script.js"></script>
+
+
+    <!-- Sidebar Toggle JS -->
+    <script>
+        const toggleBtn = document.querySelector('.menu-toggle');
+        const sidebar = document.getElementById('sidebar');
+        const overlay = document.getElementById('sidebarOverlay');
+        const navLinks = sidebar.querySelectorAll('.nav-link');
+
+        toggleBtn.addEventListener('click', () => {
+            sidebar.classList.add('show');
+            overlay.classList.add('show');
+        });
+
+        overlay.addEventListener('click', () => {
+            sidebar.classList.remove('show');
+            overlay.classList.remove('show');
+        });
+
+        navLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                // If the link is a submenu toggle, do NOT close sidebar
+                if (link.getAttribute('data-bs-toggle') === 'collapse') {
+                    // Just expand/collapse submenu, don't close sidebar
+                    return;
+                }
+
+                // Only close sidebar if the clicked link is NOT inside a submenu
+                if (window.innerWidth < 768 && !link.closest('.submenu')) {
+                    sidebar.classList.remove('show');
+                    overlay.classList.remove('show');
+                }
+            });
+        });
+    </script>
+</body>
+
+</html>
