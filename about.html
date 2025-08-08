@@ -11,6 +11,11 @@
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" rel="stylesheet">
 
+    <!-- Carousel CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+        integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
     <!-- custom css -->
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/media.css">
@@ -114,7 +119,7 @@
 
     <!-- main content -->
     <main class="container-fluid about-page">
-        <div class="container px-5">
+        <div class="container px-lg-5">
             <div class="breadcrumb row mt-4">
                 <div class="col-12 ps-0">
                     <nav aria-label="breadcrumb ps-0">
@@ -130,7 +135,7 @@
                     <h1 class="about-heading">About Us</h1>
 
                     <div class="row about-section mt-5">
-                        <div class="col-4 me-auto">
+                        <div class="col-lg-4 col-sm-12 me-auto">
                             <div class="card h-100">
                                 <div class="card-body">
                                     <img src="images/about/about1.png" alt="About Us Image"
@@ -139,8 +144,9 @@
                             </div>
 
                         </div>
-                        <div class="col-6 me-auto">
-                            <h2 class="about-us-title mb-4">Stocks Research and Recommendations - <span class="highlight">Buy, Sell and Hold.</span></h2>
+                        <div class="col-lg-6 col-sm-12 me-auto">
+                            <h2 class="about-us-title mb-4">Stocks Research and Recommendations - <span
+                                    class="highlight">Buy, Sell and Hold.</span></h2>
                             <p class="about-us-description">Veye is a leading independent equities research firm
                                 dedicated to helping its clients improve their investment results through unbiased and
                                 precise recommendations around buying, selling or holding stocks. Our sole purpose is to
@@ -154,11 +160,19 @@
                     <div class="row explore-section mt-5 pt-5">
                         <div class="col-12 mt-4">
                             <h2 class="about-us-title text-center mb-5">Explore <span class="highlight">Us</span></h2>
-                            <div class="row gx-5 mt-4">
-                                <div class="col-4">
+                            <div class="row gx-5 gy-3 mt-4">
+                                <div class="col-lg-4 col-sm-12">
                                     <div class="card h-100">
                                         <div class="card-body py-5 px-4">
-                                            <i class="bi bi-buildings-fill"></i>
+                                            <div class="d-flex justify-content-center align-items-center mb-3">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="37" height="36"
+                                                    viewBox="0 0 37 36" fill="none">
+                                                    <path
+                                                        d="M14 0H8C6.01088 0 4.10322 0.790176 2.6967 2.1967C1.29018 3.60322 0.5 5.51088 0.5 7.5L0.5 28.5C0.5 29.4849 0.693993 30.4602 1.0709 31.3701C1.44781 32.2801 2.00026 33.1069 2.6967 33.8033C4.10322 35.2098 6.01088 36 8 36H21.5V7.5C21.5 6.51509 21.306 5.53982 20.9291 4.62987C20.5522 3.71993 19.9997 2.89314 19.3033 2.1967C18.6069 1.50026 17.7801 0.947814 16.8701 0.570903C15.9602 0.193993 14.9849 0 14 0ZM8 28.5H6.5C6.10218 28.5 5.72064 28.342 5.43934 28.0607C5.15804 27.7794 5 27.3978 5 27C5 26.6022 5.15804 26.2206 5.43934 25.9393C5.72064 25.658 6.10218 25.5 6.5 25.5H8C8.39782 25.5 8.77936 25.658 9.06066 25.9393C9.34196 26.2206 9.5 26.6022 9.5 27C9.5 27.3978 9.34196 27.7794 9.06066 28.0607C8.77936 28.342 8.39782 28.5 8 28.5ZM8 22.5H6.5C6.10218 22.5 5.72064 22.342 5.43934 22.0607C5.15804 21.7794 5 21.3978 5 21C5 20.6022 5.15804 20.2206 5.43934 19.9393C5.72064 19.658 6.10218 19.5 6.5 19.5H8C8.39782 19.5 8.77936 19.658 9.06066 19.9393C9.34196 20.2206 9.5 20.6022 9.5 21C9.5 21.3978 9.34196 21.7794 9.06066 22.0607C8.77936 22.342 8.39782 22.5 8 22.5ZM8 16.5H6.5C6.10218 16.5 5.72064 16.342 5.43934 16.0607C5.15804 15.7794 5 15.3978 5 15C5 14.6022 5.15804 14.2206 5.43934 13.9393C5.72064 13.658 6.10218 13.5 6.5 13.5H8C8.39782 13.5 8.77936 13.658 9.06066 13.9393C9.34196 14.2206 9.5 14.6022 9.5 15C9.5 15.3978 9.34196 15.7794 9.06066 16.0607C8.77936 16.342 8.39782 16.5 8 16.5ZM8 10.5H6.5C6.10218 10.5 5.72064 10.342 5.43934 10.0607C5.15804 9.77936 5 9.39782 5 9C5 8.60218 5.15804 8.22064 5.43934 7.93934C5.72064 7.65804 6.10218 7.5 6.5 7.5H8C8.39782 7.5 8.77936 7.65804 9.06066 7.93934C9.34196 8.22064 9.5 8.60218 9.5 9C9.5 9.39782 9.34196 9.77936 9.06066 10.0607C8.77936 10.342 8.39782 10.5 8 10.5ZM15.5 28.5H14C13.6022 28.5 13.2206 28.342 12.9393 28.0607C12.658 27.7794 12.5 27.3978 12.5 27C12.5 26.6022 12.658 26.2206 12.9393 25.9393C13.2206 25.658 13.6022 25.5 14 25.5H15.5C15.8978 25.5 16.2794 25.658 16.5607 25.9393C16.842 26.2206 17 26.6022 17 27C17 27.3978 16.842 27.7794 16.5607 28.0607C16.2794 28.342 15.8978 28.5 15.5 28.5ZM15.5 22.5H14C13.6022 22.5 13.2206 22.342 12.9393 22.0607C12.658 21.7794 12.5 21.3978 12.5 21C12.5 20.6022 12.658 20.2206 12.9393 19.9393C13.2206 19.658 13.6022 19.5 14 19.5H15.5C15.8978 19.5 16.2794 19.658 16.5607 19.9393C16.842 20.2206 17 20.6022 17 21C17 21.3978 16.842 21.7794 16.5607 22.0607C16.2794 22.342 15.8978 22.5 15.5 22.5ZM15.5 16.5H14C13.6022 16.5 13.2206 16.342 12.9393 16.0607C12.658 15.7794 12.5 15.3978 12.5 15C12.5 14.6022 12.658 14.2206 12.9393 13.9393C13.2206 13.658 13.6022 13.5 14 13.5H15.5C15.8978 13.5 16.2794 13.658 16.5607 13.9393C16.842 14.2206 17 14.6022 17 15C17 15.3978 16.842 15.7794 16.5607 16.0607C16.2794 16.342 15.8978 16.5 15.5 16.5ZM15.5 10.5H14C13.6022 10.5 13.2206 10.342 12.9393 10.0607C12.658 9.77936 12.5 9.39782 12.5 9C12.5 8.60218 12.658 8.22064 12.9393 7.93934C13.2206 7.65804 13.6022 7.5 14 7.5H15.5C15.8978 7.5 16.2794 7.65804 16.5607 7.93934C16.842 8.22064 17 8.60218 17 9C17 9.39782 16.842 9.77936 16.5607 10.0607C16.2794 10.342 15.8978 10.5 15.5 10.5ZM29 7.5H24.5V36H29C30.9884 35.9976 32.8947 35.2067 34.3007 33.8007C35.7067 32.3947 36.4976 30.4884 36.5 28.5V15C36.4976 13.0116 35.7067 11.1053 34.3007 9.69933C32.8947 8.29332 30.9884 7.50238 29 7.5ZM30.5 28.5C30.2033 28.5 29.9133 28.412 29.6666 28.2472C29.42 28.0824 29.2277 27.8481 29.1142 27.574C29.0006 27.2999 28.9709 26.9983 29.0288 26.7074C29.0867 26.4164 29.2296 26.1491 29.4393 25.9393C29.6491 25.7296 29.9164 25.5867 30.2074 25.5288C30.4983 25.4709 30.7999 25.5006 31.074 25.6142C31.3481 25.7277 31.5824 25.92 31.7472 26.1666C31.912 26.4133 32 26.7033 32 27C32 27.3978 31.842 27.7794 31.5607 28.0607C31.2794 28.342 30.8978 28.5 30.5 28.5ZM30.5 22.5C30.2033 22.5 29.9133 22.412 29.6666 22.2472C29.42 22.0824 29.2277 21.8481 29.1142 21.574C29.0006 21.2999 28.9709 20.9983 29.0288 20.7074C29.0867 20.4164 29.2296 20.1491 29.4393 19.9393C29.6491 19.7296 29.9164 19.5867 30.2074 19.5288C30.4983 19.4709 30.7999 19.5006 31.074 19.6142C31.3481 19.7277 31.5824 19.92 31.7472 20.1666C31.912 20.4133 32 20.7033 32 21C32 21.3978 31.842 21.7794 31.5607 22.0607C31.2794 22.342 30.8978 22.5 30.5 22.5ZM30.5 16.5C30.2033 16.5 29.9133 16.412 29.6666 16.2472C29.42 16.0824 29.2277 15.8481 29.1142 15.574C29.0006 15.2999 28.9709 14.9983 29.0288 14.7074C29.0867 14.4164 29.2296 14.1491 29.4393 13.9393C29.6491 13.7296 29.9164 13.5867 30.2074 13.5288C30.4983 13.4709 30.7999 13.5006 31.074 13.6142C31.3481 13.7277 31.5824 13.92 31.7472 14.1666C31.912 14.4133 32 14.7033 32 15C32 15.3978 31.842 15.7794 31.5607 16.0607C31.2794 16.342 30.8978 16.5 30.5 16.5Z"
+                                                        fill="#4854EB" />
+                                                </svg>
+                                            </div>
+
                                             <h5 class="card-title text-center">Our Mission</h5>
                                             <p class="card-text">Stock Market decisions in today’s volatile business
                                                 environment are complex and governed by various aspects. Our mission is
@@ -167,10 +181,26 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="col-4">
+                                <div class="col-lg-4 col-sm-12">
                                     <div class="card card-active h-100">
                                         <div class="card-body py-5 px-4">
-                                            <i class="bi bi-graph-up-arrow card-icon"></i>
+                                            <div class="d-flex justify-content-center align-items-center mb-3">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="37" height="36"
+                                                    viewBox="0 0 37 36" fill="none">
+                                                    <g clip-path="url(#clip0_1387_4200)">
+                                                        <path
+                                                            d="M33.5021 17.25C33.5021 16.8375 33.1661 16.5 32.7521 16.5H32.0021C31.1741 16.5 30.5021 15.8295 30.5021 15C30.5021 14.1705 31.1741 13.5 32.0021 13.5C32.4161 13.5 32.7521 13.1625 32.7521 12.75C32.7521 12.3375 32.4161 12 32.0021 12H29.0021C28.1741 12 27.5021 11.3295 27.5021 10.5C27.5021 9.67049 28.1741 8.99999 29.0021 8.99999H32.0021C34.0691 8.99999 35.7521 10.6815 35.7521 12.75C35.7521 13.386 35.5916 13.986 35.3111 14.5125C36.0431 15.1965 36.5021 16.17 36.5021 17.25C36.5021 19.3185 34.8191 21 32.7521 21H29.0021C28.1741 21 27.5021 20.3295 27.5021 19.5C27.5021 18.6705 28.1741 18 29.0021 18H32.7521C33.1661 18 33.5021 17.6625 33.5021 17.25ZM3.13764 11.4825C2.65164 11.745 2.19864 11.9895 1.82364 12.2175C0.787143 12.849 0.296644 13.9065 0.578644 14.91C0.848643 15.876 1.76664 16.5 2.91414 16.5H8.00214C8.83014 16.5 9.50214 15.8295 9.50214 15C9.50214 14.1705 8.83014 13.5 8.00214 13.5H5.69514C7.60164 12.4125 9.50214 11.046 9.50214 8.99999C9.50214 6.51899 7.48314 4.49999 5.00214 4.49999C2.52114 4.49999 0.502144 6.51899 0.502144 8.99999C0.502144 9.82949 1.17414 10.5 2.00214 10.5C2.83014 10.5 3.50214 9.82949 3.50214 8.99999C3.50214 8.17049 4.17564 7.49999 5.00214 7.49999C5.82864 7.49999 6.50214 8.17199 6.50214 8.99999C6.50214 9.66599 3.97014 11.0325 3.13764 11.4825ZM16.5626 4.61999L17.0021 4.18049V10.5C17.0021 11.3295 17.6741 12 18.5021 12C19.3301 12 20.0021 11.3295 20.0021 10.5V2.16749C20.0021 1.28849 19.4771 0.50399 18.6656 0.16649C17.8526 -0.16951 16.9256 0.0134898 16.3046 0.63449L14.4416 2.49749C13.8551 3.08399 13.8551 4.03199 14.4416 4.61849C15.0281 5.20499 15.9776 5.20649 16.5626 4.61999ZM20.0021 15H17.0021C14.9306 15 13.2521 16.6785 13.2521 18.75V32.25C13.2521 34.3215 14.9306 36 17.0021 36H20.0021C22.0736 36 23.7521 34.3215 23.7521 32.25V18.75C23.7521 16.6785 22.0736 15 20.0021 15ZM32.7521 24H30.5021C28.4306 24 26.7521 25.6785 26.7521 27.75V32.25C26.7521 34.3215 28.4306 36 30.5021 36H32.7521C34.8236 36 36.5021 34.3215 36.5021 32.25V27.75C36.5021 25.6785 34.8236 24 32.7521 24ZM6.50214 19.5H4.25214C2.18064 19.5 0.502144 21.1785 0.502144 23.25V32.25C0.502144 34.3215 2.18064 36 4.25214 36H6.50214C8.57364 36 10.2521 34.3215 10.2521 32.25V23.25C10.2521 21.1785 8.57364 19.5 6.50214 19.5Z"
+                                                            fill="white" />
+                                                    </g>
+                                                    <defs>
+                                                        <clipPath id="clip0_1387_4200">
+                                                            <rect width="36" height="36" fill="white"
+                                                                transform="translate(0.5)" />
+                                                        </clipPath>
+                                                    </defs>
+                                                </svg>
+                                            </div>
+
                                             <h5 class="card-title text-center">Our Approach</h5>
                                             <p class="card-text">At Veye, we believe that the best market research comes
                                                 from a holistic approach that combines both qualitative and quantitative
@@ -180,10 +210,19 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="col-4">
+                                <div class="col-lg-4 col-sm-12">
                                     <div class="card h-100">
                                         <div class="card-body py-5 px-4">
-                                            <i class="bi bi-graph-up-arrow card-icon"></i>
+                                            <div class="d-flex justify-content-center mb-3">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35"
+                                                    viewBox="0 0 35 35" fill="none">
+                                                    <path
+                                                        d="M12.3333 22.6667V27.8333C12.3333 30.6868 10.0201 33 7.16667 33C4.3132 33 2 30.6868 2 27.8333C2 24.9799 4.3132 22.6667 7.16667 22.6667H12.3333ZM12.3333 22.6667H22.6667M12.3333 22.6667V12.3333M22.6667 22.6667V27.8333C22.6667 30.6868 24.9799 33 27.8333 33C30.6868 33 33 30.6868 33 27.8333C33 24.9799 30.6868 22.6667 27.8333 22.6667H22.6667ZM22.6667 22.6667V12.3333M22.6667 12.3333H12.3333M22.6667 12.3333V7.16667C22.6667 4.3132 24.9799 2 27.8333 2C30.6868 2 33 4.3132 33 7.16667C33 10.0201 30.6868 12.3333 27.8333 12.3333H22.6667ZM12.3333 12.3333V7.16667C12.3333 4.3132 10.0201 2 7.16667 2C4.3132 2 2 4.3132 2 7.16667C2 10.0201 4.3132 12.3333 7.16667 12.3333H12.3333Z"
+                                                        stroke="#4854EB" stroke-width="4" stroke-linecap="round"
+                                                        stroke-linejoin="round" />
+                                                </svg>
+                                            </div>
+
                                             <h5 class="card-title text-center">Values</h5>
                                             <p class="card-text">At Veye, we are committed to conducting research with
                                                 integrity, professionalism, and respect. We believe that our work should
@@ -197,8 +236,9 @@
                     </div>
 
                     <div class="row analysis-section mt-5 pt-5">
-                        <div class="col-6 mx-auto">
-                            <h2 class="about-us-title mb-4">Our Stock Analysis <span class="highlight">Methodology</span>
+                        <div class="col-lg-6 col-sm-12 mx-auto">
+                            <h2 class="about-us-title mb-4">Our Stock Analysis <span
+                                    class="highlight">Methodology</span>
                             </h2>
                             <p class="about-us-description">While our primary approach is geared towards long-term
                                 investing, we also recognize short-term profit opportunities when stocks reach their
@@ -206,7 +246,7 @@
                                 insights and recommendations to help investors make informed decisions.</p>
                         </div>
 
-                        <div class="col-4 mx-auto">
+                        <div class="col-lg-4 col-sm-12 mx-auto">
                             <div class="card h-100">
                                 <div class="card-body">
                                     <img src="images/about/about1.png" alt="About Us Image"
@@ -220,11 +260,25 @@
                         <div class="col-12 mb-4">
                             <h2 class="about-us-title text-center">What Our Clients Say <span>About Us</span></h2>
                         </div>
-                        <div class="row">
-                            <div class="col-3">
+                        <div class="row testimonials-carousel owl-carousel owl-theme" id="testimonials-carousel">
+                            <div class="col-12">
                                 <div class="card border-0 h-100">
                                     <div class="card-body">
-                                        <i class="bi bi-quote card-icon"></i>
+                                        <div class="d-flex justify-content-center mb-3">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30"
+                                                viewBox="0 0 30 30" fill="none">
+                                                <path
+                                                    d="M12.5 10C12.5 12.357 12.5 13.5355 11.7678 14.2677C11.0355 15 9.85703 15 7.5 15C5.14298 15 3.96446 15 3.23224 14.2677C2.5 13.5355 2.5 12.357 2.5 10C2.5 7.64298 2.5 6.46446 3.23224 5.73224C3.96446 5 5.14298 5 7.5 5C9.85703 5 11.0355 5 11.7678 5.73224C12.5 6.46446 12.5 7.64298 12.5 10Z"
+                                                    fill="#4854EB" stroke="#4854EB" stroke-width="1.5" />
+                                                <path d="M12.5 8.75V14.3526C12.5 19.3184 9.35536 23.5296 5 25"
+                                                    stroke="#4854EB" stroke-width="1.5" stroke-linecap="round" />
+                                                <path
+                                                    d="M27.5 10C27.5 12.357 27.5 13.5355 26.7677 14.2677C26.0355 15 24.857 15 22.5 15C20.143 15 18.9645 15 18.2323 14.2677C17.5 13.5355 17.5 12.357 17.5 10C17.5 7.64298 17.5 6.46446 18.2323 5.73224C18.9645 5 20.143 5 22.5 5C24.857 5 26.0355 5 26.7677 5.73224C27.5 6.46446 27.5 7.64298 27.5 10Z"
+                                                    fill="#4854EB" stroke="#4854EB" stroke-width="1.5" />
+                                                <path d="M27.5 8.75V14.3526C27.5 19.3184 24.3554 23.5296 20 25"
+                                                    stroke="#4854EB" stroke-width="1.5" stroke-linecap="round" />
+                                            </svg>
+                                        </div>
                                         <p class="card-text">Nobis voluptatem magni doloribus voluptate culpa dolor est
                                             neque</p>
 
@@ -232,10 +286,24 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-3">
+                            <div class="col-12">
                                 <div class="card border-0 h-100">
                                     <div class="card-body">
-                                        <i class="bi bi-quote card-icon"></i>
+                                        <div class="d-flex justify-content-center mb-3">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30"
+                                                viewBox="0 0 30 30" fill="none">
+                                                <path
+                                                    d="M12.5 10C12.5 12.357 12.5 13.5355 11.7678 14.2677C11.0355 15 9.85703 15 7.5 15C5.14298 15 3.96446 15 3.23224 14.2677C2.5 13.5355 2.5 12.357 2.5 10C2.5 7.64298 2.5 6.46446 3.23224 5.73224C3.96446 5 5.14298 5 7.5 5C9.85703 5 11.0355 5 11.7678 5.73224C12.5 6.46446 12.5 7.64298 12.5 10Z"
+                                                    fill="#4854EB" stroke="#4854EB" stroke-width="1.5" />
+                                                <path d="M12.5 8.75V14.3526C12.5 19.3184 9.35536 23.5296 5 25"
+                                                    stroke="#4854EB" stroke-width="1.5" stroke-linecap="round" />
+                                                <path
+                                                    d="M27.5 10C27.5 12.357 27.5 13.5355 26.7677 14.2677C26.0355 15 24.857 15 22.5 15C20.143 15 18.9645 15 18.2323 14.2677C17.5 13.5355 17.5 12.357 17.5 10C17.5 7.64298 17.5 6.46446 18.2323 5.73224C18.9645 5 20.143 5 22.5 5C24.857 5 26.0355 5 26.7677 5.73224C27.5 6.46446 27.5 7.64298 27.5 10Z"
+                                                    fill="#4854EB" stroke="#4854EB" stroke-width="1.5" />
+                                                <path d="M27.5 8.75V14.3526C27.5 19.3184 24.3554 23.5296 20 25"
+                                                    stroke="#4854EB" stroke-width="1.5" stroke-linecap="round" />
+                                            </svg>
+                                        </div>
                                         <p class="card-text">Nobis voluptatem magni doloribus voluptate culpa dolor est
                                             neque</p>
 
@@ -243,10 +311,24 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-3">
+                            <div class="col-12">
                                 <div class="card border-0 h-100">
                                     <div class="card-body">
-                                        <i class="bi bi-quote card-icon"></i>
+                                        <div class="d-flex justify-content-center mb-3">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30"
+                                                viewBox="0 0 30 30" fill="none">
+                                                <path
+                                                    d="M12.5 10C12.5 12.357 12.5 13.5355 11.7678 14.2677C11.0355 15 9.85703 15 7.5 15C5.14298 15 3.96446 15 3.23224 14.2677C2.5 13.5355 2.5 12.357 2.5 10C2.5 7.64298 2.5 6.46446 3.23224 5.73224C3.96446 5 5.14298 5 7.5 5C9.85703 5 11.0355 5 11.7678 5.73224C12.5 6.46446 12.5 7.64298 12.5 10Z"
+                                                    fill="#4854EB" stroke="#4854EB" stroke-width="1.5" />
+                                                <path d="M12.5 8.75V14.3526C12.5 19.3184 9.35536 23.5296 5 25"
+                                                    stroke="#4854EB" stroke-width="1.5" stroke-linecap="round" />
+                                                <path
+                                                    d="M27.5 10C27.5 12.357 27.5 13.5355 26.7677 14.2677C26.0355 15 24.857 15 22.5 15C20.143 15 18.9645 15 18.2323 14.2677C17.5 13.5355 17.5 12.357 17.5 10C17.5 7.64298 17.5 6.46446 18.2323 5.73224C18.9645 5 20.143 5 22.5 5C24.857 5 26.0355 5 26.7677 5.73224C27.5 6.46446 27.5 7.64298 27.5 10Z"
+                                                    fill="#4854EB" stroke="#4854EB" stroke-width="1.5" />
+                                                <path d="M27.5 8.75V14.3526C27.5 19.3184 24.3554 23.5296 20 25"
+                                                    stroke="#4854EB" stroke-width="1.5" stroke-linecap="round" />
+                                            </svg>
+                                        </div>
                                         <p class="card-text">Nobis voluptatem magni doloribus voluptate culpa dolor est
                                             neque</p>
 
@@ -254,10 +336,24 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-3">
+                            <div class="col-12">
                                 <div class="card border-0 h-100">
                                     <div class="card-body">
-                                        <i class="bi bi-quote card-icon"></i>
+                                        <div class="d-flex justify-content-center mb-3">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30"
+                                                viewBox="0 0 30 30" fill="none">
+                                                <path
+                                                    d="M12.5 10C12.5 12.357 12.5 13.5355 11.7678 14.2677C11.0355 15 9.85703 15 7.5 15C5.14298 15 3.96446 15 3.23224 14.2677C2.5 13.5355 2.5 12.357 2.5 10C2.5 7.64298 2.5 6.46446 3.23224 5.73224C3.96446 5 5.14298 5 7.5 5C9.85703 5 11.0355 5 11.7678 5.73224C12.5 6.46446 12.5 7.64298 12.5 10Z"
+                                                    fill="#4854EB" stroke="#4854EB" stroke-width="1.5" />
+                                                <path d="M12.5 8.75V14.3526C12.5 19.3184 9.35536 23.5296 5 25"
+                                                    stroke="#4854EB" stroke-width="1.5" stroke-linecap="round" />
+                                                <path
+                                                    d="M27.5 10C27.5 12.357 27.5 13.5355 26.7677 14.2677C26.0355 15 24.857 15 22.5 15C20.143 15 18.9645 15 18.2323 14.2677C17.5 13.5355 17.5 12.357 17.5 10C17.5 7.64298 17.5 6.46446 18.2323 5.73224C18.9645 5 20.143 5 22.5 5C24.857 5 26.0355 5 26.7677 5.73224C27.5 6.46446 27.5 7.64298 27.5 10Z"
+                                                    fill="#4854EB" stroke="#4854EB" stroke-width="1.5" />
+                                                <path d="M27.5 8.75V14.3526C27.5 19.3184 24.3554 23.5296 20 25"
+                                                    stroke="#4854EB" stroke-width="1.5" stroke-linecap="round" />
+                                            </svg>
+                                        </div>
                                         <p class="card-text">Nobis voluptatem magni doloribus voluptate culpa dolor est
                                             neque</p>
 
@@ -408,6 +504,50 @@
 
     <!-- custom scripts -->
     <script src="js/script.js"></script>
+
+    <!-- Carousel JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
+        integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <script>
+
+        $(document).ready(function () {
+            $('#testimonials-carousel').owlCarousel({
+                loop: true,
+                margin: 10,
+                nav: false,
+                autoplay: false,
+                autoplayTimeout: 3000,
+                autoplayHoverPause: true,
+                autoHeight: false,
+                items: 4,
+                navText: [
+                    "<i class='bi bi-arrow-left-short'></i>",
+                    "<i class='bi bi-arrow-right-short'></i>"
+                ],
+                dots: false,
+                responsiveClass: true,
+                responsive: {
+                    0: {
+                        items: 1
+                    },
+                    600: {
+                        items: 2
+                    },
+                    1000: {
+                        items: 3
+                    },
+                    1200: {
+                        items: 4
+                    }
+                }
+            });
+
+            
+        });
+
+    </script>
 </body>
 
 </html>

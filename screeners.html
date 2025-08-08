@@ -11,6 +11,11 @@
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" rel="stylesheet">
 
+    <!-- Carousel CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+        integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
     <!-- custom css -->
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/media.css">
@@ -113,39 +118,182 @@
 
 
     <!-- main content -->
-    <main class="container-fluid login-content">
-        <div class="container">
-            <div class="row justify-content-center mt-5">
-                <div class="col-lg-5 col-md-6 col-sm-12">
-                    <div class="card login-card">
-                        <div class="card-body">
-                            <h2 class="card-title text-center mb-4 mt-4">Reset Password</h2>
-                            <img src="images/static/veye-colorfull.png" alt="Veye Logo"
-                                class="img-fluid d-block mx-auto mb-4 card-logo">
+    <main class="container-fluid dividend-screener-page">
+        <div class="container px-5">
+            <div class="breadcrumb row mt-4">
+                <div class="col-12 ps-0">
+                    <nav aria-label="breadcrumb ps-0">
+                        <ol class="breadcrumb ps-0">
+                            <li class="breadcrumb-item"><a href="#">Home</a></li>
+                            <li class="breadcrumb-item active" aria-current="page">Dividend Stock Screener</li>
+                        </ol>
+                    </nav>
+                </div>
+            </div>
+            <div class="row mt-2">
 
-                            <h3 class="text-center mb-4 card-sub-title">Reset your password</h3>
-                            <form class="login-form mt-5">
+
+                <div class="col-12">
+                    <h1 class="page-title">Dividend Stock Screener - Find High Quality Dividend Stocks</h1>
+                    <p class="page-desc">Presented below is our research report for BUY and Sell recommendations.
+                        The report is for all closed recommendations. A closed recommendation is where a BUY
+                        recommendation was given on a particular stock followed by a subsequent SELL recommendation.
+                        The stock, hence, is no longer being held in the portfolio.</p>
+                </div>
+
+
+                <div class="col-4 screener-control mx-auto">
+                    <div class="card subscribe-item px-3 py-4">
+                        <div class="card-body">
+                            <form action="" class="screeners-form veye-form">
                                 <div class="mb-3 input-box">
-                                    <label for="email" class="form-label">Email address</label>
-                                    <input type="email" class="form-control" id="email" onfocus="setFocus(true)"
+                                    <!-- <label for="dividend-sector" class="form-label">Select Sector</label> -->
+                                    <select class="form-select" id="dividend-sector" onfocus="setFocus(true)"
+                                        onblur="setFocus(false)" required>
+                                        <option value="" selected disabled>Select Sector</option>
+                                        <option value="1">All Sectors</option>
+                                        <option value="2">Airlines</option>
+                                        <option value="3">Financial</option>
+                                    </select>
+                                </div>
+
+                                <div class="mb-3 input-boxx">
+                                    <!-- <label for="market-cap" class="form-label">Market Cap</label> -->
+                                    <input type="range" class="range-control" id="market-cap" onfocus="setFocus(true)"
                                         onblur="setFocus(false)" required>
                                 </div>
 
+                                <div class="d-flex mb-3 justify-content-between gap-3">
+                                    <div class="input-box">
+                                        <label for="min-cap" class="form-label">Min Cap</label>
+                                        <input type="number" class="form-control" id="min-cap" onfocus="setFocus(true)"
+                                            onblur="setFocus(false)" required>
+                                    </div>
 
-
-                                <div class="mt-3 d-flex justify-content-center">
-                                    <button type="submit" class="btn btn-login mt-3 mx-auto">Send Link</button>
+                                    <div class="input-box">
+                                        <label for="max-cap" class="form-label">Max Cap</label>
+                                        <input type="number" class="form-control" id="max-cap" onfocus="setFocus(true)"
+                                            onblur="setFocus(false)" required>
+                                    </div>
                                 </div>
-                                <div class="text-center mt-3">
-                                    <p class="mb-0">Remembered Password? <a href="login.html"
-                                            class="forgot-pass-link">Login</a></p>
 
+                                <div class="mb-3 input-box">
+                                    <!-- <label for="price-metric" class="form-label">Price Metric</label> -->
+                                    <select class="form-select" id="price-metric" onfocus="setFocus(true)"
+                                        onblur="setFocus(false)" required>
+                                        <option value="" selected disabled>Select Price Metric</option>
+                                        <option value="1">Last Price</option>
+                                        <option value="2">52 Week High</option>
+                                        <option value="3">52 Week Low</option>
+                                    </select>
                                 </div>
+
+                                <div class="mb-3 input-box">
+                                    <!-- <label for="shareholder-returns" class="form-label">Shareholder Returns</label> -->
+                                    <select class="form-select" id="shareholder-returns" onfocus="setFocus(true)"
+                                        onblur="setFocus(false)" required>
+                                        <option value="" selected disabled>Select Shareholder Returns</option>
+                                        <option value="1">All Returns</option>
+                                        <option value="2">Positive Returns</option>
+                                        <option value="3">Negative Returns</option>
+                                    </select>
+                                </div>
+
                             </form>
+
+
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="col-8">
+                    <div class="card veye-table-card px-3 py-4">
+                        <div class="card-body">
+                            <div class="table-header d-flex justify-content-between align-items-center mb-3">
+                                <h2 class="table-title pt-0">Dividend Stock Screener</h2>
+                                <div class="input-box">
+                                    <input type="text" class="form-control" placeholder="Search by Company Name"
+                                        name="key" onfocus="setFocus(true)" onblur="setFocus(false)">
+                                    <i class="bi bi-search"></i>
+                                </div>
+
+                            </div>
+                            <div class="table-responsive">
+                                <table class="main-table">
+                                    <thead>
+                                        <tr>
+                                            <th>Company</th>
+                                            <th>Price (AUD)</th>
+                                            <th>1-day Change</th>
+                                            <th>Market Cap</th>
+                                        </tr>
+                                    </thead>
+
+                                    <tbody>
+                                        <tr>
+                                            <td>Company A</td>
+                                            <td>$10.00</td>
+                                            <td>0.11%</td>
+                                            <td>3439.79</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Company B</td>
+                                            <td>$15.50</td>
+                                            <td>0.15%</td>
+                                            <td>1234.56</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Company C</td>
+                                            <td>$8.75</td>
+                                            <td>0.08%</td>
+                                            <td>567.89</td>
+                                        </tr>
+                                        
+                                        <!-- Add more rows as needed -->
+                                    </tbody>
+                                </table>
+                            </div>
+
+                            <div class="row veye-pagination mt-4">
+                                <div class="col-12 d-flex justify-content-between align-items-center">
+                                    <div class="col-3 d-flex justify-content-start align-items-center">
+                                        <span class="pagination-info my-auto me-3">Showing 1 to 3 of 3
+                                            entries</span>
+
+                                        <div class="pagination-show-entries">
+                                            <select class="form-select" aria-label="Show entries" name="entries">
+                                                <option value="10">10</option>
+                                                <option value="20">20</option>
+                                                <option value="30">30</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <nav aria-label="Page navigation" class="pagination-nav">
+                                        <ul class="pagination">
+                                            <li class="page-item">
+                                                <a class="page-link link disabled" href="#" tabindex="-1"
+                                                    aria-disabled="true">Previous</a>
+                                            </li>
+                                            <li class="page-item"><a class="page-link active" href="#">1</a>
+                                            </li>
+                                            <li class="page-item"><a class="page-link" href="#">2</a></li>
+                                            <li class="page-item"><a class="page-link" href="#">3</a></li>
+                                            <li class="page-item">
+                                                <a class="page-link link" href="#">Next</a>
+                                            </li>
+                                        </ul>
+                                    </nav>
+
+                                </div>
+                            </div>
+
+
                         </div>
                     </div>
                 </div>
             </div>
+
         </div>
     </main>
 
@@ -281,8 +429,14 @@
     <script src="https://code.jquery.com/jquery-3.7.1.js"
         integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
 
+    <!-- Carousel JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
+        integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
     <!-- custom scripts -->
     <script src="js/script.js"></script>
+
 </body>
 
 </html>
