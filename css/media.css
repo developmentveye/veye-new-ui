@@ -1,3 +1,9 @@
+@media (min-width: 1400px) {
+    .container, .container-lg, .container-md, .container-sm, .container-xl, .container-xxl {
+        max-width: 1320px;
+    }
+}
+
 @media screen and (min-width: 768px) {
 
     .container,
@@ -114,6 +120,46 @@
         padding-left: 1rem;
         padding-right: 1rem;
     }
+
+    .past-recommendations-page .heading {
+        font-size: 1.8rem;
+    }
+
+    .veye-table-card .table-header {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .veye-table-card .veye-pagination > div {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .veye-pagination > div {
+        align-items: start;
+    }
+
+    .contact-card-body {
+        padding: 5px;
+        height: auto;
+    }
+
+    .contact-card-body .contact-form {
+        display: block;
+    }
+
+    .contact-card-body .contact-form .card {
+        padding: 5px;
+    }
+
+    .trending-new-page .latest-articles {
+        margin-top: 1rem;
+    }
+
+    .free-trial-content .card .card-body {
+        padding-left: 0;
+        padding-right: 0;
+    }
 }
 
 /* Medium Devices */
@@ -166,3 +212,4 @@
         border-bottom-right-radius: 0px;
     }
 }
+

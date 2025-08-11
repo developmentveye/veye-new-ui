@@ -504,7 +504,9 @@ body {
     border-bottom: 0;
     margin-bottom: 20px;
     margin-top: 0 !important;
+    gap: 2px;
 }
+
 
 .high-low-charts-section .nav .nav-link {
     font-size: 1.0rem;
@@ -871,8 +873,17 @@ body {
 
 .our-subscription .pkg-type-text {
     font-size: 0.8rem;
-    font-weight: normal;
+    font-weight: bold;
     color: var(--primary-color);
+}
+
+.our-subscription img.price-card-clipart {
+    max-width: 100%;
+    height: auto;
+    position: absolute;
+    right: 0;
+    bottom: -50px;
+    overflow: hidden;
 }
 
 .our-subscription .subscribe-btn {
@@ -883,6 +894,11 @@ body {
     border: none;
     border-radius: 50px;
     cursor: pointer;
+}
+
+.our-subscription .premium-btn {
+    background-color: #FFFFFF;
+    color: var(--text-dark-color);
 }
 
 .our-subscription .sub-details .pkg-price-text {
@@ -2778,6 +2794,10 @@ body {
 
 
 /* Veye pagination */
+.veye-pagination > div {
+    align-items: center;
+}
+
 .veye-pagination .pagination-info {
     font-size: 0.9rem;
     color: var(--text-dark-color);
